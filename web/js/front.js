@@ -1,7 +1,12 @@
+$('#loginIn').click(function () {
+    alert("hello");
+    // window.location.href="http://www.baidu.com";
+});
+
 $(function () {
 
     // ------------------------------------------------------- //
-    // Tooltips init
+    // 工具初始化
     // ------------------------------------------------------ //    
 
     $('[data-toggle="tooltip"]').tooltip()        

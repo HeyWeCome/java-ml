@@ -7,13 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/forms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/indexOfFront.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/tables.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/front.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +252,7 @@
       <workItem from="1583417219957" duration="5021000" />
       <workItem from="1583458264167" duration="7474000" />
       <workItem from="1583649446327" duration="10484000" />
-      <workItem from="1583718478356" duration="2270000" />
+      <workItem from="1583718478356" duration="7296000" />
     </task>
     <servers />
   </component>
@@ -363,10 +360,10 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2296" y="195" key="run.anything.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1583416417817" />
-    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1583418472238">
+    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1583737919438">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
-    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1583418472238" />
+    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1583737919438" />
     <state x="449" y="105" key="spring file set editor" timestamp="1583408594802">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
