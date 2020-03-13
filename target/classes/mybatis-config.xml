@@ -4,13 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--配置数据源，交给spring做-->
-
     <typeAliases>
         <package name="com.kang.pojo"/>
     </typeAliases>
 
     <mappers>
-<!--        <mapper class="com.kang.mapper.BookMapper"/>-->
+        <mapper class="com.kang.dao.provincial.ProvincialMapper"/>
     </mappers>
 
 </configuration>
