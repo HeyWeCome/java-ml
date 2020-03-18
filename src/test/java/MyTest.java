@@ -14,7 +14,7 @@ public class MyTest {
     @Test
     public void test(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        ProvincialService provincialServiceImpl = (ProvincialService) context.getBean("provincialServiceImpl");
+        ProvincialService provincialServiceImpl = (ProvincialService) context.getBean("ProvincialServiceImpl");
 
         for (Provincial provincial : provincialServiceImpl.queryAllProvincial()) {
             System.out.println(provincial);

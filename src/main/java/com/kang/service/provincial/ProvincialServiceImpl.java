@@ -13,7 +13,7 @@ import java.util.List;
  * @createDate: 2020/3/13 15:11
  * @version: 1.0
  */
-@Service
+@Service("ProvincialServiceImpl")
 public class ProvincialServiceImpl implements ProvincialService{
     // service调用dao层
     @Autowired

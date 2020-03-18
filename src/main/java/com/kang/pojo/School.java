@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @description:
+ * @description: 学校类
  * @author: HeyWeCome
  * @createDate: 2020/3/11 20:31
  * @version: 1.0
