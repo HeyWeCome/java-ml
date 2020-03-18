@@ -7,24 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/ErrorCorrection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Module.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/NoteBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/QuestionDiscuss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Report.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/SonModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/UserCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/UserPrefer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/userNote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/pojo/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/provincial/ProvincialServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/provincial/ProvincialServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/provincial/ProvincialServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/provincial/ProvincialServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/indexOfFront.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/indexOfFront.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/css/index" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -142,17 +130,17 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\css\index" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\css" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js\layui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MyTest.test">
@@ -289,6 +277,8 @@
       <workItem from="1584171648815" duration="1953000" />
       <workItem from="1584251347385" duration="4118000" />
       <workItem from="1584409412442" duration="6434000" />
+      <workItem from="1584495729231" duration="4778000" />
+      <workItem from="1584513004364" duration="546000" />
     </task>
     <servers />
   </component>
@@ -309,11 +299,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583394543672" />
-    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583467335423">
+    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584498160595">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408508810" />
-    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1583467335423" />
+    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584498160595" />
     <state x="2388" y="178" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1583417435231">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
@@ -397,11 +387,11 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408653538" />
     <state x="2153" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584088741816" />
-    <state x="439" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1584409412134">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1584513003961">
+      <screen x="1920" y="0" width="1440" height="860" />
     </state>
-    <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1584409412134" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584086976764" />
+    <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1584495729220" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584513003961" />
     <state x="2296" y="195" key="run.anything.popup" timestamp="1583416417817">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
