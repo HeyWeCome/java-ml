@@ -13,9 +13,9 @@
     <!--将我们的所有业务类都注入到Spring，可以通过配置或者注解实现
         注解的话只要在ServiceImpl类名上写@Service，属性上写@Autowired
     -->
-    <!--BookServiceImpl注入到IOC容器中-->
-<!--    <bean id="BookServiceImpl" class="com.kang.service.BookServiceImpl">-->
-<!--        <property name="bookMapper" ref="bookMapper"/>-->
+<!--       BookServiceImpl注入到IOC容器中-->
+<!--    <bean id="ProvincialServiceImpl" class="com.kang.service.provincial.ProvincialServiceImpl">-->
+<!--        <property name="ProvincialMapper" ref="ProvincialMapper"/>-->
 <!--    </bean>-->
 
     <!-- 3.声明式事务配置，配置事务管理器 -->

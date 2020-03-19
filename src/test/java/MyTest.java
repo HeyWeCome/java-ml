@@ -1,8 +1,11 @@
 import com.kang.pojo.Provincial;
 import com.kang.service.provincial.ProvincialService;
+import com.kang.service.sentence.SentenceService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.List;
 
 /**
  * @description:
@@ -14,10 +17,9 @@ public class MyTest {
     @Test
     public void test(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        ProvincialService provincialServiceImpl = (ProvincialService) context.getBean("ProvincialServiceImpl");
+        SentenceService sentenceService = (SentenceService) context.getBean("SentenceServiceImpl");
 
-        for (Provincial provincial : provincialServiceImpl.queryAllProvincial()) {
-            System.out.println(provincial);
-        }
+        String sentence = sentenceService.loadOneSentence();
+        System.out.println(sentence);
     }
 }

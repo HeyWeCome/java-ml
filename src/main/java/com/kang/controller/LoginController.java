@@ -21,6 +21,7 @@ import java.util.Map;
 public class LoginController {
 
     @RequestMapping(value = "/userLogin")
+    @ResponseBody
     public String userLogin(String userName,String password){
 
         System.out.println("进来了");
