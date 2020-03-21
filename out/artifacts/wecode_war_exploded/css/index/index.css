@@ -127,3 +127,9 @@ a:link,a:visited{
 .tag:hover {
     color: black;
 }
+
+.leftBody{
+    width: 350px;
+    height: 500px;
+    background-color: #533f03;
+}

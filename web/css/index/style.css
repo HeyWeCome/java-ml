@@ -1,10 +1,10 @@
 .card {
     width: 350px;
+    height: 400px;
     background-color: #3c3b3d;
     overflow: hidden;
     border: none;
-    margin-left: 50px;
-    margin-top: 40px;
+    float: left;
 }
 
 .card:nth-child(5n) {
@@ -51,6 +51,7 @@
     padding: 1em;
     color: #808080;
     text-align: center;
+    height: 85px;
 }
 
 .card .card-info p {
