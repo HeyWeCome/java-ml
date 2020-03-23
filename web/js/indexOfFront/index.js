@@ -40,3 +40,21 @@ window.onload = function () {
     });
 }
 
+//实时监听字数变化
+$(document).ready(function(){
+    $('#inputMessage').on('input focus keyup',
+        function(){
+            var strs   = getByteLen($(this).val());
+            remain = 120-strs.length;
+            var content_msg = "还可以输入"+remain+'字';
+            document.getElementById("remainWord").innerText=content_msg;
+        }
+    );
+});
+
+//获取除标点符号之外的字数
+function getByteLen(val) {
+    strs = val.replace(/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\，|\。|\？|\：|\；|\‘|\’|\”|\“|\、|\·|\！|\（|\）|\》|\《|\『|\』]/g,"");
+    //let recxType = /^[0-9A-Za-z\u4e00-\u9fa5]{15,}$/;
+    return strs;
+}

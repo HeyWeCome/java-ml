@@ -226,5 +226,69 @@ a:link,a:visited{
     width: 640px;
     height: 250px;
     float: left;
-    background-color: #e0a800;
+    background-color: #fff;
+}
+
+.userInput{
+    width: 640px;
+    height: 200px;
+    float: left;
+    border-bottom: 1px solid #888da8;
+}
+
+.hi{
+    width: 30px;
+    height: 200px;
+    float: left;
+    background: url("../../img/hi.png") no-repeat;
+}
+
+.inputBody{
+    width: 610px;
+    height: 200px;
+    float: left;
+    /*background-color: #17a2b8;*/
+}
+
+.inputMessage{
+    width: 610px;
+    height: 199px;
+    resize: none;
+    border: none;
+    font-size: 13px;;
+    text-align: left;
+    line-height: 30px;
+    outline: none;
+    letter-spacing: 3px;
+}
+
+.inputMessage::-webkit-input-placeholder{
+    top: 18px;
+    font-size: 13px;
+    line-height: 1.42857;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.doPost{
+    width: 640px;
+    height: 50px;
+    float: left;
+}
+
+#remainWord{
+    font-size: 10px;
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: 3px;
+    width: 165px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+    color: #888da8;
+}
+
+#post{
+    margin-top: 7px;
+    margin-left: 395px;
 }

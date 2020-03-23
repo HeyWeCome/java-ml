@@ -80,11 +80,17 @@
       <div class="middleBody">
         <!--输入框-->
         <div class="postMessage">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">记录</span>
+          <!--用户输入-->
+          <div class="userInput">
+            <div class="hi"></div>
+            <div class="inputBody">
+              <textarea class="inputMessage" id="inputMessage" maxlength="120" placeholder="今天想要记录些什么？"></textarea>
             </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <!--显示剩余字数和发送按钮-->
+          <div class="doPost">
+            <span id="remainWord">还可以输入120字</span>
+            <a id="post" class="btn btn-success" href="#" role="button">发布</a>
           </div>
         </div>
         <!--中部结束-->
@@ -131,6 +137,5 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/indexOfFront/login.js"></script>
   <script type="text/javascript" src="js/indexOfFront/index.js"></script>
-
   </body>
 </html>
