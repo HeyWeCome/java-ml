@@ -58,3 +58,28 @@ function getByteLen(val) {
     //let recxType = /^[0-9A-Za-z\u4e00-\u9fa5]{15,}$/;
     return strs;
 }
+
+// 用户发布动态
+$("#post").click(function(){
+    // 输入框中的内容
+    // var inputMessage = $("#inputMessage").val();
+
+    var dairy ={
+        userId: "1",
+        content: $("#inputMessage").val()
+    }
+
+    console.log(dairy);
+    $.ajax({
+        url: "user/postDairy",
+        type: "POST",
+        dataType: "json",
+        data: dairy,
+        success: function (result) {
+            console.log(result);
+        },
+        error: function () {
+            console.log("失败");
+        }
+    });
+});

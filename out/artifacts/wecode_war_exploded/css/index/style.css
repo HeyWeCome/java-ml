@@ -1,4 +1,4 @@
-.card {
+.weatherCard {
     width: 350px;
     height: 400px;
     background-color: #3c3b3d;
@@ -7,18 +7,18 @@
     float: left;
 }
 
-.card:nth-child(5n) {
+.weatherCard:nth-child(5n) {
     margin-right: 0;
 }
 
-.card .card-color {
+.weatherCard .card-color {
     position: relative;
     width: 100%;
     padding: 6.5em 1em;
     display: block;
 }
 
-.card .card-color:after {
+.weatherCard .card-color:after {
     position: absolute;
     content: '';
     top: 0;
@@ -27,46 +27,46 @@
     width: 50%;
 }
 
-.card .card-color.color-sunny {
+.weatherCard .card-color.color-sunny {
     background-color: #4FC1E9;
 }
 
-.card .card-color.color-snow {
+.weatherCard .card-color.color-snow {
     background-color: #CCD1D9;
 }
 
-.card .card-color.color-moon {
+.weatherCard .card-color.color-moon {
     background-color: #000;
 }
 
-.card .card-color.color-storm {
+.weatherCard .card-color.color-storm {
     background-color: #656D78;
 }
 
-.card .card-color.color-rain {
+.weatherCard .card-color.color-rain {
     background-color: #41BA9C;
 }
 
-.card .card-info {
+.weatherCard .card-info {
     padding: 1em;
     color: #808080;
     text-align: center;
     height: 85px;
 }
 
-.card .card-info p {
+.weatherCard .card-info p {
     font-size: 0.85rem;
     margin-bottom: .75em;
 }
 
-.card .card-info p:first-child {
+.weatherCard .card-info p:first-child {
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
     color: #fff;
 }
 
-.card .card-info p:last-child {
+.weatherCard .card-info p:last-child {
     margin-bottom: 0;
 }
 

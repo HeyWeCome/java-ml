@@ -58,8 +58,8 @@
     <div class="mainBody">
       <!--主体部分开始-->
       <div class="leftBody">
-        <div class="card">
-          <div id = "weatherColor" class="card-color color-rain">
+        <div class="weatherCard">
+          <div id="weatherColor" class="card-color color-rain">
             <div id="weather"></div>
           </div>
           <div class="card-info">
@@ -90,16 +90,12 @@
           <!--显示剩余字数和发送按钮-->
           <div class="doPost">
             <span id="remainWord">还可以输入120字</span>
-            <a id="post" class="btn btn-success" href="#" role="button">记录</a>
+            <a id="post" class="btn btn-success" role="button">记录</a>
           </div>
         </div>
-
         <!--自己写的日记记录-->
         <div class="daily">
           <div class="card dailyCard text-sm-left">
-            <div class="card-header">
-              发布于两天之前
-            </div>
             <div class="card-body">
               <h5 class="card-title">余秀华</h5>
               <p class="card-text">
@@ -107,13 +103,15 @@
                 ，如果我给你寄一本书，我不会寄我的诗歌
                 ，我会寄你一本关于植物的书
                 ，告诉你稻子和稗子的区别
-                ，告诉你稗子那提心吊胆的春天。</p>
-<!--              <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                ，告诉你稗子那提心吊胆的春天。
+              </p>
             </div>
-            <div class="card-footer text-muted">
-              2 days ago
+            <div class="card-footer text-muted text-sm-right">
+              发布于2020年3月20日
             </div>
+            <!--每一个记录的结束-->
           </div>
+          <!--动态的结束-->
         </div>
         <!--中部结束-->
       </div>
