@@ -7,12 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/hi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/UserDiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/完成记录.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/index/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/index/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/indexOfFront.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/indexOfFront.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/indexOfFront/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/indexOfFront/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/indexOfFront.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/indexOfFront.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/indexOfFront/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/indexOfFront/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +116,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -246,11 +252,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -284,12 +285,17 @@
       <workItem from="1584582448421" duration="792000" />
       <workItem from="1584583312780" duration="11139000" />
       <workItem from="1584756339114" duration="15661000" />
-      <workItem from="1584928887694" duration="7169000" />
+      <workItem from="1584928887694" duration="7432000" />
+      <workItem from="1585055729895" duration="472000" />
+      <workItem from="1585134428320" duration="4123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2226" y="67" width="854" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584084054083">
@@ -405,11 +411,11 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408653538" />
     <state x="2153" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584759706905" />
-    <state x="439" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1584928949352">
+    <state x="439" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1585134438996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1584928949352" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1584756339490" />
+    <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585134438996" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585055729454" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1584602177179">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

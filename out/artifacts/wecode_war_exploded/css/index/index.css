@@ -1,13 +1,13 @@
 .content-wrapper{
     box-sizing: border-box;
     min-height: 100%;
+    background-color: rgb(237,242,246);
 }
+
 .body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background: #FFFFFF;
-    color: #a5a5a5;
 }
 
 a:link,a:visited{
@@ -116,14 +116,6 @@ a:link,a:visited{
     text-align: center;
 }
 
-#downArrow{
-    width: 25px;
-    height: 25px;
-    margin: 0 auto;
-    float: left;
-    background-color: pink;
-}
-
 .tag:hover {
     color: black;
 }
@@ -131,5 +123,172 @@ a:link,a:visited{
 .leftBody{
     width: 350px;
     height: 500px;
+    margin-top: 40px;
+    margin-left: 50px;
+    float: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#weatherColor{
+    width: 350px;
+    height: 315px;
+}
+.remainTime{
+    height: 100px;
+    width: 350px;
+    float: left;
+    background-color: #9f3741;
+}
+
+.remainTime{
+    padding-top: 10px;
+}
+
+.tips{
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.classify{
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#spanTime{
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.rightBody{
+    width: 350px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: rgb(237,242,246);
+    float: left;
+}
+
+.dailyQuestion{
+    width: 350px;
+    height: 250px;
+    background-color: #808080;
+    float: left;
+}
+
+.totalQuestion{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(237,242,246);
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item{
+    width: 145px;
+    height: 95px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    /*background-color: #FFA500;*/
+    background-color: rgb(90,98,104);
+    /*background-color: #41BA9C;*/
+    border-radius: 35px;
+    padding-top: 20px;
+ }
+
+/**************************************中部**********************************************/
+.middleBody{
+    width: 640px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 50px;
     background-color: #533f03;
+    float: left;
+}
+
+.postMessage{
+    width: 640px;
+    height: 250px;
+    float: left;
+    background-color: #fff;
+}
+
+.userInput{
+    width: 640px;
+    height: 200px;
+    float: left;
+    border-bottom: 1px solid #888da8;
+}
+
+.hi{
+    width: 30px;
+    height: 200px;
+    float: left;
+    background: url("../../img/hi.png") no-repeat;
+}
+
+.inputBody{
+    width: 610px;
+    height: 200px;
+    float: left;
+    /*background-color: #17a2b8;*/
+}
+
+.inputMessage{
+    width: 610px;
+    height: 199px;
+    resize: none;
+    border: none;
+    font-size: 13px;;
+    text-align: left;
+    line-height: 30px;
+    outline: none;
+    letter-spacing: 3px;
+}
+
+.inputMessage::-webkit-input-placeholder{
+    top: 18px;
+    font-size: 13px;
+    line-height: 1.42857;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.doPost{
+    width: 640px;
+    height: 50px;
+    float: left;
+}
+
+#remainWord{
+    font-size: 10px;
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: 3px;
+    width: 165px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+    color: #888da8;
+}
+
+#post{
+    margin-top: 7px;
+    margin-left: 395px;
 }
