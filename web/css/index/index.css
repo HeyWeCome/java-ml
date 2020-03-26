@@ -222,8 +222,12 @@ a:link,a:visited{
     background-color: #4b5c31;
 }
 
-.jumbotronColor h1,p{
+.jumbotronColor h1{
    color: #FFFFFF;
+}
+
+#jumbotronP{
+    color:#FFFFFF;
 }
 
 .jumbotronColor hr{
