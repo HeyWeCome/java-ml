@@ -142,11 +142,11 @@ a:link,a:visited{
     height: 100px;
     width: 350px;
     float: left;
-    background-color: #9f3741;
+    background-color: #845900;
 }
 
 .remainTime{
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 .tips{
@@ -159,10 +159,10 @@ a:link,a:visited{
 
 .classify{
     text-align: center;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: #1b1b1b;
+    color: #FFFFFF;
 }
 
 #spanTime{
@@ -182,20 +182,20 @@ a:link,a:visited{
 .dailyQuestion{
     width: 350px;
     height: 250px;
-    background-color: #808080;
+    /*background-color: #808080;*/
     float: left;
 }
 
 .totalQuestion{
     width: 350px;
     height: 250px;
-    background-color: rgb(237,242,246);
+    /*background-color: rgb(237,242,246);*/
     float: left;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -203,16 +203,32 @@ a:link,a:visited{
 }
 
 .item{
-    width: 145px;
+    width: 160px;
     height: 95px;
     margin-bottom: 15px;
     margin-top: 10px;
-    background-color: rgb(233,236,239);
+    background-color: #4b5c31;
+    /*background-color: rgb(233,236,239);*/
     /*background-color: #FFFFFF;*/
     padding-top: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
  }
 
+.card-info{
+    background-color: #4b5c31;
+}
+
+.jumbotronColor{
+    background-color: #4b5c31;
+}
+
+.jumbotronColor h1,p{
+   color: #FFFFFF;
+}
+
+.jumbotronColor hr{
+    background-color: #FFFFFF;
+}
 /**************************************中部**********************************************/
 .middleBody{
     width: 640px;
@@ -290,6 +306,7 @@ a:link,a:visited{
 #post{
     margin-top: 7px;
     margin-left: 395px;
+    color: #FFFFFF;
 }
 
 .daily{
