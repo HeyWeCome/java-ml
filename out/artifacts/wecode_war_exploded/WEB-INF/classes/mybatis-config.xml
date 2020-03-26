@@ -11,6 +11,7 @@
     <mappers>
         <mapper class="com.kang.dao.provincial.ProvincialMapper"/>
         <mapper class="com.kang.dao.sentence.SentenceMapper"/>
+        <mapper class="com.kang.dao.user.UserMapper"/>
     </mappers>
 
 </configuration>

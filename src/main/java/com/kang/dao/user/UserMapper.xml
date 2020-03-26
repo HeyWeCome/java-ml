@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kang.dao.user.UserMapper">
+    <!--增加一个省份-->
+    <insert id="addDairy" parameterType="UserDiary">
+        insert into wecode.userdiary(id,userId,content,createTime)
+        values (#{id},#{userId},#{content},#{createTime})
+    </insert>
+
+</mapper>

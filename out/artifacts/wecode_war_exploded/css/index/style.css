@@ -44,12 +44,14 @@
 }
 
 .weatherCard .card-color.color-rain {
-    background-color: #41BA9C;
+    /*background-color: #41BA9C;*/
+    /*background-color: #66CC00;*/
+    background-color: rgb(40,167,69);
 }
 
 .weatherCard .card-info {
     padding: 1em;
-    color: #808080;
+    color: #FFFFFF;
     text-align: center;
     height: 85px;
 }
