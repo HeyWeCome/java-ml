@@ -30,4 +30,8 @@ public class UserServiceImpl implements UserService {
     public int addDairy(UserDiary userDiary) {
         return userMapper.addDairy(userDiary);
     }
+
+    public List<UserDiary> queryAlldiary(String userId) {
+        return userMapper.queryAlldiary(userId);
+    }
 }

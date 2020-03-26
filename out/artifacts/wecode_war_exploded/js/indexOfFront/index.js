@@ -31,13 +31,14 @@ window.onload = function () {
         // data: user,
         contentType:"application/json; charset=utf-8", //前后台格式一致 防止乱码
         success: function (result) {
-            console.log(result);
             $("#sentence").text(result);
         },
         error: function () {
             $("#sentence").text("我需要，最狂的风，和最静的海");
         }
     });
+
+    loadDairy("1");
 }
 
 //实时监听字数变化
@@ -61,9 +62,6 @@ function getByteLen(val) {
 
 // 用户发布动态
 $("#post").click(function(){
-    // 输入框中的内容
-    // var inputMessage = $("#inputMessage").val();
-
     var dairy ={
         userId: "1",
         content: $("#inputMessage").val()
@@ -76,6 +74,10 @@ $("#post").click(function(){
         dataType: "json",
         data: dairy,
         success: function (result) {
+            if(result != null){
+                alert("插入成功");
+                loadDairy("1");
+            }
             console.log(result);
         },
         error: function () {
@@ -83,3 +85,44 @@ $("#post").click(function(){
         }
     });
 });
+
+function loadDairy(userId) {
+    var user ={
+        userId: userId
+    }
+
+    $.ajax({
+        url: "user/loadDairy",
+        type: "POST",
+        dataType: "json",
+        data: user,
+        success: function (userDairy) {
+            console.log("查询出来的日志为");
+            console.log(userDairy);
+            // 移除现有的所有已加载的日记
+            $(".daily").remove();
+
+            // 动态添加div
+            for (var i in userDairy){
+                var oneDiary =
+                    "<div class=\"daily\" id=\""+userDairy[i].id+"\" >" +
+                    " <div class=\"card dailyCard text-sm-left\">" +
+                    " <div class=\"card-body\">" +
+                    "<p class=\"card-text\">" +
+                        userDairy[i].content+
+                    "</p>" +
+                    "</div>" +
+                    "<div class=\"card-footer text-muted text-sm-right\">\n" +
+                    "发布于"+userDairy[i].createTime +
+                    "</div>" +
+                    "</div>";
+                $(".middleBody").append(oneDiary);
+
+                console.log(oneDiary);
+            }
+        },
+        error: function () {
+            console.log("失败");
+        }
+    });
+}

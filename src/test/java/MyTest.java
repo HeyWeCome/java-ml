@@ -1,3 +1,4 @@
+import com.alibaba.fastjson.JSONObject;
 import com.kang.pojo.Provincial;
 import com.kang.pojo.UserDiary;
 import com.kang.service.provincial.ProvincialService;
@@ -8,6 +9,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -26,6 +28,16 @@ public class MyTest {
 
         String sentence = sentenceService.loadOneSentence();
         System.out.println(sentence);
+    }
+
+    @Test
+    public void test3(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) context.getBean("UserServiceImpl");
+
+        List<UserDiary> userDiaries = userService.queryAlldiary("1");
+
+        System.out.println(JSONObject.toJSONString(userDiaries));
     }
 
     @Test
@@ -50,5 +62,6 @@ public class MyTest {
         System.out.println(createTime);
 
         System.out.println(userService.addDairy(userDiary));
+        System.out.println(userDiary.getId());
     }
 }

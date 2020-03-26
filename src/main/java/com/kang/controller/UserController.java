@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -26,6 +27,7 @@ public class UserController {
     @Autowired
     private UserService userService =  new UserServiceImpl();
 
+    // 发布用户的个人日志
     @RequestMapping(value = "/postDairy",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String postDairy(String userId,String content){
@@ -37,9 +39,17 @@ public class UserController {
 
         UserDiary userDiary = new UserDiary(id,userId,content,createTime);
 
-        System.out.println(userService.addDairy(userDiary));
+        // 执行新增日志的操作
+        userService.addDairy(userDiary);
 
+        return JSONObject.toJSONString(userDiary.getId());
+    }
 
-        return JSONObject.toJSONString("ccc");
+    // 发布用户的个人日志
+    @RequestMapping(value = "/loadDairy",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadDairy(String userId){
+        List<UserDiary> userDiaries = userService.queryAlldiary(userId);
+        return JSONObject.toJSONString(userDiaries);
     }
 }

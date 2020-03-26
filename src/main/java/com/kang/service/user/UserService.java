@@ -2,6 +2,8 @@ package com.kang.service.user;
 
 import com.kang.pojo.UserDiary;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: HeyWeCome
@@ -10,4 +12,5 @@ import com.kang.pojo.UserDiary;
  */
 public interface UserService {
     int addDairy(UserDiary userDiary);
+    List<UserDiary> queryAlldiary(String userId);    //查询全部日志,返回list集合
 }

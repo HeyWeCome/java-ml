@@ -4,9 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.user.UserMapper">
     <!--增加一个省份-->
-    <insert id="addDairy" parameterType="UserDiary">
+    <insert id="addDairy" parameterType="UserDiary" keyProperty="id">
         insert into wecode.userdiary(id,userId,content,createTime)
         values (#{id},#{userId},#{content},#{createTime})
     </insert>
 
+    <!--查询全部Book-->
+    <select id="queryAlldiary" parameterType="String" resultType="UserDiary">
+        SELECT * from wecode.userdiary
+        where userId = #{userId}
+        Order By createTime Desc
+    </select>
 </mapper>
