@@ -20,7 +20,7 @@ window.onload = function () {
     }
 
     // 天气模块
-    var weather = new Array("rain","storm","sunny","snow");
+    var weather = new Array("rain","sunny","sunny","snow");
     var number = Math.floor(Math.random()*4);
     document.getElementById('weather').className = weather[number];
 
@@ -126,3 +126,12 @@ function loadDairy(userId) {
         }
     });
 }
+
+// 鼠标扫描头像出现框子选择
+$(".user").mouseover(function () {
+    $(".userInfo").show();
+});
+
+$(".userInfo").mouseleave(function () {
+    $(".userInfo").hide();
+});
