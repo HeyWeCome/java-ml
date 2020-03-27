@@ -39,4 +39,8 @@
     <session-config>
         <session-timeout>15</session-timeout>
     </session-config>
+
+    <welcome-file-list>
+        <welcome-file>indexOfFront.html</welcome-file>
+    </welcome-file-list>
 </web-app>

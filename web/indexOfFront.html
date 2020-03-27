@@ -40,19 +40,44 @@
 
         <!--右侧导航栏-->
         <div class="nav-right">
-          <div id="searchDiv" class="form-group">
-            <input type="text" class="form-control" id="search" placeholder="找 点 什 么">
-          </div>
+<!--          <div id="searchDiv" class="form-group">-->
+<!--            <input type="text" class="form-control" id="search" placeholder="找 点 什 么">-->
+<!--          </div>-->
 
           <div class="user">
+            <div class="notify">
+              <img src="img/notify.png"><p>消息</p>
+            </div>
             <div class="userPhoto"></div>
             <div class="userInfo">
-              <a class="userName">帅康康</a>
+              <div class="nameAndIndex">
+                <p>heywecome</p>
+                <button type="button" class="btn btn-dark">个人中心</button>
+              </div>
+              <div class="userItem">
+                <div class="everyItem">
+                  <img src="img/收藏.png">
+                  <p>收藏</p>
+                </div>
+                <div class="everyItem">
+                  <img src="img/日志.png">
+                  <p>日志</p>
+                </div>
+                <div class="everyItem">
+                  <img src="img/解题.png">
+                  <p>解题</p>
+                </div>
+              </div>
+              <div class="settingAndOut">
+                <a><i class="hover-item-ico hover-accout-icon"></i>账号设置</a>
+                <a><i class="hover-item-ico hover-accout-logout"></i>退出登录</a>
+              </div>
             </div>
           </div>
           <!--右侧导航栏结束-->
         </div>
       <!--头部div结束-->
+
     </div>
 
     <div class="mainBody">
@@ -93,6 +118,7 @@
             <a id="post" class="btn btn-success" role="button">记录</a>
           </div>
         </div>
+<!--        <h3>已发布动态</h3>-->
         <!--自己写的日记记录-->
         <div class="daily">
           <div class="card dailyCard text-sm-left">
