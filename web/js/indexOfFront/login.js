@@ -21,3 +21,7 @@ $("#login").click(function(){
             }
         });
 });
+
+$('.carousel').carousel({
+    interval: 2500
+})

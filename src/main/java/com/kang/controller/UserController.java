@@ -58,7 +58,6 @@ public class UserController {
     }
 
     // 上传头像
-
     @RequestMapping(value ="uploadHead",method = RequestMethod.POST)
     public String addUser(HttpServletRequest request , User user, MultipartFile pictureFile) throws Exception{
         System.out.println("上传进来了");
