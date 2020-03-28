@@ -1,14 +1,32 @@
-$("#login").click(function(){
+$("#loginIn").click(function(){
     // 获取前台的用户名和密码
+    var name = $('#account').val();
+    var passW = $('#password').val();
+
     var user ={
-        userName: $('#userName').val(),
-        password: $('#password').val()
+        userName: name,
+        password: passW
     }
 
     console.log(user);
-
-    $.ajax({
-            url: "login/userLogin",
+    if (name == "" && passW == ""){
+        swal({
+            text: "请输入账号和密码",
+            button: "好的",
+        });
+    }else if(name == ""){
+        swal({
+            text: "请输入账号",
+            button: "好的",
+        });
+    }else if(passW == ""){
+        swal({
+            text: "请输入密码",
+            button: "好的",
+        });
+    }else{
+        $.ajax({
+            url: "../../login/userLogin",
             type: "POST",
             dataType: "json",
             data: user,
@@ -20,4 +38,9 @@ $("#login").click(function(){
                 console.log("失败");
             }
         });
+    }
 });
+
+$('.carousel').carousel({
+    interval: 2500
+})

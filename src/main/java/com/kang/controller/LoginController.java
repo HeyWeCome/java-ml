@@ -20,7 +20,7 @@ import java.util.Map;
 @RequestMapping("/login")
 public class LoginController {
 
-    @RequestMapping(value = "/userLogin")
+    @RequestMapping(value = "/userLogin",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String userLogin(String userName,String password){
 

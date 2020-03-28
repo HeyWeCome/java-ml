@@ -60,17 +60,6 @@ a:link,a:visited{
     /*background-color: #0c5460;*/
 }
 
-#search{
-    margin-top: 9px;
-    float: left;
-    height: 30px;
-    width: 200px;
-    background: url(../../img/searchLogo.png) no-repeat;
-    background-color: white;
-    background-position-y: center;
-    padding-left: 35px;
-    border-radius: 10px;
-}
 
 .tag{
     width: 90px;
@@ -100,23 +89,6 @@ a:link,a:visited{
     user-select:none;
 }
 
-.notify{
-    width: 60px;
-    height: 40px;
-    float: left;
-    padding-top: 15px;
-    cursor: pointer;
-}
-
-.notify p,img{
-    float: left;
-    font-size: 15px;
-}
-
-.notify p{
-    text-align: center;
-    vertical-align: center;
-}
 
 .userInfo{
     width: 350px;

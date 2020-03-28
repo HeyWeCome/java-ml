@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/index/password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/sweetalert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/sweetalert.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/index/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/html/indexOfFront/loginOfFront.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/indexOfFront/loginBefore.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/indexOfFront/loginBefore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/indexOfFront/loginOfFront.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/indexOfFront/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/indexOfFront/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +64,8 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -118,7 +121,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/index" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -133,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\css" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img\index" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\css\index" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js\indexOfFront" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img\index" />
@@ -275,11 +278,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -320,7 +318,7 @@
       <workItem from="1585205649763" duration="6647000" />
       <workItem from="1585289297535" duration="16133000" />
       <workItem from="1585362067660" duration="1613000" />
-      <workItem from="1585374374367" duration="16278000" />
+      <workItem from="1585374374367" duration="21795000" />
     </task>
     <servers />
   </component>
@@ -349,11 +347,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="151" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1584583222472" />
-    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585386225059">
+    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585405652051">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408508810" />
-    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585386225059" />
+    <state x="2388" y="169" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585405652051" />
     <state x="2388" y="178" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1585314471634">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

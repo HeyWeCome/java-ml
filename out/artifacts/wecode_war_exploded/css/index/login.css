@@ -1,0 +1,55 @@
+.loginOrRegister{
+    background: #1b1b1b;
+    border-radius: 20px;
+    color: #fff;
+    line-height: 24px;
+    float: right;
+    padding: 2px 0;
+    margin: 12px 10px 0 10px;
+    white-space: nowrap;
+}
+
+.loginOrRegister a{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    /*padding: 0 20px;*/
+    text-decoration: none;
+}
+
+.nav-account-login {
+    padding: 0 3px 0 20px;
+}
+
+.nav-account-reg {
+    padding: 0 20px 0 3px;
+}
+
+.mainBody{
+    margin-top: 30px;
+    width: 1024px;
+    height: 463px;
+    /*background: #e0a800;*/
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.mainBody img{
+    width: 1024px;
+    height: 463px;
+    margin-bottom: 10px;
+}
+
+.question{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #9f3741;
+    float: left;
+    margin-left: 50px;
+}
+
+.carousel-inner P{
+    color: #FFFFFF;
+}
