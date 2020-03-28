@@ -7,30 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/index/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/index/loginStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/indexOfFront/loginBefore.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/farsighted.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/peace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/person-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/person-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/person-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/pleaseSit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/professionalTeam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/sit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/sunny.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/index/wise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/index/password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/index/user.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/index/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/indexOfFront/loginOfFront.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/indexOfFront/loginOfFront.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/searchLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/indexOfFront.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/indexOfFront.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/indexOfFront/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/indexOfFront/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/index/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/indexOfFront/loginBefore.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/indexOfFront/loginBefore.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +320,7 @@
       <workItem from="1585205649763" duration="6647000" />
       <workItem from="1585289297535" duration="16133000" />
       <workItem from="1585362067660" duration="1613000" />
-      <workItem from="1585374374367" duration="12270000" />
+      <workItem from="1585374374367" duration="16278000" />
     </task>
     <servers />
   </component>

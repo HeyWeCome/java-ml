@@ -46,12 +46,44 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <a href="#" class="btn primary-btn">登 录</a>
-                <a href="#" class="btn secondary-btn">注 册</a>
+                <a href="#" class="btn primary-btn" data-toggle="modal" data-target="#login">登 录</a>
+                <a href="#contact" class="btn secondary-btn">注 册</a>
             </form>
         </div>
     </div>
 </nav>
+
+<!-- 登录模态框 -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">用户登录</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-username"><img src="../../img/index/user.svg" class="img-fluid logo"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="请输入账号" aria-label="Username" aria-describedby="basic-username">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-password"><img src="../../img/index/password.svg" class="img-fluid logo"></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="请输入密码" aria-label="Password" aria-describedby="basic-password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="bt btn-sm btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="bt btn-sm btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section id="jionUs" class="bg-light">
     <div class="container">
@@ -62,8 +94,8 @@
                 <h2>尽绵薄之力</h2>
                 <p class="topmargin-sm">在考研的征途中，我们希望可以为你提供一些力所能及的帮助，你不是一个人在战斗。</p>
                 <div class="topmargin-sm">
-                    <a href="#" class="btn primary-btn">立即登录</a>
-                    <a href="#" class="btn secondary-btn">加入我们</a>
+                    <a href="#" class="btn primary-btn" data-toggle="modal" data-target="#login">立即登录</a>
+                    <a href="#contact" class="btn secondary-btn">加入我们</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -87,6 +119,7 @@
                     <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                 </ol>
+                <!--轮播图-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../../img/index/professionalTeam.jpg" class="d-block w-100" alt="...">
@@ -124,11 +157,11 @@
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" id="next" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only">上一张</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">下一张</span>
                 </a>
             </div>
             <!--主体内容结束-->
@@ -213,9 +246,9 @@
         <div class="row">
             <div class="col-md-6">
                 <h4>快来加入我们吧！</h4>
-                <p>青青子衿，悠悠我心。纵我不往，子宁不嗣音？</p>
-                <p>青青子佩，悠悠我思。纵我不往，子宁不来？</p>
-                <p>挑兮达兮，在城阙兮。一日不见，如三月兮。</p>
+                <p>月色苍凉，东方将白，客方散去。</p>
+                <p>吾辈纵舟，酣睡于十里荷花之中，香气拍人，清梦甚惬。</p>
+                <p class="text-sm-right">——《西湖梦寻·西湖七月半》</p>
             </div>
             <div class="col-md-6">
                 <form>
@@ -260,38 +293,38 @@
 
 <footer id="footer">
     <div class="container text-center">
-        <h3>What can we help you with?</h3>
+        <h3>微不足道的建议</h3>
         <div class="row text-center topmargin-lg">
             <div class="col-md-3 divider-right">
                 <div class="footer-btn">
                     <a href="#">
-                        <h6>Backend Solutions <i class="icon ion-md-arrow-forward"></i></h6>
+                        <h6>3月---6月 <i class="icon ion-md-arrow-forward"></i></h6>
                     </a>
-                    <p>More information.</p>
+                    <p>打好数学和英语基础</p>
                 </div>
             </div>
             <div class="col-md-3 divider-right">
                 <div class="footer-btn">
                     <a href="#">
-                        <h6>Software Solutions <i class="icon ion-md-arrow-forward"></i></h6>
+                        <h6>6月---9月 <i class="icon ion-md-arrow-forward"></i></h6>
                     </a>
-                    <p>More information.</p>
+                    <p>开始准备专业课，同时二轮数学和英语</p>
                 </div>
             </div>
             <div class="col-md-3 divider-right">
                 <div class="footer-btn">
                     <a href="#">
-                        <h6>Mobile Solutions <i class="icon ion-md-arrow-forward"></i></h6>
+                        <h6>9月---11月 <i class="icon ion-md-arrow-forward"></i></h6>
                     </a>
-                    <p>More information.</p>
+                    <p>全面强化</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="footer-btn">
                     <a href="#">
-                        <h6>Cloud Solutions <i class="icon ion-md-arrow-forward"></i></h6>
+                        <h6>11月---12月考试 <i class="icon ion-md-arrow-forward"></i></h6>
                     </a>
-                    <p>More information.</p>
+                    <p>查漏补缺</p>
                 </div>
             </div>
         </div>

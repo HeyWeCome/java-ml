@@ -49,3 +49,7 @@
     float: left;
     margin-left: 50px;
 }
+
+.carousel-inner P{
+    color: #FFFFFF;
+}
