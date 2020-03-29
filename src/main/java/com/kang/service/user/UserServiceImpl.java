@@ -3,6 +3,7 @@ package com.kang.service.user;
 import com.kang.dao.provincial.ProvincialMapper;
 import com.kang.dao.user.UserMapper;
 import com.kang.pojo.Provincial;
+import com.kang.pojo.User;
 import com.kang.pojo.UserDiary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,5 +34,9 @@ public class UserServiceImpl implements UserService {
 
     public List<UserDiary> queryAlldiary(String userId) {
         return userMapper.queryAlldiary(userId);
+    }
+
+    public User userLogin(String account, String password) {
+        return userMapper.userLogin(account,password);
     }
 }

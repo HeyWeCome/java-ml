@@ -1,10 +1,12 @@
 import com.alibaba.fastjson.JSONObject;
 import com.kang.pojo.Provincial;
+import com.kang.pojo.User;
 import com.kang.pojo.UserDiary;
 import com.kang.service.provincial.ProvincialService;
 import com.kang.service.sentence.SentenceService;
 import com.kang.service.user.UserService;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -38,6 +40,16 @@ public class MyTest {
         List<UserDiary> userDiaries = userService.queryAlldiary("1");
 
         System.out.println(JSONObject.toJSONString(userDiaries));
+    }
+
+    @Test
+    public void test4(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) context.getBean("UserServiceImpl");
+
+        User user = userService.userLogin("heywecome", "123456");
+
+        System.out.println(user.toString());
     }
 
     @Test

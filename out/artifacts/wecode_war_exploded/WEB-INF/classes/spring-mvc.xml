@@ -15,8 +15,7 @@
     <mvc:annotation-driven />
     <!-- 2.静态资源过滤，默认servlet配置-->
     <mvc:default-servlet-handler/>
-    <!--放行静态资源-->
-    <mvc:resources location="/upload/" mapping="/upload/**"/>
+
 
     <!-- 定义文件上传解析器 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

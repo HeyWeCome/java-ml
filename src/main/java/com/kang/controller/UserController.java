@@ -31,6 +31,22 @@ public class UserController {
     @Autowired
     private UserService userService =  new UserServiceImpl();
 
+    // 用户登录
+    @RequestMapping(value = "/userLogin",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String userLogin(String account,String password){
+        User user = userService.userLogin(account, password);
+
+        if(user != null){
+            System.out.println(user.toString());
+            return JSONObject.toJSONString(user);
+        }else{
+            // 查不到就给个0
+            System.out.println("0");
+            return "0";
+        }
+    }
+
     // 发布用户的个人日志
     @RequestMapping(value = "/postDairy",produces = "application/json; charset=utf-8")
     @ResponseBody
@@ -49,16 +65,17 @@ public class UserController {
         return JSONObject.toJSONString(userDiary.getId());
     }
 
-    // 发布用户的个人日志
+    // 加载用户的个人日志
     @RequestMapping(value = "/loadDairy",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loadDairy(String userId){
         List<UserDiary> userDiaries = userService.queryAlldiary(userId);
+
         return JSONObject.toJSONString(userDiaries);
     }
 
     // 上传头像
-    @RequestMapping(value ="uploadHead",method = RequestMethod.POST)
+    @RequestMapping(value ="/uploadHead",method = RequestMethod.POST)
     public String addUser(HttpServletRequest request , User user, MultipartFile pictureFile) throws Exception{
         System.out.println("上传进来了");
         //使用UUID给图片重命名，并去掉四个“-”
@@ -80,6 +97,5 @@ public class UserController {
 //        //重定向到查询所有用户的Controller，测试图片回显
         return "redirect:/index.html";
     }
-
 
 }

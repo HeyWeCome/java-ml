@@ -15,4 +15,10 @@
         where userId = #{userId}
         Order By createTime Desc
     </select>
+
+    <!--用户登录-->
+    <select id="userLogin" parameterType="String" resultType="User">
+        SELECT * from wecode.user
+        where account = #{account} and password = #{password}
+    </select>
 </mapper>
