@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="../../css/index/loginStyle.css">
     <link rel="stylesheet" href="../../css/index/login.css">
@@ -254,39 +255,37 @@
                 <p class="text-sm-right">——《西湖梦寻·西湖七月半》</p>
             </div>
             <div class="col-md-6">
-                <form>
+                <form id="register">
                     <div class="row">
-
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="inputOne" placeholder="账号名称">
+                                <input type="text" class="form-control" id="userAccount" placeholder="账号名称">
+                                <p class="text-sm-left text-warning" id="accountNotify">请输入4到16位（字母，数字，下划线，减号）</p>
+                                <p class="text-sm-left text-warning" id="accountExist">该账号已经存在</p>
+                                <p class="text-sm-left text-success" id="accountOk">该账号符合要求</p>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="inputTwo" placeholder="账号密码">
+                                <input type="password" class="form-control" id="userPassword1" placeholder="账号密码">
+                                <p class="text-sm-left text-warning" id="passwordNotify1">只能输入6-20个字母、数字、下划线  </p>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="inputThree" placeholder="请再次输入密码">
+                                <input type="password" class="form-control" id="userPassword2" placeholder="请再次输入密码">
+                                <p class="text-sm-left text-warning" id="passwordNotify2">两次密码结果不一致</p>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="inputFour" placeholder="邮箱地址">
+                                <input type="text" class="form-control" id="userName" placeholder="请输入用户名">
+                                <p class="text-sm-left text-warning" id="nameNotify">用户名可以为中文，英文字母，数字及下划线组成，长度2-20位</p>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="inputFive"
-                                       placeholder="手机号码">
-                            </div>
+                            <button type="submit" id="registerNow" class="btn primary-btn full-width">立即注册</button>
                         </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn primary-btn full-width">立即注册</button>
-                        </div>
-
                     </div>
                 </form>
             </div>
@@ -358,8 +357,9 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.16.1/esm/popper.js"></script>
+<script type="text/javascript" src="../../js/popper.js"></script>
 <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="../../js/sweetalert.min.js"></script>
 <script type="text/javascript" src="../../js/indexOfFront/login.js"></script>
 </body>

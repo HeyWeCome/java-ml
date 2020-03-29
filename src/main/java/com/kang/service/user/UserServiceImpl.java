@@ -39,4 +39,12 @@ public class UserServiceImpl implements UserService {
     public User userLogin(String account, String password) {
         return userMapper.userLogin(account,password);
     }
+
+    public int checkAccount(String account) {
+        return userMapper.checkAccount(account);
+    }
+
+    public int register(User user) {
+        return userMapper.register(user);
+    }
 }

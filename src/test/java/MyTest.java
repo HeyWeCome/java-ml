@@ -53,6 +53,20 @@ public class MyTest {
     }
 
     @Test
+    public void test5(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) context.getBean("UserServiceImpl");
+
+        User user = new User();
+        user.setId();
+        user.setAccount("test");
+        user.setPassword("123456");
+        user.setName("康爸爸");
+
+        System.out.println(userService.register(user));
+    }
+
+    @Test
     public void test2(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) context.getBean("UserServiceImpl");

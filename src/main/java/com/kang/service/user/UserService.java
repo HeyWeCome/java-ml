@@ -13,6 +13,8 @@ import java.util.List;
  */
 public interface UserService {
     int addDairy(UserDiary userDiary);
-    List<UserDiary> queryAlldiary(String userId);    //查询全部日志,返回list集合
-    User userLogin(String account, String password);    // 用户登录查询
+    List<UserDiary> queryAlldiary(String userId);    // 查询全部日志,返回list集合
+    User userLogin(String account, String password); // 用户登录查询
+    int checkAccount(String account);                // 检测是否注册过
+    int register(User user);                         // 注册新用户
 }

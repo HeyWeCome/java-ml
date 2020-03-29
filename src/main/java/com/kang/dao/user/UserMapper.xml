@@ -21,4 +21,16 @@
         SELECT * from wecode.user
         where account = #{account} and password = #{password}
     </select>
+
+    <!--检测用户账号是否存在-->
+    <select id="checkAccount" parameterType="java.lang.String" resultType="Integer">
+        SELECT count(*) from wecode.user
+        where account = #{account}
+    </select>
+
+    <!--新增用户-->
+    <insert id="register" parameterType="User">
+        insert into wecode.user(id,account,password,name)
+        values (#{id}, #{account}, #{password}, #{name})
+    </insert>
 </mapper>

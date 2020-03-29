@@ -47,6 +47,30 @@ public class UserController {
         }
     }
 
+    // 用户注册
+    @RequestMapping(value = "/register",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String register(String account,String password,String name){
+        User user = new User();
+        // 设置ID,内置UUID
+        user.setId();
+        user.setAccount(account);
+        user.setPassword(password);
+        user.setName(name);
+
+        return JSONObject.toJSONString(userService.register(user));
+    }
+
+    // 检测用户账号是否存在
+    @RequestMapping(value = "/checkAccount",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String checkAccount(String account){
+        userService.checkAccount(account);
+        System.out.println(userService.checkAccount(account));
+
+        return JSONObject.toJSONString(userService.checkAccount(account));
+    }
+
     // 发布用户的个人日志
     @RequestMapping(value = "/postDairy",produces = "application/json; charset=utf-8")
     @ResponseBody

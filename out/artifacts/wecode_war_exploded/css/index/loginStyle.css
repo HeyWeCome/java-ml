@@ -411,7 +411,10 @@ footer a h6:hover {
     }
 }
 
-/*#sit{*/
-/*    width: 800px;*/
-/*    height: 600px;*/
-/*}*/
+#register p{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    display: none;
+}
