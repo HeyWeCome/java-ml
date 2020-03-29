@@ -8,7 +8,6 @@ $("#loginIn").click(function(){
         password: passW
     }
 
-    console.log(user);
     if (account == "" && passW == ""){
         swal({
             text: "请输入账号和密码",
@@ -32,8 +31,6 @@ $("#loginIn").click(function(){
             data: user,
             // contentType:"application/json; charset=utf-8", //contentType很重要
             success: function (result) {
-                console.log(result);
-
                 if(result=="0"){
                     swal("用户名和密码错误", {
                         buttons: false,
@@ -49,6 +46,7 @@ $("#loginIn").click(function(){
                         timer: 1000,
                     }).then(() => {
                         $('#login').modal("hide");
+                        $(location).attr('href', '../../indexOfFront.html');
                     });
                 }
             },

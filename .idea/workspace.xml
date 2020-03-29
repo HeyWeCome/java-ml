@@ -7,32 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/wecode_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/wecode_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/indexOfFront/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/indexOfFront/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/indexOfFront/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/indexOfFront/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -356,7 +330,7 @@
       <workItem from="1585289297535" duration="16133000" />
       <workItem from="1585362067660" duration="1613000" />
       <workItem from="1585374374367" duration="22053000" />
-      <workItem from="1585460269037" duration="10742000" />
+      <workItem from="1585460269037" duration="11005000" />
     </task>
     <servers />
   </component>

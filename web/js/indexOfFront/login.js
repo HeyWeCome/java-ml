@@ -46,6 +46,7 @@ $("#loginIn").click(function(){
                         timer: 1000,
                     }).then(() => {
                         $('#login').modal("hide");
+                        $(location).attr('href', '../../indexOfFront.html');
                     });
                 }
             },
