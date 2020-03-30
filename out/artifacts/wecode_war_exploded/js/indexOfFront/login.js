@@ -1,11 +1,3 @@
-// window.onload = function () {
-//     $("#accountNotify").hide();
-//     $("#accountExist").hide();
-//     $("#passwordNotify1").hide();
-//     $("#passwordNotify2").hide();
-//     $("#accountOk").hide();
-// }
-
 /*动态监听事件，不断查看账号，密码是否符合规范*/
 //监听用户名
 $("#userAccount").bind("input propertychange", function() {
@@ -110,7 +102,7 @@ $("#loginIn").click(function(){
         });
     }else{
         $.ajax({
-            url: "../../user/userLogin",
+            url: "../user/userLogin",
             type: "POST",
             dataType: "json",
             data: user,
@@ -131,6 +123,12 @@ $("#loginIn").click(function(){
                         timer: 1000,
                     }).then(() => {
                         $('#login').modal("hide");
+                        $.cookie('userName', result.name);
+                        $.cookie('userId', result.id);
+
+                        console.log($.cookie('userName'));
+                        console.log($.cookie('userId'));
+
                         $(location).attr('href', '../../indexOfFront.html');
                     });
                 }
@@ -219,6 +217,7 @@ $("#registerNow").click(function(){
     }
 });
 
+// 轮播图时间
 $('.carousel').carousel({
     interval: 2500
 })
