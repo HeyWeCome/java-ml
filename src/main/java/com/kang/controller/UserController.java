@@ -66,8 +66,8 @@ public class UserController {
     @ResponseBody
     public String checkAccount(String account){
         userService.checkAccount(account);
-        System.out.println(userService.checkAccount(account));
-
+//        System.out.println(userService.checkAccount(account));
+        // 返回0没注册，返回1注册过了
         return JSONObject.toJSONString(userService.checkAccount(account));
     }
 

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/index/style.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/index/loginStyle.css">
+    <link rel="stylesheet" href="css/index/login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+
+    <!-- Ionic Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/index/favicon.png" />
+
+    <!--sweetalert.css-->
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+    <title>WeCode考研助手</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/index/sunny.svg" class="img-fluid logo">WeCode考研助手</a>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#school">院校</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#question">题库</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">资讯</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" id="readUser" class="btn primary-btn">登 录</a>
+                <a href="#" class="btn secondary-btn">个 人 中 心</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row  d-flex">
+            <div class="col-lg-3 col-md-12 justify-content-center align-self-center">
+                <div class="weatherCard">
+                    <div id="weatherColor" class="card-color color-sunny">
+                        <div id="weather" class="sunny"></div>
+                    </div>
+                    <div class="card-info">
+                        <p>欢迎回来！</p>
+                        <p id="sentence">我需要，最狂的风，和最静的海</p>
+                        <p class="tips">考研剩余时间</p>
+                        <p class="tips" id="spanTime"></p>
+                        <!--卡片信息结束-->
+                    </div>
+                    <!--卡片DIV结束-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row  d-flex">
+            <div class="col-lg-6 col-md-12 justify-content-center align-self-center">
+                <h1>为计算机考研学子</h1>
+                <h2>尽绵薄之力</h2>
+                <p class="topmargin-sm">在考研的征途中，我们希望可以为你提供一些力所能及的帮助，你不是一个人在战斗。</p>
+                <div class="topmargin-sm">
+                    <a href="#" class="btn primary-btn" data-toggle="modal" data-target="#login">立即登录</a>
+                    <a href="#contact" class="btn secondary-btn">加入我们</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img id="sit" src="img/index/pleaseSit.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer">
+    <div class="container text-center">
+        <h3>微不足道的建议</h3>
+        <div class="row text-center topmargin-lg">
+            <div class="col-md-3 divider-right">
+                <div class="footer-btn">
+                    <a href="#">
+                        <h6>3月---6月 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>打好数学和英语基础</p>
+                </div>
+            </div>
+            <div class="col-md-3 divider-right">
+                <div class="footer-btn">
+                    <a href="#">
+                        <h6>6月---9月 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>开始准备专业课，同时二轮数学和英语</p>
+                </div>
+            </div>
+            <div class="col-md-3 divider-right">
+                <div class="footer-btn">
+                    <a href="#">
+                        <h6>9月---11月 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>全面强化</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-btn">
+                    <a href="#">
+                        <h6>11月---12月考试 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>查漏补缺</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="copyright" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/index/sunny.svg" class="logo"><br>
+                <small>网站作者：heywecome/何玮康</small>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline tright">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/heywecome/"><i class="icon ion-logo-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/vico.ho.56"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/heywecome"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/HeyWeCome"><i class="icon ion-logo-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/index/user.js"></script>
+<script type="text/javascript" src="js/index/index.js"></script>
+</body>
+</html>

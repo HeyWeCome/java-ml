@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/index/style.css">
+    <link rel="stylesheet" href="css/index/normal.css">
+    <link rel="stylesheet" href="css/index/loginStyle.css">
+    <link rel="stylesheet" href="css/index/login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+
+    <!-- Ionic Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/index/favicon.png" />
+
+    <!--sweetalert.css-->
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+    <title>WeCode考研助手</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/index/sunny.svg" class="img-fluid logo">WeCode考研助手</a>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#school">院校</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#question">题库</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">资讯</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" id="readUser" class="btn primary-btn">登 录</a>
+                <a href="#" class="btn secondary-btn">个 人 中 心</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section id="doPost" class="bg-light">
+    <div class="container-fluid">
+        <div class="row  d-flex">
+            <div class="col-lg-3 col-md-12">
+                <div class="weatherCard">
+                    <div id="weatherColor" class="card-color color-sunny">
+                        <div id="weather" class="sunny"></div>
+                    </div>
+                    <div class="card-info">
+                        <p id="spanTime">考研剩余时间:</p>
+<!--                        <p id="spanTime"></p>-->
+                        <p id="sentence">我需要，最狂的风，和最静的海</p>
+                        <!--卡片信息结束-->
+                    </div>
+                    <!--卡片DIV结束-->
+                </div>
+            </div>
+            <!--动态发布-->
+            <div class="col-lg-5 col-md-12">
+                <!--输入框-->
+                <div class="postMessage">
+                    <!--用户输入-->
+                    <div class="userInput">
+                        <div class="hi"></div>
+                        <div class="inputBody">
+                            <textarea class="inputMessage" id="inputMessage" maxlength="120" placeholder="今天想要记录些什么？"></textarea>
+                        </div>
+                    </div>
+
+                    <!--显示剩余字数和发送按钮-->
+                    <div class="doPost">
+                        <span id="remainWord">还可以输入120字</span>
+                        <a id="post" class="btn" role="button">记录</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12" style="background-color: #FFFFFF">
+                <div class="row">
+                    <div class="userCard col-12">
+                        <div class="userPhoto">
+                            <div class="level center">
+                                成为海贼王的男人
+                            </div>
+                            <div class="photo">
+                                <div class="paper"></div>
+                            </div>
+                            <div class="points center">
+                                早上好呀
+                            </div>
+                        </div>
+                        <div class="userIntro">
+                            <div class="note">
+                                <p class="text-sm-left">
+                                    <svg t="1585576071740" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7880" width="20" height="20"><path d="M999.321587 781.169293c-0.317485-126.517792-68.100543-243.250908-177.81964-306.250346a275.166159 275.166159 0 0 1-115.623253 54.886228c102.86649 86.089139 162.12414 213.455336 161.722615 347.592769v14.637662a508.589704 508.589704 0 0 0 129.89007-65.495298 369.91677 369.91677 0 0 0 1.830208-45.371015" fill="#68688c" p-id="7881"></path><path d="M644.413322 16.4612A243.660437 243.660437 0 0 0 600.871182 20.853965a308.807568 308.807568 0 0 1 28.540305 475.653965h15.001835c132.964873 0 240.755048-107.79151 240.755049-240.756382 0-132.963539-107.79151-240.755048-240.755049-240.755048v1.4647z" fill="#68688c" p-id="7882"></path><path d="M224.00309 514.80334c115.669941 94.683913 282.057452 94.683913 397.722057 0 123.851184 71.063292 200.205004 202.97166 200.142308 345.763895a390.322521 390.322521 0 0 1-3.293574 50.857636 680.92539 680.92539 0 0 1-392.963784 112.329678A675.460112 675.460112 0 0 1 27.523866 907.037441 408.399159 408.399159 0 0 1 24.5958 859.836219c-0.098714-142.420058 75.957631-274.021612 199.40729-345.032879" fill="#68688c" p-id="7883"></path><path d="M497.691209 592.736581l-25.980415 70.252238 26.345923 163.916997-69.518554 84.519055-73.180303-84.519055 30.369179-163.552823-31.098861-70.616412z" fill="#68688c" p-id="7884"></path><path d="M422.682031 541.513437c-149.342032-0.805718-269.827608-122.387818-269.290017-271.728516C153.92827 120.437553 275.288931-0.26546 424.630963 0.001334 573.978331 0.26546 694.900115 121.40735 694.905451 270.754717a270.756051 270.756051 0 0 1-79.819477 191.971737 270.784065 270.784065 0 0 1-192.403943 78.786983" fill="#68688c" p-id="7885"></path></svg>
+                                    已经加入Wecode：108天
+                                </p>
+                            </div>
+                            <div class="note">
+                                <p class="text-sm-left">
+                                    <svg t="1585576133544" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8819" width="20" height="20"><path d="M572.8 0c20.8 0 37.6 16.8 37.6 37.6 0 19.2-14.4 35.2-33.6 37.6H263.2C161.6 75.2 78.4 156 75.2 257.6v503.2c0 101.6 80.8 184.8 182.4 188.8h503.2c101.6 0 184.8-80.8 188.8-182.4V451.2c0-20.8 16.8-37.6 37.6-37.6 19.2 0 35.2 14.4 37.6 33.6V760c0 143.2-114.4 259.2-256 263.2H263.2C120 1024 4 909.6 0 768V263.2C0 120 114.4 4 256 0h316.8z" fill="#68688c" p-id="8820"></path><path d="M928 118.4c-56-57.6-148-59.2-205.6-4L451.2 376c-7.2 6.4-11.2 15.2-11.2 24.8l-8 157.6c-0.8 20.8 15.2 38.4 35.2 39.2h2.4l158.4-2.4c9.6 0 18.4-4 25.6-10.4l270.4-261.6c58.4-55.2 60-147.2 4-204.8z m-51.2 55.2c24 28 22.4 70.4-4.8 96.8L612 520.8l-103.2 1.6 4.8-103.2L773.6 168c28-27.2 72.8-26.4 100 1.6 0 0.8 3.2 4 3.2 4z" fill="#68688c" p-id="8821"></path></svg>
+                                    已经解答题目共：300题
+                                </p>
+                            </div>
+                            <div class="note">
+                                <p class="text-sm-left">
+                                    <svg t="1585576265670" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10274" width="20" height="20"><path d="M512 0C229.2 0 0 229.2 0 512c0 282.8 229.2 512 512 512s512-229.2 512-512C1024 229.2 794.7 0 512 0zM492.2 768 256 514.6l60.5-51.2 136.6 113c56-70.2 180.2-209.6 351.6-320.4l14.4 35.1C661.8 443.6 533 658.3 492.2 768z" p-id="10275" data-spm-anchor-id="a313x.7781069.0.i56" class="selected" fill="#68688c"></path></svg>
+                                    已经完成套卷共：45套
+                                </p>
+                            </div>
+                            <div class="note">
+                                <p>
+                                    <svg t="1585576323969" class="icon" viewBox="0 0 1072 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11229" width="20" height="20"><path d="M902.095238 0h-731.428571c-80.457143 0-146.285714 73.630476-146.285715 169.398857v515.510857c0 95.719619 65.828571 169.398857 146.285715 169.398857H243.809524v169.398858h73.142857l146.285714-169.398858h438.857143c80.457143 0 146.285714-73.630476 146.285714-169.398857V169.398857C1048.380952 73.630476 982.552381 0 902.095238 0zM307.2 486.058667c-43.885714 0-73.142857-29.45219-73.142857-73.630477s29.257143-73.630476 73.142857-73.630476 73.142857 29.45219 73.142857 73.630476-29.257143 73.630476-73.142857 73.630477z m243.809524 0c-43.885714 0-73.142857-29.45219-73.142857-73.630477s29.257143-73.630476 73.142857-73.630476 73.142857 29.45219 73.142857 73.630476-29.257143 73.630476-73.142857 73.630477z m241.371428 0c-43.885714 0-73.142857-29.45219-73.142857-73.630477s29.257143-73.630476 73.142857-73.630476 73.142857 29.45219 73.142858 73.630476-29.257143 73.630476-73.142858 73.630477z" p-id="11230" fill="#68688c"></path></svg>
+                                    已经在<b>87</b>道题目下留下了自己的见解
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="dailyQuestion col-12">
+                        <h4>每日一题</h4>
+                        <h6>数据结构是一门研究非数值计算的程序设计问题中计算机的......</h6>
+                        <button type="button" class="btn btn-light" style="float: right">查看</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="copyright" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/index/sunny.svg" class="logo"><br>
+                <small>网站作者：heywecome/何玮康</small>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline tright">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/heywecome/"><i class="icon ion-logo-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/vico.ho.56"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/heywecome"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/HeyWeCome"><i class="icon ion-logo-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/index/user.js"></script>
+<script type="text/javascript" src="js/index/index.js"></script>
+</body>
+</html>
