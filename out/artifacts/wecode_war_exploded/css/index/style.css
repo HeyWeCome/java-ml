@@ -1,7 +1,7 @@
 .weatherCard {
     width: 350px;
-    height: 400px;
-    background-color: #3c3b3d;
+    height: 415px;
+    background-color: RGB(26,26,26);
     overflow: hidden;
     border: none;
     float: left;
@@ -33,19 +33,20 @@
 
 .weatherCard .card-info {
     padding: 1em;
+    font-size: 0.75rem;
     color: #FFFFFF;
+    height: 100px;
     text-align: center;
-    height: 85px;
 }
 
 .weatherCard .card-info p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin-bottom: .75em;
 }
 
-.weatherCard .card-info p:first-child {
+.weatherCard .card-info p {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: #fff;
 }
