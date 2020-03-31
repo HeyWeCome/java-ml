@@ -47,4 +47,8 @@ public class UserServiceImpl implements UserService {
     public int register(User user) {
         return userMapper.register(user);
     }
+
+    public int deleteDiary(String userId, String diaryId) {
+        return userMapper.deleteDiary(userId,diaryId);
+    }
 }

@@ -67,6 +67,15 @@ public class MyTest {
     }
 
     @Test
+    public void test6(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) context.getBean("UserServiceImpl");
+
+
+        System.out.println(userService.deleteDiary("1","56e7df87f8cf4db9aa4984e85618c9cc"));
+    }
+
+    @Test
     public void test2(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) context.getBean("UserServiceImpl");

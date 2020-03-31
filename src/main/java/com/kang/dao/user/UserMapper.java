@@ -12,4 +12,5 @@ public interface UserMapper {
     User userLogin(@Param("account") String account, @Param("password") String password);    // 用户登录查询
     int checkAccount(String account);                                                        // 检测账号
     int register(User user);                                                                 // 用户注册
+    int deleteDiary(@Param("userId") String userId,@Param("diaryId") String diaryId);        // 删除用户的日志
 }

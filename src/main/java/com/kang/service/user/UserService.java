@@ -2,6 +2,7 @@ package com.kang.service.user;
 
 import com.kang.pojo.User;
 import com.kang.pojo.UserDiary;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,5 @@ public interface UserService {
     User userLogin(String account, String password); // 用户登录查询
     int checkAccount(String account);                // 检测是否注册过
     int register(User user);                         // 注册新用户
+    int deleteDiary(String userId, String diaryId);  // 删除用户的日志
 }

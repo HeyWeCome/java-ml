@@ -33,4 +33,11 @@
         insert into wecode.user(id,account,password,name)
         values (#{id}, #{account}, #{password}, #{name})
     </insert>
+
+    <!--删除用户的日志-->
+    <delete id="deleteDiary" parameterType="String">
+        delete from wecode.userdiary where id=#{diaryId}
+        AND userId=#{userId}
+    </delete>
+
 </mapper>

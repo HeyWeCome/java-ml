@@ -98,6 +98,15 @@ public class UserController {
         return JSONObject.toJSONString(userDiaries);
     }
 
+    // 删除用户的个人日志
+    @RequestMapping(value = "/deleteDiary",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteDiary(String userId,String diaryId){
+
+        // 返回1成功，返回0删除失败
+        return JSONObject.toJSONString(userService.deleteDiary(userId,diaryId));
+    }
+
     // 上传头像
     @RequestMapping(value ="/uploadHead",method = RequestMethod.POST)
     public String addUser(HttpServletRequest request , User user, MultipartFile pictureFile) throws Exception{
