@@ -1,0 +1,66 @@
+html{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#searchSchool{
+    padding-top: 50px;
+}
+
+#center{
+    margin: 0 auto;
+}
+
+#doSearch{
+    margin-left: 10px;
+    height: 48px;
+    background-color: rgb(26,26,26);
+}
+
+/********************************搜索结果**********************/
+#searchResult{
+    margin: 0 auto;
+}
+
+#resultSession{
+    padding-top: 20px;
+}
+
+#head{
+    height: 25px;
+}
+
+#temp2{
+    float: left;
+}
+
+#temp1{
+    margin-top: -10px;
+    float: left;
+}
+
+.result{
+    width: 1200px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.itemSchool{
+    width: 200px;
+    height: 90px;
+    /*background-color: #005cbf;*/
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.itemSchool:hover{
+    background-color: rgb(245,245,245);
+}

@@ -129,7 +129,7 @@ $("#loginIn").click(function(){
                         // 将当前的用户名和ID存起来
                         // console.log($.cookie('userName'));
                         // console.log($.cookie('userId'));
-                        $(location).attr('href', 'temp.html');
+                        $(location).attr('href', 'index.html');
                     });
                 }
             },
