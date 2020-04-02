@@ -1,0 +1,62 @@
+html{
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#schoolHead{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#schoolIntro{
+    margin-left: 200px;
+}
+
+#schoolPhoto{
+    /*background-color: #005cbf;*/
+}
+
+#website,#postCode,#schoolAddress{
+    padding-top: 3px;
+}
+
+/*#schoolAddress{*/
+/*    margin-left: 50px;*/
+/*}*/
+
+#photo{
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    margin: 0 auto;
+    background: url("../../img/school/tsinghua.png") no-repeat;
+    background-size:100% 100%;
+}
+
+#time{
+    width: 100px;
+    height: 40px;
+    /*background-color: #e4606d;*/
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0px;
+}
+
+#zhou{
+    margin-bottom: 0px;
+}
+
+#paper{
+    /*padding-top: 30px;*/
+}
+
+#paperList{
+    margin: 0 auto;
+}
