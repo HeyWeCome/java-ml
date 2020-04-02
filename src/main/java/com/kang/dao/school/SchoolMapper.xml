@@ -8,4 +8,10 @@
         select * from wecode.school
         where provincial = #{provincialId}
     </select>
+
+    <!--根据院校名字，模糊搜素-->
+    <select id="searchSchool" parameterType="String" resultType="School">
+        select * from wecode.school
+        where name LIKE #{schoolName}
+    </select>
 </mapper>

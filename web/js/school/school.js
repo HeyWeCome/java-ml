@@ -1,5 +1,5 @@
 window.onload = function () {
-    // 加载所有的院校
+    // 加载所有的省份
     $.ajax({
         url: "provincial/loadProvincial",
         type: "POST",
@@ -38,10 +38,86 @@ function loadSchoolByProvincial(provincialId){
         type: "POST",
         dataType: "json",
         data: school,
-        success: function (result) {
-            console.log(result);
+        success: function (schools) {
+            $("#result").empty();
+
+            // 动态添加div
+            for (var i in schools){
+                var school =
+                    "<div class=\"itemSchool\" id=\""+schools[i].id+"\">" +
+                    "<h6>"+schools[i].name+"</h6>" +
+                    "<p>共289套真题</p>" +
+                    "</div>";
+
+                $("#result").append(school);
+            }
         },
         error: function () {
         }
     });
 }
+
+// 点击搜索，模糊搜索院校信息
+$("#doSearch").click(function(){
+    var school ={
+        keyword: $("#schoolName").val(),
+    }
+
+    if($("#schoolName").val() != "") {
+        $.ajax({
+            url: "school/searchSchool",
+            type: "POST",
+            dataType: "json",
+            data: school,
+            success: function (schools) {
+                $("#dynamicSearch").empty();
+
+                // 动态添加div
+                for (var i in schools) {
+                    var school =
+                        "<div class=\"itemSchool\" id=\"" + schools[i].id + "\">" +
+                        "<h6>" + schools[i].name + "</h6>" +
+                        "<p>共289套真题</p>" +
+                        "</div>";
+                    $("#dynamicSearch").append(school);
+                }
+            },
+            error: function () {
+            }
+        });
+    }
+});
+
+// 不点击按钮，直接动态Ajax请求获取院校
+//监听用户名
+$("#schoolName").bind("input propertychange", function() {
+
+    var school ={
+        keyword: $("#schoolName").val(),
+    }
+
+    if($("#schoolName").val() != ""){
+        $.ajax({
+            url: "school/searchSchool",
+            type: "POST",
+            dataType: "json",
+            data: school,
+            success: function (schools) {
+                $("#dynamicSearch").empty();
+
+                // 动态添加div
+                for (var i in schools){
+                    var school =
+                        "<div class=\"itemSchool\" id=\""+schools[i].id+"\">" +
+                        "<h6>"+schools[i].name+"</h6>" +
+                        "<p>共289套真题</p>" +
+                        "</div>";
+
+                    $("#dynamicSearch").append(school);
+                }
+            },
+            error: function () {
+            }
+        });
+    }
+});

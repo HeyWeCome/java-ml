@@ -43,4 +43,18 @@ public class test2 {
         }
 //        System.out.println(JSONObject.toJSONString(userDiaries));
     }
+
+    @Test
+    public void test2(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SchoolServiceImpl schoolServiceImpl = (SchoolServiceImpl) context.getBean("SchoolServiceImpl");
+
+        String schoolName = "%"+"北"+"%";
+        List<School> schools = schoolServiceImpl.searchSchool(schoolName);
+
+        for (School school : schools) {
+            System.out.println(school.toString());
+        }
+
+    }
 }

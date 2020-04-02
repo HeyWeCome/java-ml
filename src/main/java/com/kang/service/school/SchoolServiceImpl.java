@@ -31,4 +31,9 @@ public class SchoolServiceImpl implements SchoolService {
     public List<School> loadSchoolByProvincial(String provincialId) {
         return schoolMapper.loadSchoolByProvincial(provincialId);
     }
+
+    // 根据院校名称来模糊搜索院校信息
+    public List<School> searchSchool(String schoolName) {
+        return schoolMapper.searchSchool(schoolName);
+    }
 }
