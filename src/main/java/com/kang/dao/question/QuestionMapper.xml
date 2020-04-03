@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kang.dao.question.QuestionMapper">
+
+    <!--根据院校id查询,返回所有套卷-->
+    <select id="loadQuestionBySchool" parameterType="String" resultType="java.util.HashMap">
+        SELECT
+	        testpaper.id,
+	        testpaper.codeId,
+	        school.name,
+	        testpaper.year,
+	        testpaper.heat
+        FROM
+	    testpaper
+        JOIN profession_code
+        JOIN school
+        WHERE
+	    testpaper.schoolId = schoolId
+        AND school.id = schoolId
+    </select>
+
+</mapper>

@@ -13,6 +13,7 @@
         <mapper class="com.kang.dao.sentence.SentenceMapper"/>
         <mapper class="com.kang.dao.user.UserMapper"/>
         <mapper class="com.kang.dao.school.SchoolMapper"/>
+        <mapper class="com.kang.dao.question.QuestionMapper"/>
     </mappers>
 
 </configuration>

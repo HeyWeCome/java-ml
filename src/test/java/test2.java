@@ -3,12 +3,14 @@ import com.kang.pojo.Provincial;
 import com.kang.pojo.School;
 import com.kang.pojo.UserDiary;
 import com.kang.service.provincial.ProvincialService;
+import com.kang.service.question.QuestionServiceImpl;
 import com.kang.service.school.SchoolServiceImpl;
 import com.kang.service.user.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -56,5 +58,17 @@ public class test2 {
             System.out.println(school.toString());
         }
 
+    }
+
+    @Test
+    public void test5(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionServiceImpl questionServiceImpl = (QuestionServiceImpl) context.getBean("QuestionServiceImpl");
+
+        List<HashMap> result = questionServiceImpl.loadQuestionBySchool("334281f074b711ea9e870221860e9b7e");
+
+        for(int i = 0; i < result.size(); i++){
+            System.out.println(result.get(i).toString());
+        }
     }
 }

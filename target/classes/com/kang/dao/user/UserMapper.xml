@@ -5,13 +5,13 @@
 <mapper namespace="com.kang.dao.user.UserMapper">
     <!--增加一个日志-->
     <insert id="addDairy" parameterType="UserDiary" keyProperty="id">
-        insert into wecode.userdiary(id,userId,content,createTime)
+        insert into wecode.user_diary(id,userId,content,createTime)
         values (#{id},#{userId},#{content},#{createTime})
     </insert>
 
     <!--查询全部日记动态 倒序输出-->
     <select id="queryAlldiary" parameterType="String" resultType="UserDiary">
-        SELECT * from wecode.userdiary
+        SELECT * from wecode.user_diary
         where userId = #{userId}
         Order By createTime Desc
     </select>
@@ -36,7 +36,7 @@
 
     <!--删除用户的日志-->
     <delete id="deleteDiary" parameterType="String">
-        delete from wecode.userdiary where id=#{diaryId}
+        delete from wecode.user_diary where id=#{diaryId}
         AND userId=#{userId}
     </delete>
 

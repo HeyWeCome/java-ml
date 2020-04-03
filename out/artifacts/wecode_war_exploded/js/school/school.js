@@ -1,5 +1,5 @@
 window.onload = function () {
-    // 加载所有的院校
+    // 加载所有的省份
     $.ajax({
         url: "provincial/loadProvincial",
         type: "POST",
@@ -79,7 +79,6 @@ $("#doSearch").click(function(){
                         "<h6>" + schools[i].name + "</h6>" +
                         "<p>共289套真题</p>" +
                         "</div>";
-
                     $("#dynamicSearch").append(school);
                 }
             },
