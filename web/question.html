@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/index/loginStyle.css">
+    <link rel="stylesheet" href="css/index/login.css">
+    <link rel="stylesheet" href="css/question/normal.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+
+    <!-- Ionic Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/index/favicon.png" />
+
+    <!--sweetalert.css-->
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+    <title>WeCode考研助手</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/index/sunny.svg" class="img-fluid logo">WeCode考研助手</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="school.html">院校</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#question">题库</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">资讯</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn primary-btn" data-toggle="modal" data-target="#login">登 录</a>
+                <a href="#contact" class="btn secondary-btn">注 册</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div id="classify" class="bg-white">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="allClass" class="col-lg-8">
+                <div class="inner" id="dataStructure">
+                    <div class="text-center title">数据结构</div>
+                </div>
+                <div class="inner" id="network">
+                    <div class="text-center title">计算机网络</div>
+                </div>
+                <div class="inner" id="composition">
+                    <div class="text-center title">计算机组成原理</div>
+                </div>
+                <div class="inner" id="opSystem">
+                    <div class="text-center title">操作系统</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="question" class="bg-white">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="allQuestion" class="col-lg-8">
+                <!--bootstrap-table表格-->
+
+                <nav class="navbar navbar-light bg-white justify-content-between" id="search">
+                    <a class="navbar-brand">题库</a>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="searchQuestion" class="btn btn-outline-success my-2 my-sm-0" type="submit">查找</button>
+                    </form>
+                </nav>
+
+                <table id="papper" class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>题名</th>
+                        <th>所属分类</th>
+                        <th>题解</th>
+                        <th>难度</th>
+                        <th>热度</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>字符串转换整数 (atoi)</td>
+                        <td>数据结构</td>
+                        <td>867</td>
+                        <td>中等</td>
+                        <td>3213</td>
+                        <td>查看</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>两数之和</td>
+                        <td>数据结构</td>
+                        <td>321</td>
+                        <td>简单</td>
+                        <td>333</td>
+                        <td>查看</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>两数之和</td>
+                        <td>数据结构</td>
+                        <td>321</td>
+                        <td>简单</td>
+                        <td>333</td>
+                        <td>查看</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>两数之和</td>
+                        <td>数据结构</td>
+                        <td>321</td>
+                        <td>简单</td>
+                        <td>333</td>
+                        <td>查看</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>两数之和</td>
+                        <td>数据结构</td>
+                        <td>321</td>
+                        <td>简单</td>
+                        <td>333</td>
+                        <td>查看</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="dailyQuestion" class="col-lg-3">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">每日一题</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">数据结构</h6>
+                        <p class="card-text">在系统内存中设置磁盘缓冲区的主要目的是（）。</p>
+                        <p class="card-text">A.减少磁盘 I/O 次数</p>
+                        <p class="card-text">B.减少平均寻道时间</p>
+                        <p class="card-text">C.提高磁盘数据可靠性</p>
+                        <p class="card-text">D.实现设备无关性</p>
+
+                        <a href="#" class="card-link">查看</a>
+                        <a href="#" class="card-link">换一题</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">每日一题</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">数据结构</h6>
+                        <p class="card-text">在系统内存中设置磁盘缓冲区的主要目的是（）。</p>
+                        <p class="card-text">A.减少磁盘 I/O 次数</p>
+                        <p class="card-text">B.减少平均寻道时间</p>
+                        <p class="card-text">C.提高磁盘数据可靠性</p>
+                        <p class="card-text">D.实现设备无关性</p>
+
+                        <a href="#" class="card-link">查看</a>
+                        <a href="#" class="card-link">换一题</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="copyright" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/index/sunny.svg" class="logo"><br>
+                <small>网站作者：heywecome/何玮康</small>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline tright">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/heywecome/"><i class="icon ion-logo-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/vico.ho.56"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/heywecome"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/HeyWeCome"><i class="icon ion-logo-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/Scripts/popper.js"></script>
+<script type="text/javascript" src="js/Scripts/esm/popper.js"></script>
+<script type="text/javascript" src="js/Scripts/umd/popper.js"></script>
+<script type="text/javascript" src="js/popper-utils.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+</body>
+</html>
