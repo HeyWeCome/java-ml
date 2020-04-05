@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/user/normal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/user/examProcess.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/question.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +59,8 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -354,7 +351,7 @@
       <workItem from="1585798498616" duration="15469000" />
       <workItem from="1585877600706" duration="17282000" />
       <workItem from="1585966279987" duration="3055000" />
-      <workItem from="1586063311096" duration="5810000" />
+      <workItem from="1586063311096" duration="9079000" />
     </task>
     <servers />
   </component>
