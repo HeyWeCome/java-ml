@@ -108,3 +108,30 @@ html{
     /*margin: 0 auto;*/
     margin-left: 30px;
 }
+
+.progress{
+    margin-bottom: 10px;
+}
+
+#questionProcess{
+    margin-top: 50px;
+    min-height: 330px;
+}
+
+#addOne{
+    min-width: 0px;
+    min-height: 0px;
+    width: 145px;
+    height: 50px;
+}
+
+#addPaper{
+    min-width: 0px;
+    min-height: 0px;
+    width: 145px;
+    height: 50px;
+}
+
+.list-group{
+    margin-top: 20px;
+}
