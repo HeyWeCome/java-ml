@@ -185,7 +185,20 @@
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                            添加每日计划(todoList),勾选那种
+                            <div id="container">
+                                <div id="footer">
+                                    <input id="taskInput" type="text" placeholder="添加待办列表" />
+                                    <button id="taskAdd">+</button>
+                                </div>
+
+                                <!--  待办列表  -->
+                                <div id="tasks">
+                                    <div id="notification">今天还没添加计划哦</div>
+                                    <ul id="tasksList">
+                                    </ul>
+                                </div>
+                                <!--todolist结束-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,5 +240,6 @@
 <script type="text/javascript" src="../../js/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript" src="../../js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="../../js/sweetalert.min.js"></script>
+<script type="text/javascript" src="../../js/user/todoList.js"></script>
 </body>
 </html>
