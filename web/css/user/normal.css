@@ -29,7 +29,7 @@ html{
     color: rgb(55, 71, 79);
     margin: 0px 5px;
     padding: 9px 0px;
-    border-bottom: 1px solid rgb(55, 71, 79);
+    /*border-bottom: 1px solid rgb(55, 71, 79);*/
     border-color: rgb(55, 71, 79);
 }
 
