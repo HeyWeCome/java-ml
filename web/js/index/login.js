@@ -123,12 +123,10 @@ $("#loginIn").click(function(){
                         timer: 1000,
                     }).then(() => {
                         $('#login').modal("hide");
+                        console.log(result);
                         $.cookie('userName', result.name);
                         $.cookie('userId', result.id);
-
                         // 将当前的用户名和ID存起来
-                        // console.log($.cookie('userName'));
-                        // console.log($.cookie('userId'));
                         $(location).attr('href', 'index.html');
                     });
                 }

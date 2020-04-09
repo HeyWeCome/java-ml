@@ -180,3 +180,18 @@ $(".user").mouseover(function () {
 $(".userInfo").mouseleave(function () {
     $(".userInfo").hide();
 });
+
+/*注销登录，删除所有的cookie，并且返回主页面*/
+var loginOut = function () {
+    $.cookie('userName', "");
+    $.cookie('userId', "");
+    swal({
+        title: "退出成功",
+        text: "期待您的下次使用！",
+        icon: "success",
+        button: false,
+        timer: 1000,
+    }).then(() => {
+        $(location).attr('href', 'login.html');
+    });
+}
