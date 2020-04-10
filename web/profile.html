@@ -122,7 +122,7 @@
                         <div class="detailsDes">用&nbsp;户&nbsp;名：<span id="nameOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span>编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserName">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -132,7 +132,7 @@
                         <div class="detailsDes">个人简介：<span id="introOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span>编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserIntro">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -152,7 +152,7 @@
                         <div class="detailsDes">密&nbsp;&nbsp;&nbsp;码：<input id="passwordOfUser" type="password" readOnly="true"></div>
                         <div class="operator">
                             <svg t="1586066287232" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2961" width="16" height="16"><path d="M969.415644 75.480649c-18.810604 0-34.079866 15.416315-34.079866 34.469656L935.335778 241.868275c-21.810067-32.670783-47.73659-62.764123-77.604316-90.00203C803.251619 102.200852 738.856827 64.925117 666.279483 41.148981c-63.874066-20.972071-129.945858-28.638933-196.343985-22.806195-64.122846 5.610145-125.825373 23.553543-183.382234 53.248029-57.587078 29.692471-108.13982 69.719897-150.265258 118.910895C92.652763 241.445248 60.030326 300.079821 39.296964 364.71735c-20.704153 64.637529-28.282381 131.465734-22.543314 198.630346 5.572878 64.855086 23.285626 127.243521 52.64169 185.492334 29.381244 58.244784 68.953412 109.383721 117.58541 151.990604 50.390582 44.165033 108.331189 77.164166 172.233457 98.108035 50.004821 16.415465 101.57585 24.719889 153.559833 24.719889 5.710865 0 11.394536-0.1118 17.025832-0.277989 55.853674-1.971105 110.664888-13.388807 162.951034-33.913677 104.871432-41.249168 193.624525-117.773757 249.918349-215.573587 9.473792-16.443666 3.982498-37.52653-12.274835-47.108093-16.255319-9.585592-37.099474-4.028829-46.572259 12.414837C782.958406 914.35642 571.180983 996.04899 380.220521 933.385588 154.906233 859.470672 31.03182 613.900437 104.105718 385.965395 139.502004 275.554323 215.293347 185.69733 317.500715 132.949884c102.208376-52.718238 218.586144-62.08023 327.742236-26.24883 111.464611 36.530402 202.028663 111.132233 253.933077 207.714348L718.371237 314.415402c-18.810604 0-34.079866 15.442502-34.079866 34.470663 0 19.025139 15.241061 34.441454 34.079866 34.441454l236.216301 0c2.543198 0 5.019921-0.29209 7.404988-0.827924 2.390103 0.535834 4.871862 0.827924 7.423118 0.827924 18.782402 0 34.051665-15.416315 34.051665-34.441454L1003.467309 109.949298C1003.467309 90.924159 988.22524 75.480649 969.415644 75.480649z" p-id="2962"></path></svg>
-                            <span id="modifyPassword">重置</span>
+                            <span data-toggle="modal" data-target="#changeUserPassword">重置</span>
                         </div>
                     </div>
                 </li>
@@ -162,7 +162,7 @@
                         <div class="detailsDes">年&nbsp;&nbsp;&nbsp;龄：<span id="ageOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span id="modifyAge">编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserAge">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -172,7 +172,7 @@
                         <div class="detailsDes">性&nbsp;&nbsp;&nbsp;别：<span id="sexOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span id="modifySex">编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserSex">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -183,7 +183,7 @@
                         <div class="detailsDes">电子邮箱：<span id="emailOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span id="modifyEmail">编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserEmail">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -194,7 +194,7 @@
                         <div class="detailsDes">志愿院校：<span id="schoolOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586519924884" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3353" width="16" height="16"><path d="M928.768 215.04c-11.776-16.384-24.576-32.256-37.888-47.104l-32.768 33.28c11.776 12.8 22.528 26.624 32.768 40.96l37.888-27.136z m65.536 124.928l-28.672 20.48c-3.584 2.56-7.168 4.608-10.752 6.656 14.848 45.568 23.04 94.208 23.04 144.896 0 257.024-208.384 465.408-465.408 465.408S47.104 769.024 47.104 512C46.592 254.976 254.976 46.592 512 46.592c87.04 0 168.448 24.064 237.568 65.536l33.792-33.792C704.512 28.672 611.84 0 512 0 229.376 0 0 229.376 0 512s229.376 512 512 512 512-229.376 512-512c0-60.416-10.24-118.272-29.696-172.032z" p-id="3354"></path><path d="M353.28 353.28c-39.936 44.032-89.6 81.408-148.48 113.152l-23.04-30.208c55.808-30.72 103.936-67.072 143.36-108.032L353.28 353.28z m-105.984 167.936H737.28v30.208c-50.176 63.488-112.128 115.712-186.368 157.696 79.872 38.4 176.128 65.024 289.28 80.896l-18.944 35.328c-120.832-20.48-223.744-52.224-308.736-95.744-88.064 43.52-190.464 75.264-307.2 95.744l-18.944-36.864c108.032-15.872 203.776-43.008 286.208-80.896-69.12-41.984-124.416-92.672-165.888-151.552H247.296v-34.816z m260.096-361.472c11.776 26.624 20.992 52.736 29.184 78.336h281.6v37.888h-204.8v201.216h-38.912V275.456H442.88v202.24h-38.912V275.456H198.144v-37.888h299.008c-10.752-27.136-21.504-50.688-32.768-71.168l43.008-6.656z m-157.696 396.8c41.984 52.224 95.744 96.256 160.768 132.608 68.096-36.352 125.952-80.384 174.08-132.608H349.696z m342.528-230.912c56.32 35.84 104.448 72.192 144.384 110.08l-26.624 26.624c-37.376-36.352-84.992-73.216-143.36-111.616l25.6-25.088z" p-id="3355"></path></svg>
-                            <span id="modifySchool">变更</span>
+                            <span data-toggle="modal" data-target="#changeUserSchool">变更</span>
                         </div>
                     </div>
                 </li>
@@ -205,7 +205,7 @@
                         <div class="detailsDes">电话号码：<span id="phoneOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span id="modifyPhone">编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserPhone">编辑</span>
                         </div>
                     </div>
                 </li>
@@ -216,11 +216,204 @@
                         <div class="detailsDes">地&nbsp;&nbsp;&nbsp;址：<span id="addressOfUser"></span></div>
                         <div class="operator">
                             <svg t="1586065738346" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2172" width="16" height="16"><path d="M318.155208 695.179253a53.749942 53.749942 0 0 0 76.019919 0l588.529367-588.444368a53.921942 53.921942 0 0 0 0-76.189918l-0.169999-0.17a53.749942 53.749942 0 0 0-75.933919 0.17L318.070208 618.989335a53.921942 53.921942 0 0 0 0 76.189918z" p-id="2173"></path><path d="M970.077508 431.202537h-0.256a53.665942 53.665942 0 0 0-53.664942 53.664942v431.372537H107.844434V107.672884l431.371537 0.17a53.749942 53.749942 0 0 0 53.665942-53.834942v-0.17A53.665942 53.665942 0 0 0 539.131971 0.17H53.752492A53.323943 53.323943 0 0 0 0.08855 53.749942L0.00255 970.418958a53.323943 53.323943 0 0 0 53.664942 53.579942H970.419508a53.409943 53.409943 0 0 0 53.494942-53.750942V484.952479a53.749942 53.749942 0 0 0-53.836942-53.663942z" p-id="2174"></path></svg>
-                            <span id="modifyAddress">编辑</span>
+                            <span data-toggle="modal" data-target="#changeUserAddress">编辑</span>
                         </div>
                     </div>
                 </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--模态框组，通过点击表格中的数据，触发修改事件-->
+<!-- 修改用户昵称 -->
+<div class="modal fade" id="changeUserName" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑用户名</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="originalName" type="text" class="form-control" placeholder="请输入更改后的昵称" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserName" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人简介 -->
+<div class="modal fade" id="changeUserIntro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑个人简介</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="originalIntro" type="text" class="form-control" placeholder="请输入更改后的昵称" aria-label="Intro" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserIntro" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人密码 -->
+<div class="modal fade" id="changeUserPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑密码</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="originalPassWord" type="text" class="form-control" placeholder="请输入更改后的密码" aria-label="Intro" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserPassword" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人年龄 -->
+<div class="modal fade" id="changeUserAge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑年龄</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                打算使用用户自己选择的方式来做
+                <input id="originalAge" type="text" class="form-control" placeholder="请输入更改后的年龄" aria-label="Intro" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserAge" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人性别 -->
+<div class="modal fade" id="changeUserSex" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑性别</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                下拉框？
+                <input id="originalSex" type="text" class="form-control" placeholder="请输入更改后的年龄" aria-label="Intro" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserSex" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人邮箱 -->
+<div class="modal fade" id="changeUserEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑电子邮箱</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                下拉框？
+                <input id="originalEmail" type="text" class="form-control" placeholder="请输入更改后的年龄" aria-label="Intro" aria-describedby="basic-addon1">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserEmail" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的个人志愿院校 -->
+<div class="modal fade" id="changeUserSchool" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑志愿学校</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                修改院校，预计打算输入框，那种搜索输入框来搞
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserSchool" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的电话 -->
+<div class="modal fade" id="changeUserPhone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑电话</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                修改电话，正则表达式验证
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserPhone" class="btn btn-primary">更改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改用户的地址 -->
+<div class="modal fade" id="changeUserAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">编辑地址</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                修改地址
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" id="modifyUserAddress" class="btn btn-primary">更改</button>
             </div>
         </div>
     </div>

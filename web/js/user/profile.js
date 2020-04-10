@@ -24,13 +24,19 @@ window.onload = function () {
             console.log(result);
             // console.log(result.address);
 
-            $('#readUser').html("您好！"+result.name);               // 修改用户名称
+            $('#readUser').html("您好！"+result.name);                // 修改用户名称
+            $('#originalName').val(result.name);                     // 修改模态框中的值，用户名
             $('#userName').html(result.name);                        // 修改用户名称
+            $('#nameOfUser').html(result.name);                      // 表单中修改用户名称
+
+            $('#originalIntro').val(result.introduction);            // 修改模态框中的值，用户个性签名
             $('#userIntro').html("个人简介"+result.introduction);    // 修改用户介绍
             $('#introOfUser').html(result.introduction);            // 修改表单中用户介绍
-            $('#nameOfUser').html(result.name);                     // 表单中修改用户名称
+
             $('#accountOfUser').html(result.account);               // 表单中查看用户账号
             $('#passwordOfUser').val(result.password);              // 表单中查看用户密码
+            $('#originalPassWord').val(result.password);            // 修改模态框中的值，用户密码
+
             $('#ageOfUser').html(result.age);                       // 表单中查看用户年龄
 
             if (result.sex == "1"){
@@ -66,9 +72,6 @@ window.onload = function () {
         error: function () {
         }
     });
-
-
-
 
 }
 
