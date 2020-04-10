@@ -22,16 +22,51 @@ window.onload = function () {
         // contentType:"application/json; charset=utf-8", //contentType很重要
         success: function (result) {
             console.log(result);
+            // console.log(result.address);
 
             $('#readUser').html("您好！"+result.name);               // 修改用户名称
             $('#userName').html(result.name);                        // 修改用户名称
             $('#userIntro').html("个人简介"+result.introduction);    // 修改用户介绍
+            $('#introOfUser').html(result.introduction);            // 修改表单中用户介绍
             $('#nameOfUser').html(result.name);                     // 表单中修改用户名称
+            $('#accountOfUser').html(result.account);               // 表单中查看用户账号
+            $('#passwordOfUser').val(result.password);              // 表单中查看用户密码
+            $('#ageOfUser').html(result.age);                       // 表单中查看用户年龄
+
+            if (result.sex == "1"){
+                $('#sexOfUser').html("男");                          // 表单中查看用户性别
+            }else {
+                $('#sexOfUser').html("女");
+            }
+
+            $('#emailOfUser').html(result.email);                    // 表单中查看用户邮箱
+
+            // 通过用户查询出来的数据，动态加载院校信息。表单中查看用户院校
+            var school ={
+                schoolId: result.voluntarySchool
+            }
+
+            $.ajax({
+                url: "school/searchSchoolById",
+                type: "POST",
+                dataType: "json",
+                data: school,
+                success: function (result) {
+                    console.log(result.name);
+                    $('#schoolOfUser').html(result.name);
+                },
+                error: function () {
+                    $('#schoolOfUser').html("");
+                }
+            });
+
+            $('#phoneOfUser').html(result.phoneNumber);               // 表单中查看用户电话
+            $('#addressOfUser').html(result.address);                 // 表单中查看用户地址
         },
         error: function () {
-
         }
     });
+
 
 
 
