@@ -36,4 +36,9 @@ public class SchoolServiceImpl implements SchoolService {
     public List<School> searchSchool(String schoolName) {
         return schoolMapper.searchSchool(schoolName);
     }
+
+    // 通过院校ID来查询学校的信息
+    public School searchSchoolById(String schoolId) {
+        return schoolMapper.searchSchoolById(schoolId);
+    }
 }

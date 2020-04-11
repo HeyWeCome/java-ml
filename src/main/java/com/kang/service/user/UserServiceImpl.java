@@ -40,6 +40,10 @@ public class UserServiceImpl implements UserService {
         return userMapper.userLogin(account,password);
     }
 
+    public User userLoginById(String id) {
+        return userMapper.userLoginById(id);
+    }
+
     public int checkAccount(String account) {
         return userMapper.checkAccount(account);
     }
@@ -50,5 +54,41 @@ public class UserServiceImpl implements UserService {
 
     public int deleteDiary(String userId, String diaryId) {
         return userMapper.deleteDiary(userId,diaryId);
+    }
+
+    public int modifyUserNameById(String id, String name) {
+        return userMapper.modifyUserNameById(id,name);
+    }
+
+    public int modifyUserIntroById(String id, String introduction) {
+        return userMapper.modifyUserIntroById(id,introduction);
+    }
+
+    public int modifyUserPasswordById(String id, String password) {
+        return userMapper.modifyUserPasswordById(id,password);
+    }
+
+    public int modifyUserEmailById(String id, String email) {
+        return userMapper.modifyUserEmailById(id,email);
+    }
+
+    public int modifyUserPhoneById(String id, String phoneNumber) {
+        return userMapper.modifyUserPhoneById(id,phoneNumber);
+    }
+
+    public int modifyUserAddressById(String id, String address) {
+        return userMapper.modifyUserAddressById(id,address);
+    }
+
+    public int modifyUserSexById(String id, String sex) {
+        return userMapper.modifyUserSexById(id,sex);
+    }
+
+    public int modifyUserSchoolById(String id, String voluntarySchool) {
+        return userMapper.modifyUserSchoolById(id,voluntarySchool);
+    }
+
+    public int modifyUserBirthdayById(String id, String birthday) {
+        return userMapper.modifyUserBirthdayById(id,birthday);
     }
 }

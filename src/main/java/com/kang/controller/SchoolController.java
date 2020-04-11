@@ -36,4 +36,11 @@ public class SchoolController {
         String schoolName = "%"+keyword+"%";
         return JSONObject.toJSONString(schoolService.searchSchool(schoolName));
     }
+
+    // 模糊搜索院校信息
+    @RequestMapping(value = "/searchSchoolById",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchSchoolById(String schoolId){
+        return JSONObject.toJSONString(schoolService.searchSchoolById(schoolId));
+    }
 }

@@ -27,10 +27,6 @@ function actionFormatter(value, row, index) {
         '<a id="look"">查看</a>',
     ].join('');
 
-    // var id = value;
-    // var result = "";
-    // result += "<a href='javascript:;' class='btn btn-xs green' οnclick=\"EditViewById('" + id + "', view='view')\" title='查看'><span class='glyphicon glyphicon-search'>查看</span></a>";
-    // return result;
 }
 
 /*每行表格尾部的小图标点击*/
@@ -38,7 +34,7 @@ window.operateEvents = {
     'click #look':function (e,value,row,index) {
         //alert("进入查看弹框")
         //将该行数据填入模态框中
-        alert(row.id);
+        alert("试卷编号："+row.id);
     },
 };
 

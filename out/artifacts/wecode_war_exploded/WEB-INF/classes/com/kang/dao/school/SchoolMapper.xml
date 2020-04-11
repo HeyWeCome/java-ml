@@ -14,4 +14,10 @@
         select * from wecode.school
         where name LIKE #{schoolName}
     </select>
+
+    <!--通过ID来查找学校的信息-->
+    <select id="searchSchoolById" parameterType="String" resultType="School">
+        select * from wecode.school
+        where id = #{shcoolId}
+    </select>
 </mapper>

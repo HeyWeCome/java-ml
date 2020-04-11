@@ -31,7 +31,7 @@ function loadSchoolByProvincial(provincialId){
         provincialId: provincialId,
     }
 
-    console.log(school);
+    // console.log(school);
 
     $.ajax({
         url: "school/loadSchoolByProvincial",

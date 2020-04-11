@@ -37,9 +37,7 @@ public class MyTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) context.getBean("UserServiceImpl");
 
-        List<UserDiary> userDiaries = userService.queryAlldiary("1");
-
-        System.out.println(JSONObject.toJSONString(userDiaries));
+        System.out.println(userService.modifyUserNameById("1", "kangkang"));
     }
 
     @Test

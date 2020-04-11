@@ -1,9 +1,11 @@
 package com.kang.pojo;
 
+import com.kang.utils.kangkang;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -24,12 +26,17 @@ public class User {
     private String address;             // 地址
     private String photo;               // 头像地址
     private String introduction;        // 个人简介
-    private int voluntarySchool;        // 报考院校的编号
-    private int age;                    // 年龄
-    private int sex;                    // 性别，男生 1 ，女生 0
+    private String voluntarySchool;     // 报考院校的编号
+    private String birthday;            // 出生年月
+    private String sex;                 // 性别，男生 1 ，女生 0
+    private String createTime;          // 用户创建的日期
 
     public void setId(){
         this.id = UUID.randomUUID().toString().replace("-","");
+    }
+
+    public void setCreateTime(){
+        this.createTime = kangkang.time_get();
     }
 }
 

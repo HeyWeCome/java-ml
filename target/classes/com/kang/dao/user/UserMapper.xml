@@ -22,6 +22,12 @@
         where account = #{account} and password = #{password}
     </select>
 
+    <!--用户登录-->
+    <select id="userLoginById" parameterType="String" resultType="User">
+        SELECT * from wecode.user
+        where id = #{id}
+    </select>
+
     <!--检测用户账号是否存在-->
     <select id="checkAccount" parameterType="java.lang.String" resultType="Integer">
         SELECT count(*) from wecode.user
@@ -30,8 +36,8 @@
 
     <!--新增用户-->
     <insert id="register" parameterType="User">
-        insert into wecode.user(id,account,password,name)
-        values (#{id}, #{account}, #{password}, #{name})
+        insert into wecode.user(id,account,password,name,createTime)
+        values (#{id}, #{account}, #{password}, #{name}, #{createTime})
     </insert>
 
     <!--删除用户的日志-->
@@ -40,4 +46,66 @@
         AND userId=#{userId}
     </delete>
 
+    <!--通过用户的ID来更改用户的昵称-->
+    <update id="modifyUserNameById" parameterType="String">
+        update wecode.user
+        set user.name = #{userName}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的昵称-->
+    <update id="modifyUserIntroById" parameterType="String">
+        update wecode.user
+        set user.introduction = #{userIntro}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的密码-->
+    <update id="modifyUserPasswordById" parameterType="String">
+        update wecode.user
+        set user.password = #{password}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的电子邮箱-->
+    <update id="modifyUserEmailById" parameterType="String">
+        update wecode.user
+        set user.email = #{email}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的电话-->
+    <update id="modifyUserPhoneById" parameterType="String">
+        update wecode.user
+        set user.phoneNumber = #{phoneNumber}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的地址-->
+    <update id="modifyUserAddressById" parameterType="String">
+        update wecode.user
+        set user.address = #{address}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的性别-->
+    <update id="modifyUserSexById" parameterType="String">
+        update wecode.user
+        set user.sex = #{sex}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的院校-->
+    <update id="modifyUserSchoolById" parameterType="String">
+        update wecode.user
+        set user.voluntarySchool = #{voluntarySchool}
+        where user.id = #{userId}
+    </update>
+
+    <!--通过用户的ID来更改用户的出生日期-->
+    <update id="modifyUserBirthdayById" parameterType="String">
+        update wecode.user
+        set user.birthday = #{birthday}
+        where user.id = #{userId}
+    </update>
 </mapper>

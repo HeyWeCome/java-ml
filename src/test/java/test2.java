@@ -47,17 +47,13 @@ public class test2 {
     }
 
     @Test
-    public void test2(){
+    public void test8(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         SchoolServiceImpl schoolServiceImpl = (SchoolServiceImpl) context.getBean("SchoolServiceImpl");
 
-        String schoolName = "%"+"北"+"%";
-        List<School> schools = schoolServiceImpl.searchSchool(schoolName);
+        School school = schoolServiceImpl.searchSchoolById("3a68adce74b711eaae330221860e9b7e");
 
-        for (School school : schools) {
-            System.out.println(school.toString());
-        }
-
+        System.out.println(school.toString());
     }
 
     @Test
