@@ -67,3 +67,19 @@ html{
     margin: 0 auto;
     width: 100%;
 }
+
+#idOfUser{
+    visibility: hidden;
+}
+
+#choosePhoto{
+    visibility: hidden;
+}
+
+#doChangePhoto{
+    margin-left: 25px;
+}
+
+#userPhoto{
+    cursor: pointer;
+}

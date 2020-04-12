@@ -91,4 +91,10 @@ public class UserServiceImpl implements UserService {
     public int modifyUserBirthdayById(String id, String birthday) {
         return userMapper.modifyUserBirthdayById(id,birthday);
     }
+
+    public int modifyUserPhotoById(String id, String url) {
+        // url存储的是用户的头像地址
+        // id 存储的是用户的ID
+        return userMapper.modifyUserPhotoById(id,url);
+    }
 }

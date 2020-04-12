@@ -108,4 +108,11 @@
         set user.birthday = #{birthday}
         where user.id = #{userId}
     </update>
+
+    <!--通过用户的ID来更改用户的头像地址-->
+    <update id="modifyUserPhotoById" parameterType="String">
+        update wecode.user
+        set user.photo = #{photo}
+        where user.id = #{userId}
+    </update>
 </mapper>

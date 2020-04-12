@@ -111,8 +111,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2">
-                <div id="userPhoto"></div>
-                <div type="button" id="changePhoto" class="btn btn-dark">更换头像</div>
+                <form action="user/uploadHead" method="post" enctype="multipart/form-data" onsubmit="return checkForm()">
+                    <input id="idOfUser" type = "text" name = "userId"/><br>
+                    <input id="choosePhoto" type="file" name = "pictureFile"/><br>
+                    <img id="userPhoto">
+                    <input id="doChangePhoto" type="submit" class="btn btn-dark" value="更换头像"></input>
+                </form>
             </div>
             <div class="userDetails col-lg-8">
                 <li class="list-group-item list-group-item-dark"><svg t="1586067475310" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4588" width="20" height="20"><path d="M836.266667 1024l-116.053334-95.573333L610.986667 1024l-88.746667-95.573333L399.36 1024l-102.4-95.573333L180.906667 1024H133.12V109.226667A122.88 122.88 0 0 1 249.173333 0h525.653334a122.88 122.88 0 0 1 116.053333 109.226667V1024h-47.786667m6.826667-894.293333A102.4 102.4 0 0 0 754.346667 47.786667h-477.866667A102.4 102.4 0 0 0 180.906667 129.706667v812.373333l116.053333-95.573333 95.573333 102.4 122.88-95.573334L610.986667 948.906667l109.226666-95.573334 116.053334 95.573334v-819.2M276.48 614.4h464.213333v68.266667H276.48V614.4m0-191.146667h464.213333v68.266667H276.48v-68.266667m0-191.146666h464.213333v68.266666H276.48v-68.266666m0 0" fill="#2c2c2c" p-id="4589"></path></svg><span style="font-size: 15px">个人资料</span></li>
@@ -225,6 +229,30 @@
         </div>
     </div>
 </div>
+
+<!--修改用户头像-->
+<!--<div class="modal fade" id="changeUserPhoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <form action="user/uploadHead" method="post" enctype="multipart/form-data">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title">更换头像</h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                        用户名：<input type = "text" name = "username"/><br>-->
+<!--                        图片： <input type="file" name = "pictureFile"/><br>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>-->
+<!--                    <button type="submit" class="btn btn-primary">提交</button>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <!--模态框组，通过点击表格中的数据，触发修改事件-->
 <!-- 修改用户昵称 -->

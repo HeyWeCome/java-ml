@@ -196,26 +196,34 @@ public class UserController {
 
     // 上传头像
     @RequestMapping(value ="/uploadHead",method = RequestMethod.POST)
-    public String addUser(HttpServletRequest request , User user, MultipartFile pictureFile) throws Exception{
+    public String addUser(HttpServletRequest req,String userId, MultipartFile pictureFile) throws Exception{
         System.out.println("上传进来了");
+        System.out.println("用户ID："+userId);
         //使用UUID给图片重命名，并去掉四个“-”
         String name = UUID.randomUUID().toString().replaceAll("-", "");
         //获取文件的扩展名
         String ext = FilenameUtils.getExtension(pictureFile.getOriginalFilename());
         System.out.println("文件拓展名："+ext);
         //设置图片上传路径
-        String url = "E:\\Workspace\\IDEAWorkspace\\wecode\\web\\upload";
+        String realPath = req.getServletContext().getRealPath("upload/photo");
+        System.out.println("项目路径："+realPath);
+
+        String url = "E:/Workspace/IDEAWorkspace/wecode/web/upload/photo";
         System.out.println("保存路径"+url);
 
         //以绝对路径保存重名命后的图片
         pictureFile.transferTo(new File(url+"/"+name + "." + ext));
+
         //把图片存储路径保存到数据库
+        String relativeUrl ="upload/photo/"+name + "." + ext;
+
+        userService.modifyUserPhotoById(userId,relativeUrl);
 
 //        user.setImageURL("upload/"+name + "." + ext);
 //
 //        userService.addUser(user);
 //        //重定向到查询所有用户的Controller，测试图片回显
-        return "redirect:/index.html";
+        return "redirect:/profile.html";
     }
 
 }

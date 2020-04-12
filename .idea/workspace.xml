@@ -7,56 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/utils/kangkang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/photo/3daafe65d1f640af9abeaa30ede2912a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/photo/83c4cc8a8c1c4e07987cf00e29279afa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/photo/90f6221ba15a4ae692c693ff70fd9682.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/SchoolController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/school.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/school.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/school.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/school.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/SchoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/SchoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/user/normal.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/user/normal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/user/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/css/user/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/user/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/upload/c3723350aea24009bfc58062cfce2a44.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/SchoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/user/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/user/normal.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/user/normal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/user/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/user/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/user/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload/c3723350aea24009bfc58062cfce2a44.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +146,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssmbuild" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/upload/photo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -255,9 +237,15 @@
             <option name="CONTEXT_PATH" value="/wecode" />
           </settings>
         </artifact>
+        <file path="$PROJECT_DIR$/web/upload/photo">
+          <settings>
+            <option name="CONTEXT_PATH" value="/wecode/upload/photo" />
+          </settings>
+        </file>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_wecode_4" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -320,12 +308,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.kangkang" />
       <item itemvalue="JUnit.test2.test2" />
       <item itemvalue="JUnit.test2.test5" />
       <item itemvalue="JUnit.test2.test8" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
       <item itemvalue="JUnit.MyTest.test3" />
-      <item itemvalue="Application.kangkang" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
     </list>
     <recent_temporary>
       <list>
@@ -351,7 +339,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -410,7 +398,8 @@
       <workItem from="1586396611971" duration="10192000" />
       <workItem from="1586490980501" duration="11000" />
       <workItem from="1586504038223" duration="12950000" />
-      <workItem from="1586583090847" duration="17538000" />
+      <workItem from="1586583090847" duration="17873000" />
+      <workItem from="1586670749818" duration="11638000" />
     </task>
     <servers />
   </component>
@@ -421,19 +410,23 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2226" y="67" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585662458897">
+    <state x="2322" y="84" key="#Project_Structure" timestamp="1586678848390">
+      <screen x="1920" y="0" width="1440" height="860" />
+    </state>
+    <state x="2322" y="84" key="#Project_Structure/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586678848390" />
+    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586682408904">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="490" y="61" width="853" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408976065" />
-    <state x="2226" y="67" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585662458897" />
-    <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585536184453">
+    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682408904" />
+    <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586675012484">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
-    <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585536184453" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1586612706829">
+    <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675012484" />
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1586675333319">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612706829" />
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675333319" />
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585194079406" />
     <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583394543672">
       <screen x="0" y="0" width="1536" height="824" />
@@ -457,82 +450,82 @@
     </state>
     <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408575802" />
     <state x="2388" y="178" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585462328463" />
-    <state x="2556" y="168" key="FileChooserDialogImpl" timestamp="1586583860362">
+    <state x="2556" y="168" key="FileChooserDialogImpl" timestamp="1586679791574">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="678" y="161" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408560064" />
-    <state x="2556" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586583860362" />
-    <state width="1147" height="163" key="GridCell.Tab.0.bottom" timestamp="1586612983624">
+    <state x="2556" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586679791574" />
+    <state width="1147" height="211" key="GridCell.Tab.0.bottom" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.0.center" timestamp="1586612983623">
+    <state width="1147" height="211" key="GridCell.Tab.0.center" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983623" />
+    <state width="1147" height="211" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="163" key="GridCell.Tab.0.left" timestamp="1586612983623">
+    <state width="1147" height="211" key="GridCell.Tab.0.left" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983623" />
+    <state width="1147" height="211" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="163" key="GridCell.Tab.0.right" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.0.right" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="163" key="GridCell.Tab.1.bottom" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.1.bottom" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.1.center" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.1.center" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.1.left" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.1.left" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591622" />
-    <state width="1147" height="163" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.1.right" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.1.right" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.2.bottom" timestamp="1586612983625">
+    <state width="1147" height="211" key="GridCell.Tab.2.bottom" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983625" />
+    <state width="1147" height="211" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.2.center" timestamp="1586612983625">
+    <state width="1147" height="211" key="GridCell.Tab.2.center" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983625" />
+    <state width="1147" height="211" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.2.left" timestamp="1586612983624">
+    <state width="1147" height="211" key="GridCell.Tab.2.left" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983624" />
+    <state width="1147" height="211" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="163" key="GridCell.Tab.2.right" timestamp="1586612983625">
+    <state width="1147" height="211" key="GridCell.Tab.2.right" timestamp="1586682420417">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1147" height="502" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1585494591623" />
-    <state width="1147" height="163" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612983625" />
+    <state width="1147" height="211" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586682420417" />
     <state width="1228" height="486" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
     <state width="1147" height="356" key="GridCell.Tab.3.bottom" timestamp="1585471522893">
       <screen x="1920" y="0" width="1440" height="860" />
@@ -591,11 +584,11 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408653538" />
     <state x="2144" y="3" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585534215016" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1586583109650">
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1586670753827">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586270413717" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586583109650" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586670753827" />
     <state x="2215" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585491364490">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
@@ -608,10 +601,10 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2296" y="195" key="run.anything.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586583390601" />
-    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1586612747507">
+    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1586675921770">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
-    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586612747507" />
+    <state x="2303" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675921770" />
     <state x="2341" y="110" key="spring file set editor" timestamp="1584088730062">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

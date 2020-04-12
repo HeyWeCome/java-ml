@@ -23,6 +23,8 @@ window.onload = function () {
         success: function (result) {
             console.log(result);
             // console.log(result.address);
+            $('#idOfUser').val(result.id);                // 赋值给变更头像的输入框的值
+            $("#userPhoto").attr("src", result.photo);    //将图片路径存入src中，显示出图片
 
             $('#readUser').html("您好！"+result.name);                // 修改用户名称
             $('#originalName').val(result.name);                     // 修改模态框中的值，用户名
@@ -30,7 +32,7 @@ window.onload = function () {
             $('#nameOfUser').html(result.name);                      // 表单中修改用户名称
 
             $('#originalIntro').val(result.introduction);            // 修改模态框中的值，用户个性签名
-            $('#userIntro').html("个人简介"+result.introduction);    // 修改用户介绍
+            $('#userIntro').html("个人简介："+result.introduction);    // 修改用户介绍
             $('#introOfUser').html(result.introduction);            // 修改表单中用户介绍
 
             $('#accountOfUser').html(result.account);               // 表单中查看用户账号
@@ -587,3 +589,44 @@ $("#modifyUserBirth").click(function(){
         }
     });
 });
+
+// 上传头像事件
+$('#userPhoto').click(function () {
+    $('#choosePhoto').click();  //my_photo隐藏的input[file]的id
+});
+
+// 检测表单是否有数据需要提交
+function checkForm() {
+    if($('#idOfUser').val() == "" || $('#choosePhoto').val() == ""){
+        swal("先点击头像上传吧！", {
+            buttons: ["关闭", "知道啦!"],
+        });
+        return false;
+    }else {
+        return true;
+    }
+}
+
+// 头像预览
+$("#choosePhoto").change(function () {//avatar_file  input[file]的ID
+    var url = getObjectURL(this.files[0]); //获取图片的路径，该路径不是图片在本地的路径
+    console.log("url:"+url);
+
+    if (url) {
+        $("#userPhoto").attr("src", url); //将图片路径存入src中，显示出图片
+    }
+});
+
+//建立一個可存取到这个file的url
+function getObjectURL(file) {
+    var url = null;
+    if (window.createObjectURL != undefined) { //basic
+        url = window.createObjectURL(file);
+    } else if (window.URL != undefined) { //mozilla(firefox)
+        url = window.URL.createObjectURL(file);
+    } else if (window.webkitURL != undefined) { //webkit or chrome
+        url = window.webkitURL.createObjectURL(file);
+    }
+    return url;
+}
+

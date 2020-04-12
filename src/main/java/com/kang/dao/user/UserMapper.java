@@ -23,4 +23,5 @@ public interface UserMapper {
     int modifyUserSexById(@Param("userId") String id, @Param("sex") String sex);                            // 通过用户的ID来修改用户的性别
     int modifyUserSchoolById(@Param("userId") String id, @Param("voluntarySchool") String voluntarySchool); // 通过用户的ID来修改用户的院校
     int modifyUserBirthdayById(@Param("userId") String id, @Param("birthday") String birthday);             // 通过用户的ID来修改用户的出生日期
+    int modifyUserPhotoById(@Param("userId") String id,@Param("photo") String url);                         // 通过用户的ID来修改用户的头像
 }

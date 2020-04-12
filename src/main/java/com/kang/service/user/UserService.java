@@ -29,4 +29,5 @@ public interface UserService {
     int modifyUserSexById(String id,String sex);                 // 通过用户的ID来修改用户的性别
     int modifyUserSchoolById(String id,String voluntarySchool);  // 通过用户的ID来修改用户的院校
     int modifyUserBirthdayById(String id,String birthday);       // 通过用户的ID来修改用户的出生日期
+    int modifyUserPhotoById(String id,String url);               // 通过用户的ID来修改用户的头像
 }
