@@ -33,11 +33,12 @@ public class SchoolController {
     @RequestMapping(value = "/searchSchool",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String searchSchool(String keyword){
+
         String schoolName = "%"+keyword+"%";
         return JSONObject.toJSONString(schoolService.searchSchool(schoolName));
     }
 
-    // 模糊搜索院校信息
+    // 通过ID查询院校信息
     @RequestMapping(value = "/searchSchoolById",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String searchSchoolById(String schoolId){

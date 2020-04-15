@@ -24,6 +24,7 @@ public class QuestionController {
     @RequestMapping(value = "/loadQuestionBySchool",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loadQuestionBySchool(String schoolId){
+        System.out.println("QuestionController加载院校ID:"+schoolId);
         return JSONObject.toJSONString(questionService.loadQuestionBySchool(schoolId));
     }
 }

@@ -1,22 +1,48 @@
 window.onload = function () {
+    loadSchoolInfo();
+}
+
+// 加载院校信息和题库
+function loadSchoolInfo() {
     var schoolInfo = {
-        schoolId:"e15ecd64cb3946b68cff742c38392220"
+        schoolId: $.cookie('schoolId'),
     };
 
-    // 加载所有的省份
+    console.log(schoolInfo);
+
+    // 加载院校信息
     $.ajax({
-        url: "../../question/loadQuestionBySchool",
+        url: "school/searchSchoolById",
         type: "POST",
         dataType: "json",
         data: schoolInfo,
-        contentType:"application/json; charset=utf-8", //前后台格式一致 防止乱码
+        success: function (result) {
+            $('#nameOfSchool').html(result.name);                           // 赋值学校名称
+            $('#websiteOfSchool').html(result.introduction);                // 赋值学校网站
+            $('#websiteOfSchool').attr('href',result.introduction);         // 修改href
+            $('#schoolAddress').html("地址："+result.location);              // 修改学校地址
+            $('#postCode').html("邮编："+result.postcode);                   // 修改学校邮编
+            $('#heat').html("热度："+result.heat);                           // 修改学校热度
+            $('#photo').css("background-image","url(img/school/"+result.photo+")");   // 修改学校的头像
+
+            console.log(result);
+        },
+        error: function () {
+        }
+    });
+
+    // 加载院校的题库
+    $.ajax({
+        url: "question/loadQuestionBySchool",
+        type: "POST",
+        dataType: "json",
+        data: schoolInfo,
         success: function (result) {
             $('#papper').bootstrapTable('load',result);
             $('#papper').bootstrapTable('hideColumn','id');
             console.log(result);
         },
         error: function () {
-            // $("#sentence").text("我需要，最狂的风，和最静的海");
         }
     });
 }

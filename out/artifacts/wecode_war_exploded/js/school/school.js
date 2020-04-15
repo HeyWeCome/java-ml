@@ -44,17 +44,25 @@ function loadSchoolByProvincial(provincialId){
             // 动态添加div
             for (var i in schools){
                 var school =
-                    "<div class=\"itemSchool\" id=\""+schools[i].id+"\">" +
-                    "<h6>"+schools[i].name+"</h6>" +
-                    "<p>共289套真题</p>" +
-                    "</div>";
+                "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
+                "<h6>"+schools[i].name+"</h6>" +
+                "<p>共289套真题</p>" +
+                "</div>";
 
                 $("#result").append(school);
+
+                console.log(schools[i]);
             }
         },
         error: function () {
         }
     });
+}
+
+// 通过给div添加点击事件
+function loadSchoolDeatil(e){
+    $.cookie('schoolId', e.id);
+    location.href = "detail.html";
 }
 
 // 点击搜索，模糊搜索院校信息
@@ -89,7 +97,7 @@ $("#doSearch").click(function(){
 });
 
 // 不点击按钮，直接动态Ajax请求获取院校
-//监听用户名
+// 监听用户名
 $("#schoolName").bind("input propertychange", function() {
 
     var school ={

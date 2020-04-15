@@ -36,14 +36,12 @@ public class test2 {
     @Test
     public void test4(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        SchoolServiceImpl schoolServiceImpl = (SchoolServiceImpl) context.getBean("SchoolServiceImpl");
+        QuestionServiceImpl questionServiceImpl = (QuestionServiceImpl) context.getBean("QuestionServiceImpl");
 
-        List<School> schools = schoolServiceImpl.loadSchoolByProvincial("1");
+        List<HashMap> hashMaps = questionServiceImpl.loadQuestionBySchool("");
 
-        for (School school : schools) {
-            System.out.println(school.toString());
-        }
-//        System.out.println(JSONObject.toJSONString(userDiaries));
+
+        System.out.println(hashMaps.toString());
     }
 
     @Test

@@ -204,10 +204,8 @@ public class UserController {
         //获取文件的扩展名
         String ext = FilenameUtils.getExtension(pictureFile.getOriginalFilename());
         System.out.println("文件拓展名："+ext);
-        //设置图片上传路径
-        String realPath = req.getServletContext().getRealPath("upload/photo");
-        System.out.println("项目路径："+realPath);
 
+        //设置图片上传路径
         String url = "E:/Workspace/IDEAWorkspace/wecode/web/upload/photo";
         System.out.println("保存路径"+url);
 

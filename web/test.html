@@ -7,15 +7,23 @@
 <body>
 
 
-<form action="user/uploadHead" method="post" enctype="multipart/form-data">
-    用户名：<input type = "text" name = "username"/><br>
-    图片： <input type="file" name = "pictureFile"/><br>
-    <input type = "submit" value = "提交">
-</form>
-
+<div id="hedllo" onclick="ddd(this)">
+    ddd
+</div>
 
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/test/test.js"></script>
+<script>
+    var school = {
+        id: "123",
+    };
+
+    console.log(school);
+
+    function ddd(e) {
+        alert(e.id);
+    }
+</script>
 </html>

@@ -83,7 +83,7 @@ html{
 #userPhoto{
     width: 160px;
     height: 160px;
-    background-image: url(../../fonts/index/photo1.png);
+    /*background-image: url(../../fonts/index/photo1.png);*/
     /*background-image: url(../../upload/photo/fe206cd89f9849adad4879c78c621151.jpg);*/
     background-size: cover;
     margin-left: 25px;

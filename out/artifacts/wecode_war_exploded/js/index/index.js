@@ -3,6 +3,11 @@ window.onload = function () {
     $('#readUser').html("您好！"+$.cookie('userName'));    // 修改用户名称
     $('#userName').html($.cookie('userName'));
 
+    var dairy ={
+        userId: $.cookie('userId'),
+    }
+    console.log("dairy:"+dairy);
+
     // 倒计时模块
     var myDate = new Date();//获取到当前的时间
     var currentYear = myDate.getFullYear(); // 获取当前的年份
@@ -169,7 +174,7 @@ function deleteDiary(diaryId){
         error: function () {
         }
     });
-    console.log(diaryId);
+    // console.log(diaryId);
 }
 
 // 鼠标扫描头像出现框子选择
