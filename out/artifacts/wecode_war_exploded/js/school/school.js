@@ -59,12 +59,6 @@ function loadSchoolByProvincial(provincialId){
     });
 }
 
-// 通过给div添加点击事件
-function loadSchoolDeatil(e){
-    $.cookie('schoolId', e.id);
-    location.href = "detail.html";
-}
-
 // 点击搜索，模糊搜索院校信息
 $("#doSearch").click(function(){
     var school ={
@@ -83,7 +77,7 @@ $("#doSearch").click(function(){
                 // 动态添加div
                 for (var i in schools) {
                     var school =
-                        "<div class=\"itemSchool\" id=\"" + schools[i].id + "\">" +
+                        "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
                         "<h6>" + schools[i].name + "</h6>" +
                         "<p>共289套真题</p>" +
                         "</div>";
@@ -116,7 +110,7 @@ $("#schoolName").bind("input propertychange", function() {
                 // 动态添加div
                 for (var i in schools){
                     var school =
-                        "<div class=\"itemSchool\" id=\""+schools[i].id+"\">" +
+                        "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
                         "<h6>"+schools[i].name+"</h6>" +
                         "<p>共289套真题</p>" +
                         "</div>";
@@ -129,3 +123,9 @@ $("#schoolName").bind("input propertychange", function() {
         });
     }
 });
+
+// 通过给div添加点击事件，加载院校信息
+function loadSchoolDeatil(e){
+    $.cookie('schoolId', e.id);
+    location.href = "html/school/detail.html";
+}

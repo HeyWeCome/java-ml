@@ -12,7 +12,7 @@ function loadSchoolInfo() {
 
     // 加载院校信息
     $.ajax({
-        url: "school/searchSchoolById",
+        url: "../../school/searchSchoolById",
         type: "POST",
         dataType: "json",
         data: schoolInfo,
@@ -23,7 +23,7 @@ function loadSchoolInfo() {
             $('#schoolAddress').html("地址："+result.location);              // 修改学校地址
             $('#postCode').html("邮编："+result.postcode);                   // 修改学校邮编
             $('#heat').html("热度："+result.heat);                           // 修改学校热度
-            $('#photo').css("background-image","url(img/school/"+result.photo+")");   // 修改学校的头像
+            $('#photo').css("background-image","url(../../img/school/"+result.photo+")");   // 修改学校的头像
 
             console.log(result);
         },
@@ -33,7 +33,7 @@ function loadSchoolInfo() {
 
     // 加载院校的题库
     $.ajax({
-        url: "question/loadQuestionBySchool",
+        url: "../../question/loadQuestionBySchool",
         type: "POST",
         dataType: "json",
         data: schoolInfo,

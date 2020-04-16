@@ -1,0 +1,23 @@
+#questionHead{
+    padding-top: 80px;
+}
+
+#questionBody{
+    background-color: #1c7430;
+    height: 300px;
+}
+
+#questionInfo{
+    background-color: #9f3741;
+    height: 300px;
+}
+
+#hello{
+    background-color: #e0a800;
+    height: 100px;
+}
+
+#info{
+    background-color: #005cbf;
+    height: 100px;
+}
