@@ -7,6 +7,8 @@ import com.kang.pojo.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: HeyWeCome
@@ -30,5 +32,38 @@ public class SubjectServiceImpl implements SubjectService {
     // 通过题目的ID获取题目信息
     public Subject getSubjectById(String id) {
         return subjectMapper.getSubjectById(id);
+    }
+
+    // 题目的类型：1.单选 2.问答，暂时只考虑这两种 type
+    // 题目的具体分类：1.数据结构 2.计网 3.机组 4.操作系统 classify
+    public List<Subject> loadAllQuestion() {
+        List<Subject> result = subjectMapper.loadAllQuestion();
+
+        for (Subject subject : result) {
+            // 截断题目的长度
+            int length = subject.getTitle().length();
+            if (length > 35){
+                subject.setTitle(subject.getTitle().substring(0,35));
+            }
+
+            // 设置题目的类型
+            if (subject.getType().equals("1")){
+                subject.setType("单选题");
+            }else{
+                subject.setType("简答题");
+            }
+
+            // 设置题目的具体分类
+            if(subject.getClassify().equals("1")){
+                subject.setClassify("数据结构");
+            }else if (subject.getClassify().equals("2")){
+                subject.setClassify("计算机网络");
+            }else if (subject.getClassify().equals("3")){
+                subject.setClassify("计算机组成原理");
+            }else if (subject.getClassify().equals("4")){
+                subject.setClassify("操作系统");
+            }
+        }
+        return result;
     }
 }

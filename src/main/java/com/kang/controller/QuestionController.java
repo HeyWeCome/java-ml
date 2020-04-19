@@ -2,8 +2,11 @@ package com.kang.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.kang.pojo.Subject;
 import com.kang.service.question.QuestionService;
 import com.kang.service.question.QuestionServiceImpl;
+import com.kang.service.subject.SubjectService;
+import com.kang.service.subject.SubjectServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,11 +23,23 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class QuestionController {
     @Autowired
     private QuestionService questionService = new QuestionServiceImpl();
+    @Autowired
+    private SubjectService subjectService = new SubjectServiceImpl();
 
     @RequestMapping(value = "/loadQuestionBySchool",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loadQuestionBySchool(String schoolId){
-        System.out.println("QuestionController加载院校ID:"+schoolId);
         return JSONObject.toJSONString(questionService.loadQuestionBySchool(schoolId));
+    }
+
+    // 加载所有的题目
+    @RequestMapping(value = "/loadAllQuestion",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllQuestion(){
+        System.out.println("进来了");
+        for (Subject subject : subjectService.loadAllQuestion()) {
+            System.out.println(subject.toString());
+        }
+        return JSONObject.toJSONString(subjectService.loadAllQuestion());
     }
 }

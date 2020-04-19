@@ -8,4 +8,8 @@
         select * from wecode.subject
         where subject.id = #{id}
     </select>
+
+    <select id="loadAllQuestion" resultType="Subject">
+        select * from wecode.subject
+    </select>
 </mapper>
