@@ -45,4 +45,5 @@ public class QuestionController {
     public String loadQuestionByClassify(String classify){
         return JSONObject.toJSONString(subjectService.loadQuestionByClassify(classify));
     }
+
 }

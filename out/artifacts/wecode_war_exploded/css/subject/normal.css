@@ -71,6 +71,7 @@ a:link, a:visited {
 
 #title{
     color: black;
+    margin-right: 30px;
 }
 
 .questionFooter{
@@ -431,7 +432,55 @@ a:link, a:visited {
     border-radius: 3px;
     margin-bottom: 10px;
     width: 100%;
-    /*background: #fff;*/
+}
+
+.userNote{
+    padding-top: 15px;
+    background-color: #FFFFFF;
+    min-height: 130px;
+}
+
+#note{
+    float: left;
+}
+
+#doNote{
+    padding: 0px;
+    min-height: 80px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modalText{
+    font-size: 13px;
+}
+
+#modifyContent{
+    padding: 0px;
+    min-height: 80px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.userNote h1:before, #more-Question h2:before {
+    background: #ff6547;
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+
+.userNote h1, #more-Question h2 {
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 #more-Question h1:before, #more-Question h2:before {

@@ -133,7 +133,9 @@ window.operateEvents = {
     'click #look':function (e,value,row,index) {
         //alert("进入查看弹框")
         //将该行数据填入模态框中
-        alert("题目编号："+row.id);
+        $.cookie('subjectId',row.id);
+        location.href="html/subject/subject.html";
+        // alert("题目编号："+row.id);
     },
 };
 
