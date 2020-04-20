@@ -36,10 +36,13 @@ public class QuestionController {
     @RequestMapping(value = "/loadAllQuestion",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loadAllQuestion(){
-        System.out.println("进来了");
-        for (Subject subject : subjectService.loadAllQuestion()) {
-            System.out.println(subject.toString());
-        }
         return JSONObject.toJSONString(subjectService.loadAllQuestion());
+    }
+
+    // 根据类型筛选题目
+    @RequestMapping(value = "/loadQuestionByClassify",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadQuestionByClassify(String classify){
+        return JSONObject.toJSONString(subjectService.loadQuestionByClassify(classify));
     }
 }

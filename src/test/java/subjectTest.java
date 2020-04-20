@@ -35,4 +35,16 @@ public class subjectTest {
             System.out.println(subject.toString());
         }
     }
+
+    @Test
+    public void loadQuestionByClassify(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        List<Subject> subjects = subjectService.loadQuestionByClassify("计算机网络");
+
+        for (Subject subject : subjects) {
+            System.out.println(subject.toString());
+        }
+    }
 }

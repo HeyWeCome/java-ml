@@ -23,5 +23,5 @@ public class Subject {
     String optionC;         // 选项 C
     String optionD;         // 选项 D
     String content;         // 问答题的内容
-    String heat;            // 热度
+    Integer heat;            // 热度
 }

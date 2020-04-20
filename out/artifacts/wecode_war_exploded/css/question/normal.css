@@ -67,6 +67,10 @@ hr{
     background-image:url("../../img/background/bg4.png");
 }
 
+#checkAll{
+    background-color: #84AF9B;
+}
+
 #question{
     margin-top: 50px;
 }
@@ -77,11 +81,6 @@ hr{
     min-height: auto;
 }
 
-/*#dailyQuestion{*/
-/*    !*text-align: center;*!*/
-/*    margin: 0 auto;*/
-/*}*/
-
 #searchQuestion{
     width: 90px;
     height: 50px;
@@ -90,4 +89,37 @@ hr{
 
 .card{
     margin-bottom: 20px;
+}
+
+.page-list button{
+    min-width: 0px;
+    min-height: 0px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.round {
+    border-radius: 1020px;
+}
+
+.label-primary {
+    background-color: #337ab7;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+#toolbar{
+    padding-top: 15px;
+    margin-left: 30px;
 }

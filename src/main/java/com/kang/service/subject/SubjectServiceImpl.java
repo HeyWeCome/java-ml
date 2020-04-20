@@ -66,4 +66,50 @@ public class SubjectServiceImpl implements SubjectService {
         }
         return result;
     }
+
+    // 根据分类查询题目
+    public List<Subject> loadQuestionByClassify(String classify) {
+        String classifyDeatil = "";  // 具体的分类，如果没有，就是全部查询
+
+        if(classify.equals("数据结构")){
+            classifyDeatil = "1";
+        }else if(classify.equals("计算机网络")){
+            classifyDeatil = "2";
+        }else if(classify.equals("计算机组成原理")){
+            classifyDeatil = "3";
+        }else if (classify.equals("操作系统")){
+            classifyDeatil = "4";
+        }else {
+            System.out.println("拓展");
+        }
+
+        List<Subject> result = subjectMapper.loadQuestionByClassify(classifyDeatil);
+
+        for (Subject subject : result) {
+            // 截断题目的长度
+            int length = subject.getTitle().length();
+            if (length > 35){
+                subject.setTitle(subject.getTitle().substring(0,35));
+            }
+
+            // 设置题目的类型
+            if (subject.getType().equals("1")){
+                subject.setType("单选题");
+            }else{
+                subject.setType("简答题");
+            }
+
+            // 设置题目的具体分类
+            if(subject.getClassify().equals("1")){
+                subject.setClassify("数据结构");
+            }else if (subject.getClassify().equals("2")){
+                subject.setClassify("计算机网络");
+            }else if (subject.getClassify().equals("3")){
+                subject.setClassify("计算机组成原理");
+            }else if (subject.getClassify().equals("4")){
+                subject.setClassify("操作系统");
+            }
+        }
+        return result;
+    }
 }
