@@ -19,4 +19,20 @@
         where  classify = #{classify}
         order by wecode.subject.heat DESC
     </select>
+
+    <insert id="addNote" parameterType="UserNote" keyProperty="id">
+        insert into wecode.user_note(id,questionId,userId,content,notebookId)
+        values (#{id},#{questionId},#{userId},#{content},#{notebookId})
+    </insert>
+
+    <select id="loadNoteById" parameterType="String" resultType="UserNote">
+        select * from wecode.user_note
+        where  questionId = #{subjectId} and userId = #{userId}
+    </select>
+
+    <update id="modifyNote" parameterType="String">
+        update wecode.user_note
+        set content = #{content}
+        where id = #{id}
+    </update>
 </mapper>

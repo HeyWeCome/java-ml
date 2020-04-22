@@ -4,10 +4,12 @@ import com.kang.dao.school.SchoolMapper;
 import com.kang.dao.sentence.SentenceMapper;
 import com.kang.dao.subject.SubjectMapper;
 import com.kang.pojo.Subject;
+import com.kang.pojo.UserNote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @description:
@@ -111,5 +113,36 @@ public class SubjectServiceImpl implements SubjectService {
             }
         }
         return result;
+    }
+
+    // 用户添加笔记
+    public int addNote(String subjectId, String content, String userId) {
+        // 得到32位的uuid
+        String id = UUID.randomUUID().toString().replace("-", "").toLowerCase();
+        // 分类默认为空
+        String notebookId = "";
+        UserNote userNote = new UserNote(id,subjectId,userId,content,notebookId);
+        // 返回1是成功
+        return subjectMapper.addNote(userNote);
+    }
+
+    // 查询用户的笔记
+    public UserNote loadNoteById(String subjectId, String userId) {
+        return subjectMapper.loadNoteById(subjectId,userId);
+    }
+
+    // 检测用户的笔记是否存在着
+    public int checkUserNoteExist(String subjectId, String userId) {
+        UserNote userNote = subjectMapper.loadNoteById(subjectId, userId);
+        if (userNote.getId() != ""){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    // 修改笔记
+    public int modifyNote(String id, String content) {
+        return subjectMapper.modifyNote(id,content);
     }
 }

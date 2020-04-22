@@ -13,11 +13,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class userNote {
+public class UserNote {
     String id;          // 用户做的笔记的ID
     String questionId;  // 试题的ID
     String userId;      // 用户的ID
     String content;     // 笔记的内容
     String notebookId;  // 笔记本的ID
-    String time;        // 创建时间
 }

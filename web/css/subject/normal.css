@@ -437,11 +437,11 @@ a:link, a:visited {
 .userNote{
     padding-top: 15px;
     background-color: #FFFFFF;
-    min-height: 130px;
+    min-height: 160px;
 }
 
 #note{
-    float: left;
+    text-align: left;
 }
 
 #doNote{

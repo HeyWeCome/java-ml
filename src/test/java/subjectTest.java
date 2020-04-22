@@ -1,4 +1,5 @@
 import com.kang.pojo.Subject;
+import com.kang.pojo.UserNote;
 import com.kang.service.sentence.SentenceService;
 import com.kang.service.subject.SubjectService;
 import org.junit.Test;
@@ -46,5 +47,32 @@ public class subjectTest {
         for (Subject subject : subjects) {
             System.out.println(subject.toString());
         }
+    }
+
+    @Test
+    public void addNote(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+        String content = "磁盘何内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区";
+
+        int i = subjectService.addNote(subjectId, content, userId);
+        System.out.println(i);
+    }
+
+    @Test
+    public void loadNoteById(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+        String content = "磁盘何内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区";
+
+        UserNote userNote = subjectService.loadNoteById(subjectId, userId);
+
+        System.out.println(userNote.toString());
     }
 }
