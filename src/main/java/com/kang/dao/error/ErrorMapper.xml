@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kang.dao.error.ErrorMapper">
+
+    <insert id="addError" parameterType="ErrorCorrection" keyProperty="id">
+        insert into wecode.error_correction(id,questionId,reporterId,reason,time)
+        values (#{id},#{questionId},#{reporterId},#{reason},#{time})
+    </insert>
+
+</mapper>

@@ -267,3 +267,49 @@ function whetherCollected() {
         }
     });
 }
+
+
+// 纠错
+$("#postError").click(function(){
+    alert("ddddd");
+    var info = {
+        questionId: $.cookie('subjectId'),
+        reporterId: $.cookie('userId'),
+        reason: $("#modifyContent").val()
+    }
+
+    $.ajax({
+        url: "../../error/addError",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            if (result > 0){
+                swal({
+                    title: "提交成功",
+                    text: "感谢您为社区做出的贡献",
+                    icon: "success",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $("#doModify").modal('hide');
+                });
+            }else{
+                swal({
+                    icon: "warning",
+                    text: "提交失败，请稍后重试",
+                    button: false,
+                    timer: 1000,
+                });
+            }
+        },
+        error: function () {
+            swal({
+                icon: "error",
+                text: "系统故障",
+                button: false,
+                timer: 1000,
+            });
+        }
+    });
+});
