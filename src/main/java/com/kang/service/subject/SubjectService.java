@@ -1,6 +1,7 @@
 package com.kang.service.subject;
 
 import com.kang.pojo.Subject;
+import com.kang.pojo.UserCollection;
 import com.kang.pojo.UserNote;
 import org.apache.ibatis.annotations.Param;
 
@@ -14,4 +15,7 @@ public interface SubjectService {
     UserNote loadNoteById(String subjectId,String userId);                // 根据ID查询用户的笔记
     int checkUserNoteExist(String subjectId,String userId);               // 检测用户的笔记是否存在
     int modifyNote(String id,String content);                             // 修改笔记
+    int addCollection(String subjectId,String userId);                    // 新增收藏
+    int deleteCollection(String subjectId,String userId);                 // 取消收藏
+    int searchCollection(String subjectId,String userId);                 // 查找用户收藏题目
 }

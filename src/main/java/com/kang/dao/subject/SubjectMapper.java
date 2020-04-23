@@ -1,6 +1,7 @@
 package com.kang.dao.subject;
 
 import com.kang.pojo.Subject;
+import com.kang.pojo.UserCollection;
 import com.kang.pojo.UserNote;
 import org.apache.ibatis.annotations.Param;
 
@@ -13,5 +14,7 @@ public interface SubjectMapper {
     int addNote(UserNote userNote);                                                                             // 添加用户笔记
     UserNote loadNoteById(@Param("subjectId") String subjectId,@Param("userId") String userId);                // 根据ID查询用户的笔记
     int modifyNote(@Param("id") String id,@Param("content") String content);                                    // 修改用户的笔记
-
+    int addCollection(UserCollection collection);                                                               // 新增收藏
+    int deleteCollection(@Param("subjectId") String subjectId, @Param("userId") String userId);                 // 取消收藏
+    UserCollection searchCollection(@Param("subjectId") String subjectId, @Param("userId") String userId);      // 查找用户收藏题目
 }

@@ -56,4 +56,25 @@ public class SubjectController {
     public String checkNoteById(String subjectId,String userId){
         return JSONObject.toJSONString(subjectService.checkUserNoteExist(subjectId,userId));
     }
+
+    // 收藏习题
+    @RequestMapping(value = "/addCollection",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addCollection(String subjectId,String userId){
+        return JSONObject.toJSONString(subjectService.addCollection(subjectId,userId));
+    }
+
+    // 取消收藏习题
+    @RequestMapping(value = "/deleteCollection",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteCollection(String subjectId,String userId){
+        return JSONObject.toJSONString(subjectService.deleteCollection(subjectId,userId));
+    }
+
+    // 查找收藏习题
+    @RequestMapping(value = "/searchCollection",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCollection(String subjectId,String userId){
+        return JSONObject.toJSONString(subjectService.searchCollection(subjectId,userId));
+    }
 }

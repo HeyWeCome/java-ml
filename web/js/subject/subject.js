@@ -61,6 +61,10 @@ $(document).ready(function(){
         error: function () {
         }
     });
+
+    // 检测是否已经收藏了
+    whetherCollected();
+
     // 实时检测输入框输入的字数
     checkCommentSize();
 });
@@ -79,26 +83,6 @@ function checkCommentSize() {
         }
     });
 }
-
-// 收藏按钮的操作
-// 加载操作系统的数据
-$("#notChoose").click(function(){
-    swal({
-        title: "收藏成功",
-        text: "要记得回顾哦！",
-        icon: "success",
-        button: false,
-        timer: 1000,
-    }).then(() => {
-        $("#notChoose").hide();
-        $("#isChoose").show();
-    });
-});
-
-$("#isChoose").click(function(){
-    $("#isChoose").hide();
-    $("#notChoose").show();
-});
 
 // 添加笔记
 $("#postNote").click(function(){
@@ -180,4 +164,106 @@ function whetherLogin() {
     }else {
         return true;
     }
+}
+
+// 用户收藏习题
+$("#notChoose").click(function(){
+    var info = {
+        subjectId: $.cookie('subjectId'),
+        userId: $.cookie('userId'),
+    }
+
+    $.ajax({
+        url: "../../subject/addCollection",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            if (result == "1"){
+                swal({
+                    title: "收藏成功",
+                    text: "已添加至您的收藏夹",
+                    icon: "success",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    // $("#note").html($("#doNote").val());
+                    $("#notChoose").hide();
+                    $("#isChoose").show();
+                });
+            }
+        },
+        error: function () {
+        }
+    });
+});
+
+// 用户取消收藏习题
+$("#isChoose").click(function(){
+    var info = {
+        subjectId: $.cookie('subjectId'),
+        userId: $.cookie('userId'),
+    }
+
+    $.ajax({
+        url: "../../subject/deleteCollection",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            if (result > 0){
+                // $("#note").html($("#doNote").val());
+                $("#isChoose").hide();
+                $("#notChoose").show();
+            }else{
+                swal({
+                    icon: "warning",
+                    text: "取消收藏失败，请稍后重试",
+                    button: false,
+                    timer: 1000,
+                });
+            }
+        },
+        error: function () {
+            swal({
+                icon: "error",
+                text: "系统故障",
+                button: false,
+                timer: 1000,
+            });
+        }
+    });
+});
+
+// 检测用户是否已经收藏了这道题目
+function whetherCollected() {
+    var info = {
+        subjectId: $.cookie('subjectId'),
+        userId: $.cookie('userId'),
+    }
+
+    $.ajax({
+        url: "../../subject/searchCollection",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            // console.log("查询结果："+result.id);
+            if (result == 1){
+                $("#notChoose").hide();
+                $("#isChoose").show();
+            }else{
+                $("#isChoose").hide();
+                $("#notChoose").show();
+            }
+        },
+        error: function () {
+            swal({
+                icon: "error",
+                text: "系统故障",
+                button: false,
+                timer: 1000,
+            });
+        }
+    });
 }

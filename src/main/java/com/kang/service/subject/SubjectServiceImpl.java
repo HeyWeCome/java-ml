@@ -4,6 +4,7 @@ import com.kang.dao.school.SchoolMapper;
 import com.kang.dao.sentence.SentenceMapper;
 import com.kang.dao.subject.SubjectMapper;
 import com.kang.pojo.Subject;
+import com.kang.pojo.UserCollection;
 import com.kang.pojo.UserNote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -144,5 +145,30 @@ public class SubjectServiceImpl implements SubjectService {
     // 修改笔记
     public int modifyNote(String id, String content) {
         return subjectMapper.modifyNote(id,content);
+    }
+
+    // 用户新增收藏
+    public int addCollection(String subjectId, String userId) {
+        // 得到32位的uuid
+        String id = UUID.randomUUID().toString().replace("-", "").toLowerCase();
+        UserCollection userCollection = new UserCollection(id,userId,subjectId);
+
+        // 返回1 新增成功
+        return subjectMapper.addCollection(userCollection);
+    }
+
+    // 取消收藏，返回的是删除的行数
+    public int deleteCollection(String subjectId, String userId) {
+        return subjectMapper.deleteCollection(subjectId,userId);
+    }
+
+    // 查找用户收藏的题目
+    public int searchCollection(String subjectId, String userId) {
+
+        if(subjectMapper.searchCollection(subjectId, userId) == null){
+            return 0;
+        }else{
+            return 1;
+        }
     }
 }

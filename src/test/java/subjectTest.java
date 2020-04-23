@@ -75,4 +75,37 @@ public class subjectTest {
 
         System.out.println(userNote.toString());
     }
+
+    @Test
+    public void addColection(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+
+        System.out.println(subjectService.addCollection(subjectId, userId));
+    }
+
+    @Test
+    public void deleteColection(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+
+        System.out.println(subjectService.deleteCollection(subjectId, userId));
+    }
+
+    @Test
+    public void searchColection(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+
+        System.out.println(subjectService.searchCollection(subjectId, userId));
+    }
 }

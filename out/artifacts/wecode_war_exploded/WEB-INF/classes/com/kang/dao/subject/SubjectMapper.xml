@@ -35,4 +35,20 @@
         set content = #{content}
         where id = #{id}
     </update>
+
+    <insert id="addCollection" parameterType="UserCollection" keyProperty="id">
+        insert into wecode.user_collection(id,userId,questionId)
+        values (#{id},#{userId},#{questionId})
+    </insert>
+
+    <delete id="deleteCollection" parameterType="String">
+        delete from wecode.user_collection
+        where userId = #{userId} and questionId = #{subjectId}
+    </delete>
+
+    <select id="searchCollection" parameterType="String" resultType="UserCollection">
+        select * from wecode.user_collection
+        where  questionId = #{subjectId}
+        and userId = #{userId}
+    </select>
 </mapper>
