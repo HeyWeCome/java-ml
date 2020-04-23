@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kang.dao.questionDiscuss.QuestionDiscussMapper">
+
+    <insert id="addQuestionDiscuss" parameterType="QuestionDiscuss" keyProperty="id">
+        insert into wecode.question_discuss(id,questionId,userId,content,parent,time,agree,disagree)
+        values (#{id},#{questionId},#{userId},#{content},#{parent},#{time},#{agree},#{disagree})
+    </insert>
+
+    <!--查询问题的留言情况-->
+    <select id="loadQuestionDiscuss" parameterType="String" resultType="java.util.HashMap">
+        SELECT
+	        question_discuss.id,
+	        question_discuss.userId as userId,
+	        user.name as userName,
+	        user.photo,
+	        question_discuss.content,
+	        question_discuss.parent,
+	        question_discuss.time,
+	        question_discuss.agree,
+	        question_discuss.disagree
+        FROM
+	    wecode.question_discuss
+        JOIN wecode.user
+        WHERE
+	    question_discuss.userId = user.id
+        and
+        question_discuss.questionId = #{questionId}
+        order by question_discuss.agree desc
+    </select>
+</mapper>

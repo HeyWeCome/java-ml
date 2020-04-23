@@ -7,23 +7,22 @@
 <body>
 
 
-<div id="hedllo" onclick="ddd(this)">
-    ddd
-</div>
+<button class="user" id="userName" data-id="123">123
+</button>
+
+<button class="user" data-id="321">321
+</button>
 
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/test/test.js"></script>
+<!--<script src="js/test/test.js"></script>-->
 <script>
-    var school = {
-        id: "123",
-    };
+    $(".user").click(function (e) {
+        alert(e.id)
+    });
 
-    console.log(school);
-
-    function ddd(e) {
-        alert(e.id);
-    }
+    // $("#userName").data("id", "3213213");
+    // alert($("#userName").data("id"));
 </script>
 </html>
