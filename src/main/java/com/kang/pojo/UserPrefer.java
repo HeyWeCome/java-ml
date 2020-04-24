@@ -16,6 +16,5 @@ import lombok.NoArgsConstructor;
 public class UserPrefer {
     String id;                      // 记录的ID
     String userId;                  // 用户的ID
-    String questionDisscussId;      // 试题讨论的ID 父级子级都可以点赞
-    String time;                    // 点赞的时间
+    String questionDiscussId;      // 试题讨论的ID 父级子级都可以点赞
 }

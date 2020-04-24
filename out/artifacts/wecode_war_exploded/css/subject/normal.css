@@ -239,6 +239,14 @@ a:link, a:visited {
     margin-bottom: 20px;
 }
 
+.btnOfPassOnClick{
+    color: #a71d2a;
+}
+
+.btnOfNoOnClick{
+    color: #1c7430;
+}
+
 .btnOfNo{
     min-height: 35px;
     min-width: 0px;
@@ -275,6 +283,7 @@ a:link, a:visited {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 10px;
 }
 
 .reportContent{

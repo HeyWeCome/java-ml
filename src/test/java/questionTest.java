@@ -40,4 +40,27 @@ public class questionTest {
         }
 //        System.out.println();
     }
+
+    @Test
+    public void add(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
+
+        String questionId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String questionDiscussId = "b16af286972546409a15779e30ba7034agree";
+        String userId = "1";
+
+        System.out.println(questionDiscussService.addAgree(questionDiscussId, 22, userId));
+    }
+
+    @Test
+    public void check(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
+
+        String questionDiscussId = "b16af286972546409a15779e30ba7034";
+        String userId = "1";
+
+        System.out.println(questionDiscussService.checkUserPrefer(userId,questionDiscussId));
+    }
 }

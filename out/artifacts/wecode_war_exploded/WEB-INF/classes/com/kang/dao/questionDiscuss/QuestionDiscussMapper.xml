@@ -5,8 +5,8 @@
 <mapper namespace="com.kang.dao.questionDiscuss.QuestionDiscussMapper">
 
     <insert id="addQuestionDiscuss" parameterType="QuestionDiscuss" keyProperty="id">
-        insert into wecode.question_discuss(id,questionId,userId,content,parent,time,agree,disagree)
-        values (#{id},#{questionId},#{userId},#{content},#{parent},#{time},#{agree},#{disagree})
+        insert into wecode.question_discuss(id,questionId,userId,content,parent,time,agree)
+        values (#{id},#{questionId},#{userId},#{content},#{parent},#{time},#{agree})
     </insert>
 
     <!--查询问题的留言情况-->
@@ -19,8 +19,7 @@
 	        question_discuss.content,
 	        question_discuss.parent,
 	        question_discuss.time,
-	        question_discuss.agree,
-	        question_discuss.disagree
+	        question_discuss.agree
         FROM
 	    wecode.question_discuss
         JOIN wecode.user
@@ -29,5 +28,24 @@
         and
         question_discuss.questionId = #{questionId}
         order by question_discuss.agree desc
+    </select>
+
+    <update id="addAgree" parameterType="QuestionDiscuss" keyProperty="id">
+        update wecode.question_discuss
+        set agree = #{agree}
+        where id = #{id};
+    </update>
+
+    <!--添加用户的喜好-->
+    <insert id="addUserPrefer" parameterType="UserPrefer" keyProperty="id">
+        insert into wecode.user_prefer(id,questionDiscussId,userId)
+        values (#{id},#{questionDiscussId},#{userId})
+    </insert>
+
+    <!--检测用户的点赞-->
+    <select id="checkUserPrefer"  parameterType="String" resultType="Integer">
+        select count(*) from wecode.user_prefer
+        where userId = #{userId}
+        and questionDiscussId = #{questionDiscussId}
     </select>
 </mapper>

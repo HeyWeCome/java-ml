@@ -36,4 +36,11 @@ public class QuestionDiscussController {
     public String loadQuestionDiscuss(String questionId){
         return JSONObject.toJSONString(questionDiscussService.loadQuestionDiscuss(questionId));
     }
+
+    // 加载用户的留言点赞
+    @RequestMapping(value = "/addAgree",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addAgree(String id,int agree,String userId){
+        return JSONObject.toJSONString(questionDiscussService.addAgree(id,agree,userId));
+    }
 }

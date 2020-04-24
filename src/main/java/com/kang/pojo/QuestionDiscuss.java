@@ -20,6 +20,5 @@ public class QuestionDiscuss {
     String content;         // 用户讨论的内容
     String parent;          // 一级回复：0，子集回复则为父ID
     String time;            // 创建的时间
-    Integer agree;           // 赞同数
-    Integer disagree;       // 不赞同数
+    int agree;           // 赞同数
 }
