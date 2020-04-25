@@ -17,6 +17,7 @@
         <mapper class="com.kang.dao.subject.SubjectMapper"/>
         <mapper class="com.kang.dao.error.ErrorMapper"/>
         <mapper class="com.kang.dao.questionDiscuss.QuestionDiscussMapper"/>
+        <mapper class="com.kang.dao.discussCorrection.DiscussCorrectionMapper"/>
     </mappers>
 
 </configuration>

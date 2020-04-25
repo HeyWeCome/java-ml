@@ -43,4 +43,25 @@ public class QuestionDiscussController {
     public String addAgree(String id,int agree,String userId){
         return JSONObject.toJSONString(questionDiscussService.addAgree(id,agree,userId));
     }
+
+    // 删除用户的留言点赞
+    @RequestMapping(value = "/deleteAgree",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteAgree(String id,int agree,String userId){
+        return JSONObject.toJSONString(questionDiscussService.deleteAgree(id,agree,userId));
+    }
+
+    // 加载题目的收藏数
+    @RequestMapping(value = "/loadCollectionCount",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadCollectionCount(String questionId){
+        return JSONObject.toJSONString(questionDiscussService.loadCollectionCount(questionId));
+    }
+
+    // 检测用户有没有点过赞
+    @RequestMapping(value = "/checkUserPrefer",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String checkUserPrefer(String userId, String questionDiscussId){
+        return JSONObject.toJSONString(questionDiscussService.checkUserPrefer(userId,questionDiscussId));
+    }
 }

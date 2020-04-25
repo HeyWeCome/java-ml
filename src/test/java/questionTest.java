@@ -63,4 +63,15 @@ public class questionTest {
 
         System.out.println(questionDiscussService.checkUserPrefer(userId,questionDiscussId));
     }
+
+    @Test
+    public void delete(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
+
+        String questionDiscussId = "b16af286972546409a15779e30ba7034";
+        String userId = "1";
+
+        System.out.println(questionDiscussService.deleteAgree("b16af286972546409a15779e30ba7034agree",26,"1"));
+    }
 }

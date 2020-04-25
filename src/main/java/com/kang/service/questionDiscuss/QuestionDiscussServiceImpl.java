@@ -65,6 +65,24 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
         }
     }
 
+    // 取消赞
+    public int deleteAgree(String id, int agree, String userId) {
+        String realId = id.substring(0,id.length()-5);
+
+        QuestionDiscuss questionDiscuss = new QuestionDiscuss();
+        questionDiscuss.setId(realId);
+        questionDiscuss.setAgree(agree);
+
+        // 删除用户喜爱表
+        int result = questionDiscussMapper.deleteUserPrefer(realId,userId);
+
+        if(result > 0){
+            return questionDiscussMapper.deleteAgree(questionDiscuss);
+        }else{
+            return 0;
+        }
+    }
+
     // 添加用户对于留言的态度
     private int addUserPrefer(String questionDiscussId, String userId){
         String id = kangkang.id_get();
@@ -76,6 +94,10 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
     // 检测用户有没有点击喜欢
     public int checkUserPrefer(String userId, String questionDiscussId) {
         return questionDiscussMapper.checkUserPrefer(userId, questionDiscussId);
+    }
 
+    // 加载题目的收藏数
+    public int loadCollectionCount(String questionId) {
+        return questionDiscussMapper.loadCollectionCount(questionId);
     }
 }

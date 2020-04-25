@@ -1,5 +1,8 @@
 $(document).ready(function(){
     // console.log("题目ID："+$.cookie('subjectId'));
+    $('#readUser').html("您好！"+$.cookie('userName'));    // 修改用户名称
+    console.log($.cookie("userName"));
+
     var info = {
         subjectId: $.cookie('subjectId'),
     };
@@ -10,7 +13,7 @@ $(document).ready(function(){
     }
 
     $.ajax({
-        url: "../../subject/getSubjectById",
+        url: "subject/getSubjectById",
         type: "POST",
         dataType: "json",
         data: info,
@@ -47,7 +50,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url: "../../subject/loadNoteById",
+        url: "subject/loadNoteById",
         type: "POST",
         dataType: "json",
         data: noteInfo,
@@ -66,6 +69,9 @@ $(document).ready(function(){
 
     // 检测是否已经收藏了
     whetherCollected();
+
+    // 加载题目的收藏数
+    loadCollectionCount();
 
     // 加载留言
     loadAllDiscuss_parent();
@@ -106,7 +112,7 @@ $("#postNote").click(function(){
 
             if($.cookie('noteId') == ""){
                 $.ajax({
-                    url: "../../subject/addNote",
+                    url: "subject/addNote",
                     type: "POST",
                     dataType: "json",
                     data: info,
@@ -132,7 +138,7 @@ $("#postNote").click(function(){
                     content: $("#doNote").val()
                 }
                 $.ajax({
-                    url: "../../subject/modifyNote",
+                    url: "subject/modifyNote",
                     type: "POST",
                     dataType: "json",
                     data: info2,
@@ -164,6 +170,7 @@ function whetherLogin() {
         swal({
             text: "请先登录吧！",
         }).then(() => {
+            $(location).attr('href', 'login.html');
             return false;
         });
     }else {
@@ -179,7 +186,7 @@ $("#notChoose").click(function(){
     }
 
     $.ajax({
-        url: "../../subject/addCollection",
+        url: "subject/addCollection",
         type: "POST",
         dataType: "json",
         data: info,
@@ -195,6 +202,7 @@ $("#notChoose").click(function(){
                     // $("#note").html($("#doNote").val());
                     $("#notChoose").hide();
                     $("#isChoose").show();
+                    loadCollectionCount();
                 });
             }
         },
@@ -211,7 +219,7 @@ $("#isChoose").click(function(){
     }
 
     $.ajax({
-        url: "../../subject/deleteCollection",
+        url: "subject/deleteCollection",
         type: "POST",
         dataType: "json",
         data: info,
@@ -220,6 +228,7 @@ $("#isChoose").click(function(){
                 // $("#note").html($("#doNote").val());
                 $("#isChoose").hide();
                 $("#notChoose").show();
+                loadCollectionCount();
             }else{
                 swal({
                     icon: "warning",
@@ -248,7 +257,7 @@ function whetherCollected() {
     }
 
     $.ajax({
-        url: "../../subject/searchCollection",
+        url: "subject/searchCollection",
         type: "POST",
         dataType: "json",
         data: info,
@@ -273,6 +282,25 @@ function whetherCollected() {
     });
 }
 
+// 检测题目的收藏数
+function loadCollectionCount() {
+    var info = {
+        questionId: $.cookie('subjectId'),
+    }
+
+    $.ajax({
+        url: "questionDiscuss/loadCollectionCount",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            $("#totalCollectionCount").html(result+"收藏");
+        },
+        error: function () {
+            $("#totalCollectionCount").html(0+"收藏");
+        }
+    });
+}
 
 // 纠错
 $("#postError").click(function(){
@@ -284,7 +312,7 @@ $("#postError").click(function(){
     }
 
     $.ajax({
-        url: "../../error/addError",
+        url: "error/addError",
         type: "POST",
         dataType: "json",
         data: info,
@@ -329,7 +357,7 @@ $("#doPostComment").click(function(){
     }
 
     $.ajax({
-        url: "../../questionDiscuss/addQuestionDiscuss",
+        url: "questionDiscuss/addQuestionDiscuss",
         type: "POST",
         dataType: "json",
         data: info,
@@ -372,15 +400,41 @@ function loadAllDiscuss_parent() {
     }
 
     $.ajax({
-        url: "../../questionDiscuss/loadQuestionDiscuss",
+        url: "questionDiscuss/loadQuestionDiscuss",
         type: "POST",
         dataType: "json",
         data: info,
         success: function (result) {
-            $("#totalAnswer").html(result.length+"个回答");
+            $("#totalAnswer").html(result.length+"个心得");
             $("#totalDiscuss").html(result.length+"个讨论");
 
             for(var i in result){
+                var flagOfClass = "";
+
+                var temp = {
+                    questionDiscussId: result[i].id,
+                    userId: $.cookie('userId')
+                }
+
+                $.ajax({
+                    url: "questionDiscuss/checkUserPrefer",
+                    type: "POST",
+                    dataType: "json",
+                    data: temp,
+                    async:false,
+                    success: function (result) {
+                        if (result > 0){
+                            flagOfClass = "btnOfPassOnClick";
+                        }
+                    },
+                    error: function () {
+                    }
+                });
+
+                console.log("flagOfClass:"+flagOfClass);
+
+                // alert(flagOfClass);
+
                 // 头部
                 var head =
                     "<div class=\"answer-body\">" +
@@ -392,7 +446,7 @@ function loadAllDiscuss_parent() {
                     "<div id=\""+result[i].id+"agree\" onclick=\"addAgree(this);\" class=\"pass\">" +
                     "<button data-id=\"971334911\" class=\"btnOfPass btn btn-light\" title=\"赞同\">" +
                     "<svg t=\"1587200678135\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3580\" width=\"20\" height=\"20\"><path d=\"M511.051852 128c51.863704 0 102.115556 10.145185 149.428148 30.151111 45.700741 19.342222 86.755556 47.028148 122.026667 82.299259s62.957037 76.325926 82.299259 122.026667c20.100741 47.407407 30.245926 97.659259 30.245926 149.522963s-10.145185 102.115556-30.151111 149.428148c-19.342222 45.700741-47.028148 86.755556-82.29926 122.026667s-76.325926 62.957037-122.026666 82.299259c-47.407407 20.100741-97.659259 30.245926-149.522963 30.245926-51.863704 0-102.115556-10.145185-149.428148-30.151111-45.700741-19.342222-86.755556-47.028148-122.026667-82.299259s-62.957037-76.325926-82.299259-122.026667c-20.100741-47.407407-30.245926-97.659259-30.245926-149.522963s10.145185-102.115556 30.151111-149.428148c19.342222-45.700741 47.028148-86.755556 82.299259-122.026667s76.325926-62.957037 122.026667-82.299259c47.407407-20.100741 97.659259-30.245926 149.522963-30.245926m0-42.666667C275.437037 85.333333 84.385185 276.385185 84.385185 512s191.051852 426.666667 426.666667 426.666667 426.666667-191.051852 426.666667-426.666667S746.666667 85.333333 511.051852 85.333333z\" p-id=\"3581\" fill=\"#FFA800\"></path><path d=\"M512.094815 721.161481c-65.706667 0-119.087407-53.475556-119.087408-119.087407 0-11.757037 9.576296-21.333333 21.333334-21.333333s21.333333 9.576296 21.333333 21.333333c0 42.192593 34.322963 76.420741 76.420741 76.420741 42.192593 0 76.420741-34.322963 76.420741-76.420741 0-11.757037 9.576296-21.333333 21.333333-21.333333s21.333333 9.576296 21.333333 21.333333c0.094815 65.706667-53.380741 119.087407-119.087407 119.087407zM306.725926 376.414815c-19.626667 0-35.555556 15.928889-35.555556 35.555555s15.928889 35.555556 35.555556 35.555556 35.555556-15.928889 35.555555-35.555556-15.928889-35.555556-35.555555-35.555555zM718.222222 376.414815c-19.626667 0-35.555556 15.928889-35.555555 35.555555s15.928889 35.555556 35.555555 35.555556 35.555556-15.928889 35.555556-35.555556-15.928889-35.555556-35.555556-35.555555z\" p-id=\"3582\" fill=\"#FFA800\"></path></svg>" +
-                    "<span class=\"count\">"+result[i].agree+"</span>" +
+                    "<span class=\"count "+flagOfClass+"\">"+result[i].agree+"</span>" +
                     "</button>" +
                     "</div>" +
                     "</div>";
@@ -400,7 +454,7 @@ function loadAllDiscuss_parent() {
                 var responseBody =
                     "<div class=\"reportBody col-lg-11\">" +
                         "<div class=\"reportHead col-lg-6\">" +
-                            "<img class=\"userPhoto\" src=\"../../"+result[i].photo+"\">" +
+                            "<img class=\"userPhoto\" src=\""+result[i].photo+"\">" +
                             "<span class=\"reporterName\">"+result[i].userName+"</span>\n" +
                         "</div>" +
                         "<div class=\"reportContent\">" +
@@ -408,20 +462,7 @@ function loadAllDiscuss_parent() {
                         "</div>" +
                     "<div class=\"answer-legend\">" +
                         "<span class=\"answer-time\">编辑于"+ result[i].time+"</span>" +
-                        "<a data-toggle=\"collapse\" href=\"#"+result[i].id+"\" data-discussId=\""+result[i].id+"\">回复</a>\n" +
-                        "<a data-discussId=\""+result[i].id+"\">举报</a>" +
-                    "</div>" +
-
-                    "<div id=\""+result[i].id+"\" class=\"sonComment collapse col-lg-12\">" +
-                    "<div class=\"card card-body\">" +
-                    "<div>" +
-
-                    "<!--分隔符-->" +
-                    "<hr class=\"bottomHr\">" +
-                    // "<textarea placeholder=\"请输入你的观点\" class=\"reply-input col-lg-12\"></textarea>\n" +
-                    // "<a id=\"postReply\" class=\"btn btn-primary\">回复</a>"+
-                    "</div>" +
-                    "</div>" +
+                        "<a id=\""+result[i].id+"correct\" onclick=\"postCorrect(this);\" data-discussId=\""+result[i].id+"\">反馈</a>"
                     "</div>" +
                     "</div>";
 
@@ -433,53 +474,130 @@ function loadAllDiscuss_parent() {
 
                 $("#allDiscuss").append(discuss);
             }
-            console.log(result);
         },
         error: function () {
-
         }
     });
 }
 
-// 点击赞
-function addAgree(subject) {
-    // alert(subject.children(".count").html());
-    var id = subject.id;
-    var count = parseInt($("#"+id).find("span").html()) +1;
+// 提交纠错信息,打开模态框
+function postCorrect(subject) {
+    $("#postCorrect").data("data-discussId", $("#"+subject.id).attr('data-discussId'));
+    $("#correctDiscuss").modal();
+}
 
-    // 修改数据库，1：添加用户和赞的关联，2：修改回答的赞
+$("#postCorrect").click(function () {
+
     var info = {
-        id: subject.id,
-        agree: count,
-        userId: $.cookie('userId')
-    }
+        discussId: $("#postCorrect").data("data-discussId"),
+        reporterId: $.cookie('userId'),
+        content: $("#correctDiscussContent").val()
+    };
+
+    console.log(info);
 
     $.ajax({
-        url: "../../questionDiscuss/addAgree",
+        url: "discussCorrect/addDisscussCorrection",
         type: "POST",
         dataType: "json",
         data: info,
         success: function (result) {
             if (result > 0){
-                $("#"+id).find("span").html(count);
-                $("#"+id).find("span").addClass('btnOfPassOnClick');
-            }else{
                 swal({
-                    icon: "warning",
-                    text: "点赞失败，请稍后重试",
+                    icon: "success",
+                    text: "提交成功！感谢您做出的贡献！",
                     button: false,
                     timer: 1000,
+                }).then(() => {
+                    $("#correctDiscuss").modal('hide');
                 });
             }
         },
         error: function () {
-            swal({
-                icon: "error",
-                text: "系统故障",
-                button: false,
-                timer: 1000,
-            });
         }
     });
+})
+
+// 点击赞
+function addAgree(subject) {
+
+    var id = subject.id;
+    var count = parseInt($("#"+id).find("span").html()) +1;
+
+    if(!$("#"+id).find("span").hasClass("btnOfPassOnClick")){
+        // 修改数据库，1：添加用户和赞的关联，2：修改回答的赞
+        var info = {
+            id: subject.id,
+            agree: count,
+            userId: $.cookie('userId')
+        }
+
+        $.ajax({
+            url: "questionDiscuss/addAgree",
+            type: "POST",
+            dataType: "json",
+            data: info,
+            success: function (result) {
+                if (result > 0){
+                    $("#"+id).find("span").html(count);
+                    $("#"+id).find("span").addClass('btnOfPassOnClick');
+                }else{
+                    swal({
+                        icon: "warning",
+                        text: "点赞失败，请稍后重试",
+                        button: false,
+                        timer: 1000,
+                    });
+                }
+            },
+            error: function () {
+                swal({
+                    icon: "error",
+                    text: "系统故障",
+                    button: false,
+                    timer: 1000,
+                });
+            }
+        });
+    }else{
+        // 取消赞
+        // 修改数据库，1：添加用户和赞的关联，2：修改回答的赞
+        var info = {
+            id: subject.id,
+            agree: count-2,
+            userId: $.cookie('userId')
+        }
+
+        $.ajax({
+            url: "questionDiscuss/deleteAgree",
+            type: "POST",
+            dataType: "json",
+            data: info,
+            success: function (result) {
+                if (result > 0){
+                    $("#"+id).find("span").html(count-2);
+                    $("#"+id).find("span").removeClass('btnOfPassOnClick');
+                }else{
+                }
+            },
+            error: function () {
+            }
+        });
+    }
+
 }
 
+/*注销登录，删除所有的cookie，并且返回主页面*/
+var loginOut = function () {
+    $.cookie('userName', "");
+    $.cookie('userId', "");
+    swal({
+        title: "退出成功",
+        text: "期待您的下次使用！",
+        icon: "success",
+        button: false,
+        timer: 1000,
+    }).then(() => {
+        $(location).attr('href', 'login.html');
+    });
+}

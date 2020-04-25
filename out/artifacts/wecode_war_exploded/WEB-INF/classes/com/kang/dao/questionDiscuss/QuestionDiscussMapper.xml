@@ -36,16 +36,35 @@
         where id = #{id};
     </update>
 
+    <update id="deleteAgree" parameterType="QuestionDiscuss" keyProperty="id">
+        update wecode.question_discuss
+        set agree = #{agree}
+        where id = #{id};
+    </update>
+
     <!--添加用户的喜好-->
     <insert id="addUserPrefer" parameterType="UserPrefer" keyProperty="id">
         insert into wecode.user_prefer(id,questionDiscussId,userId)
         values (#{id},#{questionDiscussId},#{userId})
     </insert>
 
+    <!--删除用户的点赞-->
+    <delete id="deleteUserPrefer" parameterType="String">
+        delete from wecode.user_prefer
+        where userId = #{userId}
+        and questionDiscussId = #{questionDiscussId}
+    </delete>
+
     <!--检测用户的点赞-->
     <select id="checkUserPrefer"  parameterType="String" resultType="Integer">
         select count(*) from wecode.user_prefer
         where userId = #{userId}
         and questionDiscussId = #{questionDiscussId}
+    </select>
+
+    <!--检测题目的收藏数-->
+    <select id="loadCollectionCount"  parameterType="String" resultType="Integer">
+        select count(*) from wecode.user_collection
+        where questionId = #{questionId}
     </select>
 </mapper>

@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="../../css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="../../css/index/loginStyle.css">
-    <link rel="stylesheet" href="../../css/index/login.css">
-    <link rel="stylesheet" href="../../css/subject/normal.css">
+    <link rel="stylesheet" href="css/index/loginStyle.css">
+    <link rel="stylesheet" href="css/index/login.css">
+    <link rel="stylesheet" href="css/subject/normal.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
@@ -22,10 +22,10 @@
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../img/index/favicon.png" />
+    <link rel="shortcut icon" href="img/index/favicon.png" />
 
     <!--sweetalert.css-->
-    <link rel="stylesheet" href="../../css/sweetalert.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
 
     <title>WeCode考研助手</title>
 </head>
@@ -34,19 +34,19 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="../../img/index/sunny.svg" class="img-fluid logo">WeCode考研助手</a>
+        <a class="navbar-brand" href="#"><img src="img/index/sunny.svg" class="img-fluid logo">WeCode考研助手</a>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.html">首页</a>
+                    <a class="nav-link" href="index.html">首页</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../school.html">院校</a>
+                    <a class="nav-link" href="school.html">院校</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../question.html">题库</a>
+                    <a class="nav-link" href="question.html">题库</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#news">资讯</a>
@@ -54,7 +54,10 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a href="#" id="readUser" class="btn primary-btn">登 录</a>
-                <a href="#" class="btn secondary-btn">个 人 中 心</a>
+                <a href="profile.html" class="btn secondary-btn">个 人 中 心</a>
+                <a onclick="loginOut();">
+                    <svg t="1586400278307" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2270" width="22" height="22"><path d="M868.032 732.032h-70.336a15.744 15.744 0 0 0-12.288 5.76 353.856 353.856 0 0 1-273.024 128.192 352.768 352.768 0 0 1-250.56-103.68 353.28 353.28 0 0 1-76.032-112.512A350.528 350.528 0 0 1 158.08 512 352.32 352.32 0 0 1 261.76 261.76a353.856 353.856 0 0 1 250.56-103.744 353.856 353.856 0 0 1 273.024 128.192c3.008 3.712 7.616 5.76 12.288 5.76h70.272c6.336 0 10.24-6.976 6.72-12.288A430.208 430.208 0 0 0 511.36 81.984 429.504 429.504 0 0 0 81.984 516.48a430.272 430.272 0 0 0 430.4 425.6 430.272 430.272 0 0 0 362.304-197.76 8 8 0 0 0-6.656-12.224z m88.896-226.304l-141.952-112a8 8 0 0 0-12.992 6.272v76.032H488a8 8 0 0 0-8 8v56c0 4.352 3.584 7.936 8 7.936h313.984V624c0 6.72 7.808 10.496 12.992 6.272l141.952-112a8 8 0 0 0 0-12.544z" fill="#000000" fill-opacity=".65" p-id="2271"></path></svg>
+                </a>
             </form>
         </div>
     </div>
@@ -176,68 +179,89 @@
                             <a id="jsDealAnswer" class="btn btn-dark" href="#postComment"><svg t="1587198412053" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6003" width="15" height="15"><path d="M581.9 953.2H303.2c-13.8 0-25-11.2-25-25s11.2-25 25-25h278.7c13.8 0 25 11.2 25 25s-11.2 25-25 25z" fill="#ffffff" p-id="6004"></path><path d="M442.5 626.4H721v50H442.5z" fill="#ffffff" p-id="6005"></path><path d="M581.9 953.2c-9.9 0-18.8-5.6-23.3-14.6L417.5 657.3v-588H746v588L605.3 938.6c-4.5 9-13.5 14.6-23.4 14.6zM467.5 645.5l114.4 228 114.1-228V119.4H467.5v526.1z" fill="#ffffff" p-id="6006"></path></svg>添加心得</a>
                         </div>
 
-                        <div class="answer-body">
-                            <div class="row">
-                                <!--左侧赞同和不赞同-->
-                                <div class="passAndNo col-lg-1">
-                                    <div id="abcd" onclick="addAgree(this);" class="pass">
-                                        <button data-id="971334911" class="btnOfPass btn btn-light" title="赞同">
-                                            <svg t="1587200678135" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3580" width="20" height="20"><path d="M511.051852 128c51.863704 0 102.115556 10.145185 149.428148 30.151111 45.700741 19.342222 86.755556 47.028148 122.026667 82.299259s62.957037 76.325926 82.299259 122.026667c20.100741 47.407407 30.245926 97.659259 30.245926 149.522963s-10.145185 102.115556-30.151111 149.428148c-19.342222 45.700741-47.028148 86.755556-82.29926 122.026667s-76.325926 62.957037-122.026666 82.299259c-47.407407 20.100741-97.659259 30.245926-149.522963 30.245926-51.863704 0-102.115556-10.145185-149.428148-30.151111-45.700741-19.342222-86.755556-47.028148-122.026667-82.299259s-62.957037-76.325926-82.299259-122.026667c-20.100741-47.407407-30.245926-97.659259-30.245926-149.522963s10.145185-102.115556 30.151111-149.428148c19.342222-45.700741 47.028148-86.755556 82.299259-122.026667s76.325926-62.957037 122.026667-82.299259c47.407407-20.100741 97.659259-30.245926 149.522963-30.245926m0-42.666667C275.437037 85.333333 84.385185 276.385185 84.385185 512s191.051852 426.666667 426.666667 426.666667 426.666667-191.051852 426.666667-426.666667S746.666667 85.333333 511.051852 85.333333z" p-id="3581" fill="#FFA800"></path><path d="M512.094815 721.161481c-65.706667 0-119.087407-53.475556-119.087408-119.087407 0-11.757037 9.576296-21.333333 21.333334-21.333333s21.333333 9.576296 21.333333 21.333333c0 42.192593 34.322963 76.420741 76.420741 76.420741 42.192593 0 76.420741-34.322963 76.420741-76.420741 0-11.757037 9.576296-21.333333 21.333333-21.333333s21.333333 9.576296 21.333333 21.333333c0.094815 65.706667-53.380741 119.087407-119.087407 119.087407zM306.725926 376.414815c-19.626667 0-35.555556 15.928889-35.555556 35.555555s15.928889 35.555556 35.555556 35.555556 35.555556-15.928889 35.555555-35.555556-15.928889-35.555556-35.555555-35.555555zM718.222222 376.414815c-19.626667 0-35.555556 15.928889-35.555555 35.555555s15.928889 35.555556 35.555555 35.555556 35.555556-15.928889 35.555556-35.555556-15.928889-35.555556-35.555556-35.555555z" p-id="3582" fill="#FFA800"></path></svg>
-                                            <span class="count">21</span>
+<!--                        <div class="answer-body">-->
+<!--                            <div class="row">-->
+<!--                                &lt;!&ndash;左侧赞同和不赞同&ndash;&gt;-->
+<!--                                <div class="passAndNo col-lg-1">-->
+<!--                                    <div id="abcd" onclick="addAgree(this);" class="pass">-->
+<!--                                        <button data-id="971334911" class="btnOfPass btn btn-light" title="赞同">-->
+<!--                                            <svg t="1587200678135" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3580" width="20" height="20"><path d="M511.051852 128c51.863704 0 102.115556 10.145185 149.428148 30.151111 45.700741 19.342222 86.755556 47.028148 122.026667 82.299259s62.957037 76.325926 82.299259 122.026667c20.100741 47.407407 30.245926 97.659259 30.245926 149.522963s-10.145185 102.115556-30.151111 149.428148c-19.342222 45.700741-47.028148 86.755556-82.29926 122.026667s-76.325926 62.957037-122.026666 82.299259c-47.407407 20.100741-97.659259 30.245926-149.522963 30.245926-51.863704 0-102.115556-10.145185-149.428148-30.151111-45.700741-19.342222-86.755556-47.028148-122.026667-82.299259s-62.957037-76.325926-82.299259-122.026667c-20.100741-47.407407-30.245926-97.659259-30.245926-149.522963s10.145185-102.115556 30.151111-149.428148c19.342222-45.700741 47.028148-86.755556 82.299259-122.026667s76.325926-62.957037 122.026667-82.299259c47.407407-20.100741 97.659259-30.245926 149.522963-30.245926m0-42.666667C275.437037 85.333333 84.385185 276.385185 84.385185 512s191.051852 426.666667 426.666667 426.666667 426.666667-191.051852 426.666667-426.666667S746.666667 85.333333 511.051852 85.333333z" p-id="3581" fill="#FFA800"></path><path d="M512.094815 721.161481c-65.706667 0-119.087407-53.475556-119.087408-119.087407 0-11.757037 9.576296-21.333333 21.333334-21.333333s21.333333 9.576296 21.333333 21.333333c0 42.192593 34.322963 76.420741 76.420741 76.420741 42.192593 0 76.420741-34.322963 76.420741-76.420741 0-11.757037 9.576296-21.333333 21.333333-21.333333s21.333333 9.576296 21.333333 21.333333c0.094815 65.706667-53.380741 119.087407-119.087407 119.087407zM306.725926 376.414815c-19.626667 0-35.555556 15.928889-35.555556 35.555555s15.928889 35.555556 35.555556 35.555556 35.555556-15.928889 35.555555-35.555556-15.928889-35.555556-35.555555-35.555555zM718.222222 376.414815c-19.626667 0-35.555556 15.928889-35.555555 35.555555s15.928889 35.555556 35.555555 35.555556 35.555556-15.928889 35.555556-35.555556-15.928889-35.555556-35.555556-35.555555z" p-id="3582" fill="#FFA800"></path></svg>-->
+<!--                                            <span class="count">21</span>-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                    <div id="qqq" onclick="addDisAgree(this);" class="down">-->
+<!--                                        <button class="btnOfNo btn btn-light" title="不赞同">-->
+<!--                                            <svg t="1587203855362" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3945" width="20" height="20"><path d="M512.948148 128c51.863704 0 102.115556 10.145185 149.428148 30.151111 45.700741 19.342222 86.755556 47.028148 122.026667 82.299259s62.957037 76.325926 82.299259 122.026667c20.100741 47.407407 30.245926 97.659259 30.245926 149.522963s-10.145185 102.115556-30.151111 149.428148c-19.342222 45.700741-47.028148 86.755556-82.299259 122.026667s-76.325926 62.957037-122.026667 82.299259c-47.407407 20.100741-97.659259 30.245926-149.522963 30.245926-51.863704 0-102.115556-10.145185-149.428148-30.151111-45.700741-19.342222-86.755556-47.028148-122.026667-82.299259s-62.957037-76.325926-82.299259-122.026667c-20.100741-47.407407-30.245926-97.659259-30.245926-149.522963s10.145185-102.115556 30.151111-149.428148c19.342222-45.700741 47.028148-86.755556 82.29926-122.026667s76.325926-62.957037 122.026666-82.299259c47.407407-20.100741 97.659259-30.245926 149.522963-30.245926m0-42.666667C277.333333 85.333333 86.281481 276.385185 86.281481 512s191.051852 426.666667 426.666667 426.666667 426.666667-191.051852 426.666667-426.666667S748.562963 85.333333 512.948148 85.333333z" p-id="3946" fill="#FFA800"></path><path d="M611.84 721.161481c-11.757037 0-21.333333-9.576296-21.333333-21.333333 0-42.192593-34.322963-76.420741-76.420741-76.420741s-76.420741 34.322963-76.420741 76.420741c0 11.757037-9.576296 21.333333-21.333333 21.333333s-21.333333-9.576296-21.333333-21.333333c0-65.706667 53.475556-119.087407 119.087407-119.087407s119.087407 53.475556 119.087407 119.087407c0 11.851852-9.576296 21.333333-21.333333 21.333333zM308.622222 376.414815c-19.626667 0-35.555556 15.928889-35.555555 35.555555s15.928889 35.555556 35.555555 35.555556 35.555556-15.928889 35.555556-35.555556-15.928889-35.555556-35.555556-35.555555zM720.118519 376.414815c-19.626667 0-35.555556 15.928889-35.555556 35.555555s15.928889 35.555556 35.555556 35.555556 35.555556-15.928889 35.555555-35.555556-15.928889-35.555556-35.555555-35.555555z" p-id="3947" fill="#FFA800"></path></svg>-->
+<!--                                            <span class="count">3</span>-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                &lt;!&ndash;回复的主体部分&ndash;&gt;-->
+<!--                                <div class="reportBody col-lg-11">-->
+<!--                                    <div class="reportHead col-lg-6">-->
+<!--                                        <img class="userPhoto" src="../../upload/photo/3daafe65d1f640af9abeaa30ede2912a.jpg">-->
+<!--                                        <span class="reporterName">你的男孩康康</span>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash;评论的主体内容&ndash;&gt;-->
+<!--                                    <div class="reportContent">-->
+<!--                                        <span class="comment">磁盘和内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区，从高速缓存中复制的访问比磁盘I/O的机械操作要快很多很多。</span>-->
+<!--                                        &lt;!&ndash;评论的主体结束&ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash;评论的底部&ndash;&gt;-->
+<!--                                    <div class="answer-legend">-->
+<!--                                        <span class="answer-time">编辑于 2020-04-15 18:26:56</span>-->
+<!--                                        <a class="js-click-reply" data-toggle="collapse" href="#collapseExample">回复(33)</a>-->
+<!--                                        <a href="javascript:void(0);" class="js-nc-report" data-type="2">举报</a>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash;回复的折叠卡片&ndash;&gt;-->
+<!--                                    <div id="collapseExample" class="sonComment collapse col-lg-12">-->
+<!--                                        <div class="card card-body">-->
+<!--                                            &lt;!&ndash;评论一&ndash;&gt;-->
+<!--                                            <div>-->
+<!--                                                <div class="reply-main">-->
+<!--                                                    <div class="reply-person" style="margin-right:5px;">-->
+<!--                                                        <a class="personName">黄黄黄家澜</a>  ：-->
+<!--                                                    </div>-->
+<!--                                                    <div class="reply-content">何玮康好帅啊！啊啊啊！男神！</div>-->
+<!--                                                </div>-->
+<!--                                                <div class="answer-legend reply-info js-sub-action">-->
+<!--                                                    <span class="reply-time">编辑于2020-04-21 21:53:25</span>-->
+<!--                                                    <a href="javascript:void(0);" class="reply-like" data-action="like">赞(999+)</a>-->
+<!--                                                    <a href="javascript:void(0);" class="click-del" data-action="report">举报</a>-->
+<!--                                                </div>-->
+<!--                                                &lt;!&ndash;分隔符&ndash;&gt;-->
+<!--                                                <hr class="bottomHr">-->
+<!--                                                <textarea placeholder="请输入你的观点" class="reply-input col-lg-12"></textarea>-->
+<!--                                                <a id="postReply" class="btn btn-primary">回复</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                &lt;!&ndash;row的结束&ndash;&gt;-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <!--纠错模态框-->
+                        <div class="modal fade" id="correctDiscuss" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">反馈</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div id="qqq" onclick="addDisAgree(this);" class="down">
-                                        <button class="btnOfNo btn btn-light" title="不赞同">
-                                            <svg t="1587203855362" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3945" width="20" height="20"><path d="M512.948148 128c51.863704 0 102.115556 10.145185 149.428148 30.151111 45.700741 19.342222 86.755556 47.028148 122.026667 82.299259s62.957037 76.325926 82.299259 122.026667c20.100741 47.407407 30.245926 97.659259 30.245926 149.522963s-10.145185 102.115556-30.151111 149.428148c-19.342222 45.700741-47.028148 86.755556-82.299259 122.026667s-76.325926 62.957037-122.026667 82.299259c-47.407407 20.100741-97.659259 30.245926-149.522963 30.245926-51.863704 0-102.115556-10.145185-149.428148-30.151111-45.700741-19.342222-86.755556-47.028148-122.026667-82.299259s-62.957037-76.325926-82.299259-122.026667c-20.100741-47.407407-30.245926-97.659259-30.245926-149.522963s10.145185-102.115556 30.151111-149.428148c19.342222-45.700741 47.028148-86.755556 82.29926-122.026667s76.325926-62.957037 122.026666-82.299259c47.407407-20.100741 97.659259-30.245926 149.522963-30.245926m0-42.666667C277.333333 85.333333 86.281481 276.385185 86.281481 512s191.051852 426.666667 426.666667 426.666667 426.666667-191.051852 426.666667-426.666667S748.562963 85.333333 512.948148 85.333333z" p-id="3946" fill="#FFA800"></path><path d="M611.84 721.161481c-11.757037 0-21.333333-9.576296-21.333333-21.333333 0-42.192593-34.322963-76.420741-76.420741-76.420741s-76.420741 34.322963-76.420741 76.420741c0 11.757037-9.576296 21.333333-21.333333 21.333333s-21.333333-9.576296-21.333333-21.333333c0-65.706667 53.475556-119.087407 119.087407-119.087407s119.087407 53.475556 119.087407 119.087407c0 11.851852-9.576296 21.333333-21.333333 21.333333zM308.622222 376.414815c-19.626667 0-35.555556 15.928889-35.555555 35.555555s15.928889 35.555556 35.555555 35.555556 35.555556-15.928889 35.555556-35.555556-15.928889-35.555556-35.555556-35.555555zM720.118519 376.414815c-19.626667 0-35.555556 15.928889-35.555556 35.555555s15.928889 35.555556 35.555556 35.555556 35.555556-15.928889 35.555555-35.555556-15.928889-35.555556-35.555555-35.555555z" p-id="3947" fill="#FFA800"></path></svg>
-                                            <span class="count">3</span>
-                                        </button>
+                                    <div class="modal-body">
+                                        <p class="modalText">这个回答是否有不太正确的地方，为方便我们更快的排查并修正错误，请你详细描述本题错误：</p>
+                                        <textarea id="correctDiscussContent" class="col-lg-12"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                        <button id="postCorrect" type="button" class="btn btn-primary">提交</button>
                                     </div>
                                 </div>
-                                <!--回复的主体部分-->
-                                <div class="reportBody col-lg-11">
-                                    <div class="reportHead col-lg-6">
-                                        <img class="userPhoto" src="../../upload/photo/3daafe65d1f640af9abeaa30ede2912a.jpg">
-                                        <span class="reporterName">你的男孩康康</span>
-                                    </div>
-                                    <!--评论的主体内容-->
-                                    <div class="reportContent">
-                                        <span class="comment">磁盘和内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区，从高速缓存中复制的访问比磁盘I/O的机械操作要快很多很多。</span>
-                                        <!--评论的主体结束-->
-                                    </div>
-                                    <!--评论的底部-->
-                                    <div class="answer-legend">
-                                        <span class="answer-time">编辑于 2020-04-15 18:26:56</span>
-                                        <a class="js-click-reply" data-toggle="collapse" href="#collapseExample">回复(33)</a>
-                                        <a href="javascript:void(0);" class="js-nc-report" data-type="2">举报</a>
-                                    </div>
-                                    <!--回复的折叠卡片-->
-                                    <div id="collapseExample" class="sonComment collapse col-lg-12">
-                                        <div class="card card-body">
-                                            <!--评论一-->
-                                            <div>
-                                                <div class="reply-main">
-                                                    <div class="reply-person" style="margin-right:5px;">
-                                                        <a class="personName">黄黄黄家澜</a>  ：
-                                                    </div>
-                                                    <div class="reply-content">何玮康好帅啊！啊啊啊！男神！</div>
-                                                </div>
-                                                <div class="answer-legend reply-info js-sub-action">
-                                                    <span class="reply-time">编辑于2020-04-21 21:53:25</span>
-                                                    <a href="javascript:void(0);" class="reply-like" data-action="like">赞(999+)</a>
-                                                    <a href="javascript:void(0);" class="click-del" data-action="report">举报</a>
-                                                </div>
-                                                <!--分隔符-->
-                                                <hr class="bottomHr">
-                                                <textarea placeholder="请输入你的观点" class="reply-input col-lg-12"></textarea>
-                                                <a id="postReply" class="btn btn-primary">回复</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--row的结束-->
                             </div>
                         </div>
-
                     </div>
 
                     <!--底部评论题目输入框-->
@@ -266,8 +290,8 @@
                         </div>
                         <div class="q-info-tip">
                             <span id="totalDiscuss" class="comment-count">157条讨论</span>
-                            <span class="follow-count">48收藏</span>
-                            <span class="view-count">47317浏览</span>
+                            <span id="totalCollectionCount" class="follow-count">48收藏</span>
+<!--                            <span class="view-count">47317浏览</span>-->
                         </div>
                     </div>
                 </div>
@@ -292,7 +316,7 @@
             <div class="col-md-4">
             </div>
             <div class="col-md-4 text-center">
-                <img src="../../img/index/sunny.svg" class="logo"><br>
+                <img src="img/index/sunny.svg" class="logo"><br>
                 <small>网站作者：heywecome/何玮康</small>
             </div>
             <div class="col-md-4">
@@ -309,17 +333,17 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="../../js/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="../../js/Scripts/popper.js"></script>
-<script type="text/javascript" src="../../js/Scripts/esm/popper.js"></script>
-<script type="text/javascript" src="../../js/Scripts/umd/popper.js"></script>
-<script type="text/javascript" src="../../js/popper-utils.min.js"></script>
-<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="../../js/bootstrap-table.min.js"></script>
-<script type="text/javascript" src="../../js/bootstrap-table-zh-CN.min.js"></script>
-<script type="text/javascript" src="../../js/sweetalert.min.js"></script>
-<script type="text/javascript" src="../../js/subject/subject.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="js/Scripts/popper.js"></script>
+<script type="text/javascript" src="js/Scripts/esm/popper.js"></script>
+<script type="text/javascript" src="js/Scripts/umd/popper.js"></script>
+<script type="text/javascript" src="js/popper-utils.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/subject/subject.js"></script>
 </body>
 </html>

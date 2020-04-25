@@ -124,8 +124,8 @@ $("#loginIn").click(function(){
                     }).then(() => {
                         $('#login').modal("hide");
                         console.log(result);
-                        $.cookie('userName', result.name);
-                        $.cookie('userId', result.id);
+                        $.cookie('userName', result.name,{ expires: 7 ,path:'/'});
+                        $.cookie('userId', result.id,{ expires: 7 ,path:'/'});
                         // 将当前的用户名和ID存起来
                         $(location).attr('href', 'index.html');
                     });
