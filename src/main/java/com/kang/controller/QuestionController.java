@@ -46,4 +46,17 @@ public class QuestionController {
         return JSONObject.toJSONString(subjectService.loadQuestionByClassify(classify));
     }
 
+    // 根据类型筛选题目
+    @RequestMapping(value = "/searchTestPaperById",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchTestPaperById(String id){
+        return JSONObject.toJSONString(questionService.searchTestPaperById(id));
+    }
+
+    // 根据类型筛选题目
+    @RequestMapping(value = "/addTestPaperHeat",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addTestPaperHeat(String id){
+        return JSONObject.toJSONString(questionService.addTestPaperHeat(id));
+    }
 }

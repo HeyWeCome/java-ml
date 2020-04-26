@@ -8,7 +8,7 @@ function loadSchoolInfo() {
         schoolId: $.cookie('schoolId'),
     };
 
-    console.log(schoolInfo);
+    // console.log(schoolInfo);
 
     // 加载院校信息
     $.ajax({
@@ -40,7 +40,6 @@ function loadSchoolInfo() {
         success: function (result) {
             $('#papper').bootstrapTable('load',result);
             $('#papper').bootstrapTable('hideColumn','id');
-            console.log(result);
         },
         error: function () {
         }
@@ -60,9 +59,62 @@ window.operateEvents = {
     'click #look':function (e,value,row,index) {
         //alert("进入查看弹框")
         //将该行数据填入模态框中
-        alert("试卷编号："+row.id);
+        var info = {
+            id: row.id
+        }
+
+        $.ajax({
+            url: "../../question/searchTestPaperById",
+            type: "POST",
+            dataType: "json",
+            data: info,
+            success: function (result) {
+                window.open("http://localhost:8080/wecode/pdfjs/web/viewer.html?file=../../"+result, "_blank");
+                addHeat(row.id); // 新增热度
+            },
+            error: function () {
+            }
+        });
+
+        // alert("试卷编号："+row.id);
     },
 };
+
+function addHeat(id){
+    var info = {
+        id: id
+    }
+
+    $.ajax({
+        url: "../../question/addTestPaperHeat",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            // 刷新表格
+            var schoolInfo = {
+                schoolId: $.cookie('schoolId'),
+            };
+
+            // 加载院校的题库
+            $.ajax({
+                url: "../../question/loadQuestionBySchool",
+                type: "POST",
+                dataType: "json",
+                data: schoolInfo,
+                success: function (result) {
+                    $('#papper').bootstrapTable('load',result);
+                    $('#papper').bootstrapTable('hideColumn','id');
+                },
+                error: function () {
+                }
+            });
+
+        },
+        error: function () {
+        }
+    });
+}
 
 $('#papper').bootstrapTable({
     // url: "../../question/loadQuestionBySchool",

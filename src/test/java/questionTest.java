@@ -1,3 +1,5 @@
+import com.kang.service.question.QuestionService;
+import com.kang.service.question.QuestionServiceImpl;
 import com.kang.service.questionDiscuss.QuestionDiscussService;
 import com.kang.service.questionDiscuss.QuestionDiscussServiceImpl;
 import com.kang.service.subject.SubjectService;
@@ -73,5 +75,16 @@ public class questionTest {
         String userId = "1";
 
         System.out.println(questionDiscussService.deleteAgree("b16af286972546409a15779e30ba7034agree",26,"1"));
+    }
+
+    @Test
+    public void addheat(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionService questionService = (QuestionServiceImpl) context.getBean("QuestionServiceImpl");
+
+        String questionDiscussId = "b16af286972546409a15779e30ba7034";
+        String userId = "1";
+
+        System.out.println(questionService.addTestPaperHeat("19e2d945b0ed5e5a80d9337fc52e1548"));
     }
 }

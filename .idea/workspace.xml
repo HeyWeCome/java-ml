@@ -7,42 +7,439 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/DisscussCorrectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/discussCorrection/DiscussCorrectionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/discussCorrection/DiscussCorrectionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/DiscussCorrection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/discussCorrection/DiscussCorrectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/discussCorrection/DiscussCorrectionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/discussTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/build/pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/build/pdf.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/build/pdf.worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/build/pdf.worker.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78ms-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/78ms-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/83pv-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90ms-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90ms-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90msp-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90msp-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90pv-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/90pv-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Add-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Add-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Add-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Add-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-6.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-CNS1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-GB1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-3.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-4.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-5.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-6.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Japan1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Korea1-0.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Korea1-1.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Korea1-2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Adobe-Korea1-UCS2.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/B5pc-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/B5pc-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS1-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS1-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/CNS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETHK-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETHK-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETen-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETen-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETenms-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/ETenms-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Ext-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Ext-RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Ext-RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Ext-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GB-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GB-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GB-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GB-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBK-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBK-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBK2K-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBK2K-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBKp-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBKp-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBT-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBT-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBT-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBT-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBTpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBTpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/GBpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKdla-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKdla-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKdlb-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKdlb-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKgccs-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKgccs-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKm314-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKm314-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKm471-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKm471-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKscs-B5-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/HKscs-B5-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Hankaku.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Hiragana.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-Johab-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-Johab-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCms-UHC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCms-UHC-HW-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCms-UHC-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCms-UHC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCpc-EUC-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/KSCpc-EUC-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Katakana.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/NWP-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/NWP-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/RKSJ-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/RKSJ-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/Roman.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniCNS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniGB-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UCS2-HW-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UCS2-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJIS2004-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISPro-UCS2-HW-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISPro-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISPro-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISX0213-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISX0213-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISX02132004-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniJISX02132004-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UCS2-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UCS2-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF16-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF16-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF32-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF32-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF8-H.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/UniKS-UTF8-V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/V.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/cmaps/WP-Symbol.bcmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/compressed.tracemonkey-pldi-09.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/debugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-insert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-newparagraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-noicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/annotation-paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-next-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-next-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-next@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-previous-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-previous-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-previous.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/findbarButton-previous@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/grab.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/grabbing.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/loading-icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/loading-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/loading-small@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-documentProperties.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-documentProperties@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-firstPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-firstPage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-handTool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-handTool@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-lastPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-lastPage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-rotateCcw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-rotateCcw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-rotateCw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-rotateCw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollHorizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollHorizontal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollVertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollVertical@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollWrapped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-scrollWrapped@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-selectTool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-selectTool@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadEven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadEven@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadNone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadNone@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadOdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/secondaryToolbarButton-spreadOdd@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-bookmark@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-download@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-menuArrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-menuArrows@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-openFile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-openFile@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageDown-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageDown-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageDown@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageUp-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageUp-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-pageUp@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-presentationMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-presentationMode@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-print@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-search@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-secondaryToolbarToggle-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-secondaryToolbarToggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-secondaryToolbarToggle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-sidebarToggle-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-sidebarToggle-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-sidebarToggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-sidebarToggle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewAttachments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewAttachments@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewOutline-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewOutline-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewOutline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewOutline@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewThumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-viewThumbnail@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-zoomIn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-zoomIn@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-zoomOut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/toolbarButton-zoomOut@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-collapsed-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-collapsed-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-collapsed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-collapsed@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-expanded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/images/treeitem-expanded@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ach/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/af/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ak/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/an/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ar/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ast/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/az/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/be/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/bg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/bn-BD/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/bn-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/br/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/brx/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/bs/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ca/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/cak/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/cs/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/csb/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/cy/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/da/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/de/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/el/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/en-CA/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/en-GB/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/en-US/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/eo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/es-AR/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/es-CL/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/es-ES/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/es-MX/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/et/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/eu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/fa/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ff/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/fi/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/fr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/fy-NL/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ga-IE/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/gd/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/gl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/gn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/gu-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/he/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hi-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hsb/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hto/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/hy-AM/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ia/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/id/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/is/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/it/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ja/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ka/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/kab/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/kk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/km/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/kn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ko/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/kok/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ks/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ku/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/lg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/lij/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/lo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/locale.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/lt/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ltg/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/lv/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/meh/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/mk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/mn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/mr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ms/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/my/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/nb-NO/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ne-NP/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/nl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/nn-NO/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/nso/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/oc/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/pa-IN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/pl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/pt-BR/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/pt-PT/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/rm/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ro/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ru/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/rw/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sah/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sat/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/si/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/son/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sq/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sv-SE/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/sw/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ta-LK/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ta/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/te/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/th/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/tl/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/tn/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/tr/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/tsz/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/uk/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/ur/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/uz/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/vi/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/wo/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/xh/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/zam/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/zh-CN/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/zh-TW/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/locale/zu/viewer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/viewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/viewer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/viewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pdfjs/web/viewer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2009年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2010年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2011年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2012年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2013年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2014年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2015年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2016年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2017年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/pdf/2018年计算机学科专业基础综合试题及参考答案.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/QuestionDiscussController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/QuestionDiscussController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/questionDiscuss/QuestionDiscussService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/questionDiscuss/QuestionDiscussService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/html/subject/subject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/index/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/subject/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/subject/question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/subject/subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/subject/subject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/QuestionDiscussController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/QuestionDiscussController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/questionDiscuss/QuestionDiscussMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/questionDiscuss/QuestionDiscussMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/questionDiscuss/QuestionDiscussService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/questionDiscuss/QuestionDiscussService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/DisscussCorrectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/DisscussCorrectionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/question/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/question/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/question/QuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/question/QuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/testPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/testPaper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/question/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/question/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/question/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/js/school/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/question/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/question/QuestionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/question/QuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/question/QuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/pojo/testPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/TestPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/question/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/question/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/question/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/question/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/questionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/questionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/QuestionDiscussController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/QuestionDiscussController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/questionDiscuss/QuestionDiscussMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/questionDiscuss/QuestionDiscussService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/questionDiscuss/QuestionDiscussService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/questionDiscuss/QuestionDiscussServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/DisscussCorrectionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/DisscussCorrectionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/question/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/question/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/question/QuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/question/QuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/pojo/testPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/pojo/testPaper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/question/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/question/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/question/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/question/QuestionServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/questionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/questionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/subject/subject.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/subject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/index/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/index/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/subject/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/subject/question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/subject/subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/subject/subject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/school/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/school/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +547,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/kang/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/upload/pdf" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -164,19 +561,19 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\src\main\java\com\kang\service" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\fonts\index" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\html" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js\pdfjs" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\html\school" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img\background" />
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img" />
-      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\img\school" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\out\artifacts\wecode_war_exploded\upload\pdf" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\upload\pdf" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js\pdfjs" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\src\main\java\com\kang\service" />
+      <recent name="E:\Workspace\IDEAWorkspace\wecode\web\js" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.31">
@@ -195,6 +592,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="questionTest" />
       <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="questionTest.addheat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wecode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="questionTest" />
+      <option name="METHOD_NAME" value="addheat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,16 +627,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="questionTest.loadQuestionDiscuss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wecode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="questionTest" />
-      <option name="METHOD_NAME" value="loadQuestionDiscuss" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.31" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/wecode/login.html" />
       <deployment>
@@ -241,6 +638,11 @@
         <file path="$PROJECT_DIR$/web/upload/photo">
           <settings>
             <option name="CONTEXT_PATH" value="/wecode/upload/photo" />
+          </settings>
+        </file>
+        <file path="$PROJECT_DIR$/web/upload/pdf">
+          <settings>
+            <option name="CONTEXT_PATH" value="/wecode/upload/pdf" />
           </settings>
         </file>
       </deployment>
@@ -309,20 +711,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.questionTest.loadQuestionDiscuss" />
       <item itemvalue="JUnit.questionTest.add" />
       <item itemvalue="JUnit.questionTest.check" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
       <item itemvalue="JUnit.questionTest.delete" />
       <item itemvalue="JUnit.discussTest.delete" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
+      <item itemvalue="JUnit.questionTest.addheat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.questionTest.addheat" />
         <item itemvalue="JUnit.discussTest.delete" />
         <item itemvalue="JUnit.questionTest.delete" />
         <item itemvalue="JUnit.questionTest.check" />
         <item itemvalue="JUnit.questionTest.add" />
-        <item itemvalue="JUnit.questionTest.loadQuestionDiscuss" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +825,8 @@
       <workItem from="1587646541606" duration="10330000" />
       <workItem from="1587693282376" duration="3486000" />
       <workItem from="1587712754526" duration="12407000" />
-      <workItem from="1587780484811" duration="14701000" />
+      <workItem from="1587780484811" duration="15517000" />
+      <workItem from="1587885167939" duration="9193000" />
     </task>
     <servers />
   </component>
@@ -434,24 +837,28 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2304" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1587899272174">
+      <screen x="1920" y="0" width="1440" height="860" />
+    </state>
+    <state x="2304" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899272174" />
     <state x="2322" y="84" key="#Project_Structure" timestamp="1586678848390">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2322" y="84" key="#Project_Structure/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586678848390" />
-    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586690046346">
+    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587899496493">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="490" y="61" width="853" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408976065" />
-    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586690046346" />
+    <state x="2020" y="62" width="1008" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899496493" />
     <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586675012484">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675012484" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1587818190238">
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1587900325036">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587024987763" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587818190238" />
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587900325036" />
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585194079406" />
     <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583394543672">
       <screen x="0" y="0" width="1536" height="824" />
@@ -475,82 +882,82 @@
     </state>
     <state x="499" y="171" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408575802" />
     <state x="2388" y="178" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585462328463" />
-    <state x="2415" y="162" key="FileChooserDialogImpl" timestamp="1586922366847">
+    <state x="2415" y="162" key="FileChooserDialogImpl" timestamp="1587899646973">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="678" y="161" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586783762531" />
-    <state x="2415" y="162" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586922366847" />
-    <state width="1147" height="200" key="GridCell.Tab.0.bottom" timestamp="1587820242526">
+    <state x="2415" y="162" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899646973" />
+    <state width="1147" height="238" key="GridCell.Tab.0.bottom" timestamp="1587902292169">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242526" />
+    <state width="1147" height="238" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292169" />
     <state width="1228" height="486" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.0.center" timestamp="1587820242526">
+    <state width="1147" height="238" key="GridCell.Tab.0.center" timestamp="1587902292169">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="200" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242526" />
+    <state width="1147" height="238" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292169" />
     <state width="1228" height="486" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="200" key="GridCell.Tab.0.left" timestamp="1587820242526">
+    <state width="1147" height="238" key="GridCell.Tab.0.left" timestamp="1587902292168">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="200" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242526" />
+    <state width="1147" height="238" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292168" />
     <state width="1228" height="486" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="200" key="GridCell.Tab.0.right" timestamp="1587820242526">
+    <state width="1147" height="238" key="GridCell.Tab.0.right" timestamp="1587902292169">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="200" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242526" />
+    <state width="1147" height="238" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292169" />
     <state width="1228" height="486" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="200" key="GridCell.Tab.1.bottom" timestamp="1587820242457">
+    <state width="1147" height="238" key="GridCell.Tab.1.bottom" timestamp="1587902292121">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242457" />
+    <state width="1147" height="238" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292121" />
     <state width="1228" height="486" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.1.center" timestamp="1587820242456">
+    <state width="1147" height="238" key="GridCell.Tab.1.center" timestamp="1587902292120">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242456" />
+    <state width="1147" height="238" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292120" />
     <state width="1228" height="486" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.1.left" timestamp="1587820242456">
+    <state width="1147" height="238" key="GridCell.Tab.1.left" timestamp="1587902292120">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242456" />
+    <state width="1147" height="238" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292120" />
     <state width="1228" height="486" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.1.right" timestamp="1587820242456">
+    <state width="1147" height="238" key="GridCell.Tab.1.right" timestamp="1587902292120">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242456" />
+    <state width="1147" height="238" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292120" />
     <state width="1228" height="486" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.2.bottom" timestamp="1587820242457">
+    <state width="1147" height="238" key="GridCell.Tab.2.bottom" timestamp="1587902292121">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242457" />
+    <state width="1147" height="238" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292121" />
     <state width="1228" height="486" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.2.center" timestamp="1587820242457">
+    <state width="1147" height="238" key="GridCell.Tab.2.center" timestamp="1587902292121">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242457" />
+    <state width="1147" height="238" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292121" />
     <state width="1228" height="486" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.2.left" timestamp="1587820242457">
+    <state width="1147" height="238" key="GridCell.Tab.2.left" timestamp="1587902292121">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242457" />
+    <state width="1147" height="238" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292121" />
     <state width="1228" height="486" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="200" key="GridCell.Tab.2.right" timestamp="1587820242457">
+    <state width="1147" height="238" key="GridCell.Tab.2.right" timestamp="1587902292121">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="200" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587820242457" />
+    <state width="1147" height="238" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587902292121" />
     <state width="1228" height="486" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
     <state width="1147" height="356" key="GridCell.Tab.3.bottom" timestamp="1585471522893">
       <screen x="1920" y="0" width="1440" height="860" />
@@ -604,16 +1011,16 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2211" y="95" key="Registry/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585534202734" />
-    <state x="2144" y="3" key="SettingsEditor" timestamp="1585534215016">
+    <state x="2144" y="3" key="SettingsEditor" timestamp="1587899771122">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1583408653538" />
-    <state x="2144" y="3" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585534215016" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587780483735">
+    <state x="2144" y="3" key="SettingsEditor/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899771122" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587885193617">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="439" y="247" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586910346406" />
-    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587780483735" />
+    <state x="2332" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587885193617" />
     <state x="2215" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585491364490">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

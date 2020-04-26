@@ -21,4 +21,16 @@
         AND school.id = schoolId
     </select>
 
+    <!--查询套卷的存储地址-->
+    <select id="searchTestPaperById" parameterType="String" resultType="String">
+        select testpaper.download
+        from wecode.testpaper
+        where id = #{id}
+    </select>
+
+    <update id="addTestPaperHeat" parameterType="String">
+        UPDATE testpaper
+        SET heat = heat + 1
+        WHERE id = #{id}
+    </update>
 </mapper>

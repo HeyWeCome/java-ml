@@ -31,4 +31,15 @@ public class QuestionServiceImpl implements QuestionService {
     public List<HashMap> loadQuestionBySchool(String schoolId) {
         return questionMapper.loadQuestionBySchool(schoolId);
     }
+
+    // 查询试卷的存储地址
+    public String searchTestPaperById(String id) {
+        return questionMapper.searchTestPaperById(id);
+    }
+
+    // 新增套卷的热度
+    public int addTestPaperHeat(String id) {
+        return questionMapper.addTestPaperHeat(id);
+    }
+
 }
