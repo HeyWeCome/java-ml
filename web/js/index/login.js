@@ -124,8 +124,8 @@ $("#loginIn").click(function(){
                     }).then(() => {
                         $('#login').modal("hide");
                         console.log(result);
-                        $.cookie('userName', result.name,{ expires: 7 ,path:'/'});
-                        $.cookie('userId', result.id,{ expires: 7 ,path:'/'});
+                        $.cookie('userName', result.name);
+                        $.cookie('userId', result.id);
                         // 将当前的用户名和ID存起来
                         $(location).attr('href', 'index.html');
                     });
@@ -219,3 +219,13 @@ $("#registerNow").click(function(){
 $('.carousel').carousel({
     interval: 2500
 })
+
+// 忘记密码
+$('#forgetPassWord').click(function () {
+    swal({
+        text: "为您提供两种方式：\n" +
+            "1.联系邮箱：heywecome@163.com\n" +
+            "2.联系人工客服：15102346379\n" +
+            "提供相关的信息，工作人员为您提供服务！",
+    });
+});

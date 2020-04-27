@@ -1,15 +1,5 @@
 var timer = null;
 window.onload = function () {
-    // 最开始就判断下，用户是否登录，否则直接返回至登陆页面
-    if($.cookie('userName') == ""){
-        swal("请先登录！", {
-            buttons: false,
-            icon: "error",
-            timer: 1000,
-        }).then(() => {
-            $(location).attr('href', 'login.html');
-        });
-    }
 
     $('#readUser').html("您好！"+$.cookie('userName'));    // 修改用户名称
     $('#userName').html($.cookie('userName'));
