@@ -26,4 +26,5 @@ public interface SubjectService {
     int searchCountNote(String userId,String type);                      // 查看每个类型用户记笔记的个数
     List<HashMap> loadQuestionCollectByUser(String userId, String classify);  // 根据分类查询题目
     List<HashMap> loadQuestionNoteByUser(String userId, String classify);  // 根据分类查询题目
+    Subject loadDailySubject();                                            // 加载每日一题
 }

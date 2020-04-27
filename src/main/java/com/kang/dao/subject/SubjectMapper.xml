@@ -94,4 +94,10 @@
         and userId = #{userId}
         and user_note.questionId = subject.id
     </select>
+
+    <select id="loadDailySubject" resultType="Subject">
+        select *
+        from wecode.subject
+        ORDER BY rand() LIMIT 1
+    </select>
 </mapper>

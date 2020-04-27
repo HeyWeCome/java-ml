@@ -53,7 +53,7 @@ public class QuestionController {
         return JSONObject.toJSONString(questionService.searchTestPaperById(id));
     }
 
-    // 根据类型筛选题目
+    // 获取试卷热度
     @RequestMapping(value = "/addTestPaperHeat",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addTestPaperHeat(String id){

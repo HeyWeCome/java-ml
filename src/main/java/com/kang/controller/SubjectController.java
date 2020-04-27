@@ -126,4 +126,11 @@ public class SubjectController {
     public String loadQuestionNoteByUser(String userId, String classify){
         return JSONObject.toJSONString(subjectService.loadQuestionNoteByUser(userId,classify));
     }
+
+    // 获取每日一题
+    @RequestMapping(value = "/loadDailySubject",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadDailySubject(){
+        return JSONObject.toJSONString(subjectService.loadDailySubject());
+    }
 }

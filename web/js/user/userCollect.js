@@ -138,7 +138,6 @@ function loadOp() {
 }
 
 function loadSubject(subject) {
-    console.log(subject.id);
     $.cookie('subjectId',subject.id);
     location.href="subject.html";
 }

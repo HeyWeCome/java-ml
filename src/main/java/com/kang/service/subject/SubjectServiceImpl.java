@@ -202,4 +202,8 @@ public class SubjectServiceImpl implements SubjectService {
     public List<HashMap> loadQuestionNoteByUser(String userId, String classify) {
         return subjectMapper.loadQuestionNoteByUser(userId,classify);
     }
+
+    public Subject loadDailySubject() {
+        return subjectMapper.loadDailySubject();
+    }
 }

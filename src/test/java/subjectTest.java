@@ -125,4 +125,16 @@ public class subjectTest {
         }
 //        System.out.println(subjectService.searchCollection(subjectId, userId));
     }
+
+    @Test
+    public void sss(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+
+        Subject subject = subjectService.loadDailySubject();
+        System.out.println(subject.toString());
+    }
 }

@@ -25,4 +25,5 @@ public interface SubjectMapper {
     int searchCountNote(@Param("userId") String userId,@Param("type") String type);                             // 查看每个类型用户记笔记的个数
     List<HashMap> loadQuestionCollectByUser(@Param("userId") String userId, @Param("classify")String classify);  // 查看用户收藏
     List<HashMap> loadQuestionNoteByUser(@Param("userId") String userId, @Param("classify")String classify);    // 查看用户笔记
+    Subject loadDailySubject();                                                                                 // 加载每日一题
 }

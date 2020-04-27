@@ -6,6 +6,69 @@ window.onload = function () {
     }
 
     loadAllQuestion();
+    loadDailySubject();
+}
+
+// 加载随机一题
+function loadDailySubject(){
+    $.ajax({
+        url: "subject/loadDailySubject",
+        type: "POST",
+        dataType: "json",
+        success: function (result) {
+            console.log(result);
+
+            var classify = "";
+            if(result.classify == "1"){
+                classify = "数据结构";
+            }else if(result.classify == "2"){
+                classify = "计算机网络";
+            }else if(result.classify == "3"){
+                classify = "计算机组成原理";
+            }else if(result.classify == "4"){
+                classify = "操作系统";
+            }else{
+                classify = "";
+            }
+
+            var body = "";
+            if(result.type == "1"){
+                body =
+                    "<h5 class=\"card-title\">随机一题</h5>"+
+                    "<h6 class=\"card-subtitle mb-2 text-muted\">"+classify+"</h6>" +
+                    "<p class=\"card-text\">"+result.title+"</p>" +
+                    "<p class=\"card-text\">A."+result.optionA+"</p>" +
+                    "<p class=\"card-text\">B."+result.optionB+"</p>" +
+                    "<p class=\"card-text\">C."+result.optionC+"</p>" +
+                    "<p class=\"card-text\">D."+result.optionD+"</p>" +
+                    "<a id=\""+result.id+"\" onclick=\"lookRandomSubject(this);\" class=\"card-link\">查看</a>" +
+                    "<a onclick=\"changeRandomSubject();\" class=\"card-link\">换一题</a>";
+                $('#randomSubject').append(body);
+            }else{
+                body =
+                    "<h5 class=\"card-title\">随机一题</h5>"+
+                    "<h6 class=\"card-subtitle mb-2 text-muted\">"+classify+"</h6>" +
+                    "<p class=\"card-text\">"+result.title+"</p>" +
+                    "<p class=\"card-text\">A.减少磁盘 I/O 次数</p>" +
+                    "<a id=\""+subject.id+"\" onclick=\"lookRandomSubject(this);\" class=\"card-link\">查看</a>" +
+                    "<a onclick=\"changeRandomSubject();\" class=\"card-link\">换一题</a>";
+                $('#randomSubject').append(body);
+            }
+
+        },
+        error: function () {
+        }
+    });
+}
+
+function lookRandomSubject(subject){
+    $.cookie('subjectId',subject.id);
+    location.href="subject.html";
+}
+
+function changeRandomSubject(){
+    $('#randomSubject').empty();
+    loadDailySubject();
 }
 
 // 加载全部的数据
