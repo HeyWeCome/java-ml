@@ -9,6 +9,7 @@ import com.kang.pojo.UserNote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
@@ -192,5 +193,13 @@ public class SubjectServiceImpl implements SubjectService {
     // 查看每个类型用户记笔记的个数
     public int searchCountNote(String userId, String type) {
         return subjectMapper.searchCountNote(userId,type);
+    }
+
+    public List<HashMap> loadQuestionCollectByUser(String userId, String classify) {
+        return subjectMapper.loadQuestionCollectByUser(userId,classify);
+    }
+
+    public List<HashMap> loadQuestionNoteByUser(String userId, String classify) {
+        return subjectMapper.loadQuestionNoteByUser(userId,classify);
     }
 }

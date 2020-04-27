@@ -45,7 +45,7 @@
                     <a class="nav-link" href="school.html">院校</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#question">题库</a>
+                    <a class="nav-link" href="question.html">题库</a>
                 </li>
                 <li class="nav-item">
 <!--                    <a class="nav-link" href="#news">资讯</a>-->
@@ -90,8 +90,8 @@
             <div id="user" class="col-lg-11">
                 <div id="headProfile">
                     <div id="intro">
-                        <h2 class="userIntro">heywecome</h2>
-                        <p class="userIntro">我是爹地！</p>
+                        <h2 id="userName" class="userIntro"></h2>
+                        <p id="userIntro" class="userIntro"></p>
                     </div>
                 </div>
                 <div class="helloWorld">
@@ -112,35 +112,46 @@
             <!--打算使用bootstrap的列表组和进度条来展示-->
             <div class="col-4">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <h4 class="list-group-item list-group-item-action disabled" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">我的列表</h4>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">线性表</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">图</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">树</a>
+                    <h4 class="list-group-item list-group-item-action disabled" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">我的收藏</h4>
+                    <a class="list-group-item list-group-item-action active" id="list-data-list" data-toggle="list" href="#list-data" role="tab" aria-controls="profile">数据结构</a>
+                    <a class="list-group-item list-group-item-action" id="list-net-list" data-toggle="list" href="#list-net" role="tab" aria-controls="messages">计算机网络</a>
+                    <a class="list-group-item list-group-item-action" id="list-org-list" data-toggle="list" href="#list-org" role="tab" aria-controls="settings">计算机组成原理</a>
+                    <a class="list-group-item list-group-item-action" id="list-op-list" data-toggle="list" href="#list-op" role="tab" aria-controls="settings">操作系统</a>
                 </div>
             </div>
             <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-
                     </div>
 
-                    <div class="tab-pane fade show active" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                        <div class="list-group">
+                    <div class="tab-pane fade show active" id="list-data" role="tabpanel" aria-labelledby="list-data-list">
+                        <div id="dataStructure" class="list-group">
                             <a href="#" class="list-group-item list-group-item-action active disabled listHead">
-                                线性表
+                                数据结构
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action">1.我是个题目</a>
-                            <a href="#" class="list-group-item list-group-item-action">2.我是个题目</a>
-                            <a href="#" class="list-group-item list-group-item-action">3.我是个题目</a>
-                            <a href="#" class="list-group-item list-group-item-action">4.我是个题目</a>
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                        未定。。。
+                    <div class="tab-pane fade" id="list-net" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div id="net" class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active disabled listHead">
+                                计算机网络
+                            </a>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                        未定。。。。
+                    <div class="tab-pane fade" id="list-org" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div id="org" class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active disabled listHead">
+                                计算机组成原理
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-op" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div id="op" class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active disabled listHead">
+                                操作系统
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

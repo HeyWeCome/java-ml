@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -107,5 +108,21 @@ public class subjectTest {
         String userId = "1";
 
         System.out.println(subjectService.searchCollection(subjectId, userId));
+    }
+
+    @Test
+    public void ddd(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String subjectId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String userId = "1";
+
+        List<HashMap> hashMaps = subjectService.loadQuestionCollectByUser("1", "1");
+
+        for (HashMap hashMap : hashMaps) {
+            System.out.println(hashMap.toString());
+        }
+//        System.out.println(subjectService.searchCollection(subjectId, userId));
     }
 }

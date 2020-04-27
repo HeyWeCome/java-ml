@@ -53,7 +53,7 @@ function loadSchoolByProvincial(provincialId){
                 var school =
                 "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
                 "<h6>"+schools[i].name+"</h6>" +
-                "<p>共289套真题</p>" +
+                "<p>查看院校</p>" +
                 "</div>";
 
                 $("#result").append(school);
@@ -86,7 +86,7 @@ $("#doSearch").click(function(){
                     var school =
                         "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
                         "<h6>" + schools[i].name + "</h6>" +
-                        "<p>共289套真题</p>" +
+                        "<p>查看院校</p>" +
                         "</div>";
                     $("#dynamicSearch").append(school);
                 }
@@ -119,7 +119,7 @@ $("#schoolName").bind("input propertychange", function() {
                     var school =
                         "<div class=\"itemSchool\" id=\""+schools[i].id+"\" onclick=\"loadSchoolDeatil(this);\">" +
                         "<h6>"+schools[i].name+"</h6>" +
-                        "<p>共289套真题</p>" +
+                        "<p>查看院校</p>" +
                         "</div>";
 
                     $("#dynamicSearch").append(school);

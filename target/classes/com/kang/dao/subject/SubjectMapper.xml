@@ -52,6 +52,22 @@
         and userId = #{userId}
     </select>
 
+    <!--记载用户的收藏-->
+    <select id="loadQuestionCollectByUser" parameterType="String" resultType="HashMap">
+        select questionId,title from wecode.user_collection join wecode.subject
+        where  subject.id = user_collection.questionId
+        and subject.classify = #{classify}
+        and user_collection.userId = #{userId}
+    </select>
+
+    <!--记载用户的笔记-->
+    <select id="loadQuestionNoteByUser" parameterType="String" resultType="HashMap">
+        select questionId,user_note.content from wecode.user_note join wecode.subject
+        where  subject.id = user_note.questionId
+        and subject.classify = #{classify}
+        and user_note.userId = #{userId}
+    </select>
+
     <select id="searchCountOfDS" resultType="integer">
         select count(*) from wecode.subject
         where classify = "1"

@@ -45,7 +45,7 @@ function loadDataStruct() {
     var count = 1;
 
     $.ajax({
-        url: "subject/loadCollection",
+        url: "subject/loadNote",
         type: "POST",
         dataType: "json",
         data: info,
@@ -53,8 +53,8 @@ function loadDataStruct() {
             console.log(result);
             for(var i in result){
                 var body =
-                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].title+"</a>";
-                    $('#dataStructure').append(body);
+                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].content+"</a>";
+                $('#dataStructure').append(body);
             }
         },
         error: function () {
@@ -70,7 +70,7 @@ function loadNet() {
     var count = 1;
 
     $.ajax({
-        url: "subject/loadCollection",
+        url: "subject/loadNote",
         type: "POST",
         dataType: "json",
         data: info,
@@ -78,7 +78,7 @@ function loadNet() {
             console.log(result);
             for(var i in result){
                 var body =
-                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].title+"</a>";
+                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].content+"</a>";
                 $('#bet').append(body);
             }
         },
@@ -95,7 +95,7 @@ function loadOrg() {
     var count = 1;
 
     $.ajax({
-        url: "subject/loadCollection",
+        url: "subject/loadNote",
         type: "POST",
         dataType: "json",
         data: info,
@@ -103,7 +103,7 @@ function loadOrg() {
             console.log(result);
             for(var i in result){
                 var body =
-                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].title+"</a>";
+                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].content+"</a>";
                 $('#org').append(body);
             }
         },
@@ -120,7 +120,7 @@ function loadOp() {
     var count = 1;
 
     $.ajax({
-        url: "subject/loadCollection",
+        url: "subject/loadNote",
         type: "POST",
         dataType: "json",
         data: info,
@@ -128,7 +128,7 @@ function loadOp() {
             console.log(result);
             for(var i in result){
                 var body =
-                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].title+"</a>";
+                    "<a id=\""+ result[i].questionId+"\" onclick=\"loadSubject(this);\" class=\"list-group-item list-group-item-action\">"+(count++)+"."+result[i].content+"</a>";
                 $('#op').append(body);
             }
         },

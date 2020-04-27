@@ -5,6 +5,7 @@ import com.kang.pojo.UserCollection;
 import com.kang.pojo.UserNote;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.HashMap;
 import java.util.List;
 
 public interface SubjectService {
@@ -23,4 +24,6 @@ public interface SubjectService {
     int searchCountOfOrg();                                              // 查看机组的习题个数
     int searchCountOfOp();                                              // 查看操作系统的习题个数
     int searchCountNote(String userId,String type);                      // 查看每个类型用户记笔记的个数
+    List<HashMap> loadQuestionCollectByUser(String userId, String classify);  // 根据分类查询题目
+    List<HashMap> loadQuestionNoteByUser(String userId, String classify);  // 根据分类查询题目
 }

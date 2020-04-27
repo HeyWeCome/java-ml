@@ -112,4 +112,18 @@ public class SubjectController {
     public String searchCountNote(String userId, String type){
         return JSONObject.toJSONString(subjectService.searchCountNote(userId,type));
     }
+
+    // 获取用户的收藏
+    @RequestMapping(value = "/loadCollection",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadQuestionCollectByUser(String userId, String classify){
+        return JSONObject.toJSONString(subjectService.loadQuestionCollectByUser(userId,classify));
+    }
+
+    // 获取用户的笔记
+    @RequestMapping(value = "/loadNote",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadQuestionNoteByUser(String userId, String classify){
+        return JSONObject.toJSONString(subjectService.loadQuestionNoteByUser(userId,classify));
+    }
 }
