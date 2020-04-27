@@ -171,4 +171,26 @@ public class SubjectServiceImpl implements SubjectService {
             return 1;
         }
     }
+
+    // 查找数据结构的题目个数
+    public int searchCountOfDS() {
+        return subjectMapper.searchCountOfDS();
+    }
+
+    public int searchCountOfNet() {
+        return subjectMapper.searchCountOfNet();
+    }
+
+    public int searchCountOfOrg() {
+        return subjectMapper.searchCountOfOrg();
+    }
+
+    public int searchCountOfOp() {
+        return subjectMapper.searchCountOfOp();
+    }
+
+    // 查看每个类型用户记笔记的个数
+    public int searchCountNote(String userId, String type) {
+        return subjectMapper.searchCountNote(userId,type);
+    }
 }

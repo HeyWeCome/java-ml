@@ -77,4 +77,39 @@ public class SubjectController {
     public String searchCollection(String subjectId,String userId){
         return JSONObject.toJSONString(subjectService.searchCollection(subjectId,userId));
     }
+
+    // 获取数据结构的习题个数
+    @RequestMapping(value = "/searchCountOfDS",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCountOfDS(){
+        return JSONObject.toJSONString(subjectService.searchCountOfDS());
+    }
+
+    // 获取计算机网络的习题个数
+    @RequestMapping(value = "/searchCountOfNet",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCountOfNet(){
+        return JSONObject.toJSONString(subjectService.searchCountOfNet());
+    }
+
+    // 获取计算机组成原理的习题个数
+    @RequestMapping(value = "/searchCountOfOrg",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCountOfOrg(){
+        return JSONObject.toJSONString(subjectService.searchCountOfOrg());
+    }
+
+    // 获取操作系统的习题个数
+    @RequestMapping(value = "/searchCountOfOp",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCountOfOp(){
+        return JSONObject.toJSONString(subjectService.searchCountOfOp());
+    }
+
+    // 获取用户记了笔记的个数
+    @RequestMapping(value = "/searchCountNote",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String searchCountNote(String userId, String type){
+        return JSONObject.toJSONString(subjectService.searchCountNote(userId,type));
+    }
 }

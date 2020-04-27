@@ -82,7 +82,6 @@ window.onload = function () {
         error: function () {
         }
     });
-
 }
 
 /*注销登录，删除所有的cookie，并且返回主页面*/

@@ -17,4 +17,9 @@ public interface SubjectMapper {
     int addCollection(UserCollection collection);                                                               // 新增收藏
     int deleteCollection(@Param("subjectId") String subjectId, @Param("userId") String userId);                 // 取消收藏
     UserCollection searchCollection(@Param("subjectId") String subjectId, @Param("userId") String userId);      // 查找用户收藏题目
+    int searchCountOfDS();                                                                                      // 查看数据结构的习题个数
+    int searchCountOfNet();                                                                                      // 查看计网的习题个数
+    int searchCountOfOrg();                                                                                      // 查看机组的习题个数
+    int searchCountOfOp();                                                                                      // 查看操作系统的习题个数
+    int searchCountNote(@Param("userId") String userId,@Param("type") String type);                             // 查看每个类型用户记笔记的个数
 }

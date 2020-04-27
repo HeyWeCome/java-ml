@@ -1,10 +1,16 @@
 window.onload = function () {
+    if($.cookie('userName') == ""){
+        $('#readUser').html("您好！");    // 修改用户名称
+    }else{
+        $('#readUser').html("您好！"+$.cookie('userName'));    // 修改用户名称
+    }
+
     loadAllQuestion();
 }
 
-// 加载数据结构的数据
+// 加载全部的数据
 $("#checkAll").click(function(){
-    // 加载院校的题库
+    // 加载所有的题目
     $.ajax({
         url: "question/loadAllQuestion",
         type: "POST",

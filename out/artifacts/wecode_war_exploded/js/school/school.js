@@ -1,4 +1,11 @@
 window.onload = function () {
+
+    if($.cookie('userName') == ""){
+        $('#readUser').html("您好！");    // 修改用户名称
+    }else{
+        $('#readUser').html("您好！"+$.cookie('userName'));    // 修改用户名称
+    }
+
     // 加载所有的省份
     $.ajax({
         url: "provincial/loadProvincial",
@@ -127,5 +134,5 @@ $("#schoolName").bind("input propertychange", function() {
 // 通过给div添加点击事件，加载院校信息
 function loadSchoolDeatil(e){
     $.cookie('schoolId', e.id);
-    location.href = "html/school/detail.html";
+    location.href = "detail.html";
 }

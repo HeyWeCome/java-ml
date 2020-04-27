@@ -51,4 +51,31 @@
         where  questionId = #{subjectId}
         and userId = #{userId}
     </select>
+
+    <select id="searchCountOfDS" resultType="integer">
+        select count(*) from wecode.subject
+        where classify = "1"
+    </select>
+
+    <select id="searchCountOfNet" resultType="integer">
+        select count(*) from wecode.subject
+        where classify = "2"
+    </select>
+
+    <select id="searchCountOfOrg" resultType="integer">
+        select count(*) from wecode.subject
+        where classify = "3"
+    </select>
+
+    <select id="searchCountOfOp" resultType="integer">
+        select count(*) from wecode.subject
+        where classify = "4"
+    </select>
+
+    <select id="searchCountNote" resultType="integer">
+        select count(*) from wecode.user_note join wecode.subject
+        where classify = #{type}
+        and userId = #{userId}
+        and user_note.questionId = subject.id
+    </select>
 </mapper>
