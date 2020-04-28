@@ -3,7 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.school.SchoolMapper">
-    <!--根据id查询,返回全部院校-->
+    <!--查询全部院校-->
+    <select id="loadAllSchool" resultType="School">
+        select * from wecode.school
+        order by school.heat DESC
+    </select>
+
+    <!--根据省份id查询,返回全部院校-->
     <select id="loadSchoolByProvincial" parameterType="String" resultType="School">
         select * from wecode.school
         where provincial = #{provincialId}

@@ -7,6 +7,8 @@ import com.kang.utils.kangkang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: HeyWeCome
@@ -24,6 +26,11 @@ public class DiscussCorrectionServiceImpl implements DiscussCorrectionService {
 
     public void setDiscussCorrectionMapper(DiscussCorrectionMapper discussCorrectionMapper) {
         this.discussCorrectionMapper = discussCorrectionMapper;
+    }
+
+    // 查询所有的用户投诉讨论区
+    public List<DiscussCorrection> loadAllCorrect() {
+        return discussCorrectionMapper.loadAllCorrect();
     }
 
     // 用户新增投诉

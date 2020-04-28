@@ -20,6 +20,13 @@ public class ErrorController {
     @Autowired
     ErrorService errorService = new ErrorServiceImpl();
 
+    // 纠错题目信息
+    @RequestMapping(value = "/loadAllError",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllError(){
+        return JSONObject.toJSONString(errorService.loadAllError());
+    }
+
     @RequestMapping(value = "/addError",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addError(String questionId,String reporteId,String reason){

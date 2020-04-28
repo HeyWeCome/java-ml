@@ -16,6 +16,12 @@
         Order By createTime Desc
     </select>
 
+    <!--查询全部用户-->
+    <select id="loadAllUser" resultType="User">
+        SELECT * from wecode.user
+        Order By user.createTime Desc
+    </select>
+
     <!--用户登录-->
     <select id="userLogin" parameterType="String" resultType="User">
         SELECT * from wecode.user

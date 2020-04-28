@@ -28,6 +28,10 @@ public class UserServiceImpl implements UserService {
         return userMapper;
     }
 
+    public List<User> loadAllUser() {
+        return userMapper.loadAllUser();
+    }
+
     public int addDairy(UserDiary userDiary) {
         return userMapper.addDairy(userDiary);
     }

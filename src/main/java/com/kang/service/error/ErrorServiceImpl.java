@@ -7,6 +7,7 @@ import com.kang.utils.kangkang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -29,12 +30,17 @@ public class ErrorServiceImpl implements ErrorService {
         this.errorMapper = errorMapper;
     }
 
-    public int addError(String questionId, String reportedId,String reason) {
+    // 加载所有的题目纠错
+    public List<ErrorCorrection> loadAllError() {
+        return errorMapper.loadAllError();
+    }
+
+    public int addError(String questionId, String reportedId, String reason) {
         // 得到32位的uuid
         String id = UUID.randomUUID().toString().replace("-", "").toLowerCase();
         String createTime = kangkang.time_get();
 
-        ErrorCorrection errorCorrection = new ErrorCorrection(id, questionId, reportedId, reason, createTime);
+        ErrorCorrection errorCorrection = new ErrorCorrection(id, questionId, reportedId, reason, createTime,"0");
         return errorMapper.addError(errorCorrection);
     }
 }

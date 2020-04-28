@@ -189,7 +189,6 @@ public class UserController {
     @RequestMapping(value = "/deleteDiary",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String deleteDiary(String userId,String diaryId){
-
         // 返回1成功，返回0删除失败
         return JSONObject.toJSONString(userService.deleteDiary(userId,diaryId));
     }
@@ -224,4 +223,11 @@ public class UserController {
         return "redirect:/profile.html";
     }
 
+
+    // 查询所有的用户
+    @RequestMapping(value = "/loadAllUser",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllUser(){
+        return JSONObject.toJSONString(userService.loadAllUser());
+    }
 }

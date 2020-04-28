@@ -4,6 +4,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.discussCorrection.DiscussCorrectionMapper">
 
+    <select id="loadAllCorrect" resultType="DiscussCorrection">
+        select *
+        from wecode.discuss_correction
+        order by
+        case when status = '0'
+        THEN 0 ELSE 1 END
+    </select>
+
     <insert id="addDiscussCorrection" parameterType="DiscussCorrection" keyProperty="id">
         insert into wecode.discuss_correction(id,discussId,reporterId,content,status)
         values (#{id}, #{discussId}, #{reporterId}, #{content}, #{status})

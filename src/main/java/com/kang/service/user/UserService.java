@@ -13,6 +13,7 @@ import java.util.List;
  * @version: 1.0
  */
 public interface UserService {
+    List<User> loadAllUser();                                    // 查询所有的用户
     int addDairy(UserDiary userDiary);
     List<UserDiary> queryAlldiary(String userId);                // 查询全部日志,返回list集合
     User userLogin(String account, String password);             // 用户登录查询

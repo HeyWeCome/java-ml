@@ -20,6 +20,13 @@ public class DisscussCorrectionController {
     @Autowired
     DiscussCorrectionService discussCorrectionService = new DiscussCorrectionServiceImpl();
 
+    // 查询全部的投诉
+    @RequestMapping(value = "/loadAllCorrect",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllCorrect(){
+        return JSONObject.toJSONString(discussCorrectionService.loadAllCorrect());
+    }
+
     // 用户新增投诉
     @RequestMapping(value = "/addDisscussCorrection",produces = "application/json; charset=utf-8")
     @ResponseBody

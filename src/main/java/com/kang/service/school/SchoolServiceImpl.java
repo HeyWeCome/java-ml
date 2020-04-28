@@ -27,6 +27,11 @@ public class SchoolServiceImpl implements SchoolService {
         this.schoolMapper = schoolMapper;
     }
 
+    // 加载所有的院校
+    public List<School> loadAllSchool() {
+        return schoolMapper.loadAllSchool();
+    }
+
     // 根据省份ID查询出院校
     public List<School> loadSchoolByProvincial(String provincialId) {
         return schoolMapper.loadSchoolByProvincial(provincialId);

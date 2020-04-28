@@ -21,11 +21,17 @@ public class SchoolController {
     @Autowired
     private SchoolService schoolService = new SchoolServiceImpl();
 
+    // 加载所有的学校
+    @RequestMapping(value = "/loadAllSchool",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllSchool(){
+        return JSON.toJSONString(schoolService.loadAllSchool());
+    }
+
     // 根据省份ID加载所有的院校信息
     @RequestMapping(value = "/loadSchoolByProvincial",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loadSchool(String provincialId){
-        System.out.println("省份ID："+provincialId);
         return JSON.toJSONString(schoolService.loadSchoolByProvincial(provincialId));
     }
 

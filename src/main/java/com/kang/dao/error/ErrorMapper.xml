@@ -4,9 +4,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.error.ErrorMapper">
 
+    <select id="loadAllError" resultType="ErrorCorrection">
+        select *
+        from wecode.error_correction
+        ORDER BY
+        CASE
+        WHEN status = '0' THEN
+            0
+        ELSE
+            1
+        END,
+        time desc
+    </select>
+
     <insert id="addError" parameterType="ErrorCorrection" keyProperty="id">
-        insert into wecode.error_correction(id,questionId,reporterId,reason,time)
-        values (#{id},#{questionId},#{reporterId},#{reason},#{time})
+        insert into wecode.error_correction(id,questionId,reporterId,reason,time,status)
+        values (#{id},#{questionId},#{reporterId},#{reason},#{time},#{status})
     </insert>
 
 </mapper>

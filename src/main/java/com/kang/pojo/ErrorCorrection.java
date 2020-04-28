@@ -19,4 +19,5 @@ public class ErrorCorrection {
     String reporterId;      // 纠错人的ID
     String reason;          // 原因
     String time;            // 纠错时间
+    String status;          // 0未处理 1处理了
 }
