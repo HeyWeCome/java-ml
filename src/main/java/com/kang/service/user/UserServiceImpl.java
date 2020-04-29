@@ -36,6 +36,23 @@ public class UserServiceImpl implements UserService {
         return userMapper.addDairy(userDiary);
     }
 
+    public int modifyUser(String id, String name, String account, String password, String email, String phoneNumber, String address) {
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setAccount(account);
+        user.setPassword(password);
+        user.setEmail(email);
+        user.setPhoneNumber(phoneNumber);
+        user.setAddress(address);
+        return userMapper.modifyUser(user);
+    }
+
+    // 删除用户
+    public int deleteUser(String id) {
+        return userMapper.deleteUser(id);
+    }
+
     public List<UserDiary> queryAlldiary(String userId) {
         return userMapper.queryAlldiary(userId);
     }

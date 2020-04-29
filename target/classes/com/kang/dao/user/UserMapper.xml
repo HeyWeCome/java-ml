@@ -52,6 +52,19 @@
         AND userId=#{userId}
     </delete>
 
+    <!--修改用户-->
+    <update id="modifyUser" parameterType="User" keyProperty="id">
+        update wecode.user
+        set user.name = #{name},account = #{account}, password = #{password},email = #{email}, phoneNumber = #{phoneNumber}, address = #{address}
+        where user.id = #{id}
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="String">
+        delete from wecode.user
+        where id=#{id}
+    </delete>
+
     <!--通过用户的ID来更改用户的昵称-->
     <update id="modifyUserNameById" parameterType="String">
         update wecode.user

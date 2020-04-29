@@ -186,7 +186,55 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="table-responsive">
+                                    <div id="toolbar">
+                                        <a id="removeUser" href="#" class="btn btn-outline-primary">删除</a>
+                                    </div>
                                     <table id="user" class="table table-hover"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modifyUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">修改用户信息</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <span id="userId" style="visibility: hidden">dsadas</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                                        <input id="userName" type="text" placeholder="用户名" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card""></i></span></div>
+                                        <input id="account" type="text" placeholder="账号" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-key"></i></span></div>
+                                        <input id="password" type="text" placeholder="密码" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fab fa-cc-discover"></i></span></div>
+                                        <input id="email" type="text" placeholder="邮箱" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-headphones"></i></span></div>
+                                        <input id="phoneNumber" type="text" placeholder="手机号码" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-warehouse"></i></span></div>
+                                        <input id="address" type="text" placeholder="地址" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                    <button id="postModify" type="button" class="btn btn-primary">更改</button>
                                 </div>
                             </div>
                         </div>

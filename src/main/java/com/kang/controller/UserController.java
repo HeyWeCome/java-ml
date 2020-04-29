@@ -31,6 +31,20 @@ public class UserController {
     @Autowired
     private UserService userService =  new UserServiceImpl();
 
+    // 修改用户的信息
+    @RequestMapping(value = "/modifyUser",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String modifyUser(String id,String name,String account, String password, String email, String phoneNumber, String address){
+        return JSONObject.toJSONString(userService.modifyUser(id,name,account,password,email,phoneNumber,address));
+    }
+
+    // 删除用户
+    @RequestMapping(value = "/deleteUser",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteUser(String id){
+        return JSONObject.toJSONString(userService.deleteUser(id));
+    }
+
     // 用户登录
     @RequestMapping(value = "/userLogin",produces = "application/json; charset=utf-8")
     @ResponseBody
@@ -42,7 +56,6 @@ public class UserController {
             return JSONObject.toJSONString(user);
         }else{
             // 查不到就给个0
-            System.out.println("0");
             return "0";
         }
     }
