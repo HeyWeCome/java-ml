@@ -6,6 +6,8 @@ import com.kang.pojo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: HeyWeCome
@@ -23,6 +25,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public void setEmployeeMapper(EmployeeMapper employeeMapper) {
         this.employeeMapper = employeeMapper;
+    }
+
+    // 加载所有的员工
+    public List<Employee> loadAllEmployee() {
+        return employeeMapper.loadAllEmployee();
     }
 
     // 用户登录

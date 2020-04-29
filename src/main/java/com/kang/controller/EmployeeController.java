@@ -27,4 +27,11 @@ public class EmployeeController {
         return JSONObject.toJSONString(employeeService.employeeLogin(account,password));
     }
 
+    // 查询所有的员工
+    @RequestMapping(value = "/loadAllEmployee",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllEmployee(){
+        return JSONObject.toJSONString(employeeService.loadAllEmployee());
+    }
+
 }

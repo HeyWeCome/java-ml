@@ -3,6 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.employee.EmployeeMapper">
+    <!--查询所有的员工-->
+    <select id="loadAllEmployee" resultType="Employee">
+        select *
+        from wecode.employee
+    </select>
 
     <select id="employeeLogin" parameterType="String" resultType="Employee">
         select *
