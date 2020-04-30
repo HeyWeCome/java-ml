@@ -7,6 +7,8 @@ import com.kang.utils.kangkang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @description:
  * @author: HeyWeCome
@@ -24,6 +26,11 @@ public class PermissionServiceImpl implements PermissionService {
 
     public void setPermissionMapper(PermissionMapper permissionMapper) {
         this.permissionMapper = permissionMapper;
+    }
+
+    // 加载所有的权限
+    public List<Permission> loadAllPermission() {
+        return permissionMapper.loadAllPermission();
     }
 
     // 新增权限

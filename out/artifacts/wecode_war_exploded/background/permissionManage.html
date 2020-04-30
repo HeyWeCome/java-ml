@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="../css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../css/bootstrap-table.min.css">
     <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
@@ -111,19 +111,19 @@
                             后台
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#" aria-expanded="false"><i class="fa fa-fw fa-user-circle"></i>用 户 管 理</a>
+                            <a class="nav-link" href="userManage.html" aria-expanded="false"><i class="fa fa-fw fa-user-circle"></i>用 户 管 理</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="employeeManage.html"><i class="fa fas fa-users"></i>员 工 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-user-plus"></i>角 色 管 理</a>
+                            <a class="nav-link" href="roleManage.html"><i class="fas fa-user-plus"></i>角 色 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="permissionManage.html"><i class="fas fa-cube"></i>权 限 管 理</a>
+                            <a class="nav-link active" href="#"><i class="fas fa-cube"></i>权 限 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fab fa-microsoft"></i>  模 块 管 理</a>
+                            <a class="nav-link" href="moduleManage.html"><i class="fab fa-microsoft"></i>  模 块 管 理</a>
                         </li>
 
                         <li class="nav-divider">
@@ -161,13 +161,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">用户管理</h2>
-                            <p class="pageheader-text">这是用户管理部分</p>
+                            <h2 class="pageheader-title">权限管理</h2>
+                            <p class="pageheader-text">这是权限管理部分</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">用户管理</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">用户列表</li>
+                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">权限管理</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">权限展示</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -185,60 +185,25 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <div id="toolbar">
-                                        <a id="removeUser" href="#" class="btn btn-outline-primary">删除</a>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="list-group" id="listOfRole" role="tablist" style="text-align: center;">
+<!--                                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#" role="tab">Home</a>-->
+<!--                                            <a onclick="loadPermission(this);" class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#" role="tab">Profile</a>-->
+                                        </div>
                                     </div>
-                                    <table id="user" class="table table-hover"></table>
+                                    <span id="roleId" style="visibility: hidden"></span>
+                                    <div class="col-4">
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <form id="listOfMudule" style="padding-left: 30px">
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="modifyUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">修改用户信息</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <span id="userId" style="visibility: hidden">dsadas</span>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
-                                        <input id="userName" type="text" placeholder="用户名" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card""></i></span></div>
-                                        <input id="account" type="text" placeholder="账号" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-key"></i></span></div>
-                                        <input id="password" type="text" placeholder="密码" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fab fa-cc-discover"></i></span></div>
-                                        <input id="email" type="text" placeholder="邮箱" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-headphones"></i></span></div>
-                                        <input id="phoneNumber" type="text" placeholder="手机号码" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-warehouse"></i></span></div>
-                                        <input id="address" type="text" placeholder="地址" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                    <button id="postModify" type="button" class="btn btn-primary">更改</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- ============================================================== -->
                     <!-- end basic table  -->
                     <!-- ============================================================== -->
@@ -272,8 +237,7 @@
 <script type="text/javascript" src="../js/bootstrap-select.min.js"></script>
 <!-- chart c3 js -->
 <script src="js/jquery.cookie.min.js"></script>
-<script src="js/index/index.js"></script>
-<script src="js/user/main.js"></script>
+<script src="js/permission/main.js"></script>
 </body>
 
 </html>

@@ -20,6 +20,13 @@ public class PermissionController {
     @Autowired
     PermissionService permissionService = new PermissionServiceImpl();
 
+    // 根据角色的Id来查询权限
+    @RequestMapping(value = "/loadAllPermission",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllPermission(){
+        return JSONObject.toJSONString(permissionService.loadAllPermission());
+    }
+
     // 纠错题目信息
     @RequestMapping(value = "/addPermission",produces = "application/json; charset=utf-8")
     @ResponseBody
