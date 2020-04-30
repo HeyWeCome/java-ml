@@ -7,24 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/background/js/permission/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/background/permissionManage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/employeeManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/employeeManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/moduleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/moduleManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/roleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/roleManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/userManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/userManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/permission/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/permission/PermissionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/permission/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/permission/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/permission/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/permission/PermissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/permission/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/permission/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/js/permission/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/js/permission/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/permissionManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/permissionManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/employee/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/employee/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/employee/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/employee/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/employeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/employeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/background/employeeManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/employeeManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/background/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/background/moduleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/moduleManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/background/roleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/roleManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/background/userManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/userManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/js/permission/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/js/permission/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/permissionManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/permissionManage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +156,7 @@
       <recent name="E:\Workspace\IDEAWorkspace\wecode\web\html\school" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.31">
+  <component name="RunManager" selected="JUnit.employeeTest.loadAll">
     <configuration name="ModuleTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
@@ -182,31 +177,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermissionTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="employeeTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PermissionTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="employeeTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleTest.deleteRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="employeeTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoleTest" />
-      <option name="METHOD_NAME" value="deleteRole" />
+      <option name="MAIN_CLASS_NAME" value="employeeTest" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleTest.modify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="employeeTest.loadAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoleTest" />
-      <option name="METHOD_NAME" value="modify" />
+      <option name="MAIN_CLASS_NAME" value="employeeTest" />
+      <option name="METHOD_NAME" value="loadAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,20 +291,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoleTest.modify" />
-      <item itemvalue="JUnit.RoleTest.deleteRole" />
-      <item itemvalue="JUnit.PermissionTest.test" />
       <item itemvalue="JUnit.PermissionTest.delete" />
       <item itemvalue="JUnit.ModuleTest.test" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
+      <item itemvalue="JUnit.employeeTest.loadAll" />
+      <item itemvalue="JUnit.employeeTest.add" />
+      <item itemvalue="JUnit.employeeTest.delete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.employeeTest.loadAll" />
+        <item itemvalue="JUnit.employeeTest.delete" />
+        <item itemvalue="JUnit.employeeTest.add" />
         <item itemvalue="JUnit.ModuleTest.test" />
         <item itemvalue="JUnit.PermissionTest.delete" />
-        <item itemvalue="JUnit.PermissionTest.test" />
-        <item itemvalue="JUnit.RoleTest.modify" />
-        <item itemvalue="JUnit.RoleTest.deleteRole" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +322,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -419,7 +414,7 @@
       <workItem from="1588165735718" duration="9416000" />
       <workItem from="1588213486119" duration="661000" />
       <workItem from="1588225923785" duration="12952000" />
-      <workItem from="1588255634955" duration="4102000" />
+      <workItem from="1588255634955" duration="7121000" />
     </task>
     <servers />
   </component>
@@ -447,11 +442,11 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675012484" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1588257810651">
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1588262713797">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587024987763" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588257810651" />
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262713797" />
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585194079406" />
     <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583394543672">
       <screen x="0" y="0" width="1536" height="824" />
@@ -480,77 +475,77 @@
     </state>
     <state x="678" y="161" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586783762531" />
     <state x="2415" y="162" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899646973" />
-    <state width="1147" height="180" key="GridCell.Tab.0.bottom" timestamp="1588259549922">
+    <state width="1397" height="432" key="GridCell.Tab.0.bottom" timestamp="1588262771703">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1397" height="432" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262771703" />
     <state width="1228" height="486" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.0.center" timestamp="1588259549922">
+    <state width="1397" height="432" key="GridCell.Tab.0.center" timestamp="1588262771703">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="180" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1397" height="432" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262771703" />
     <state width="1228" height="486" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="180" key="GridCell.Tab.0.left" timestamp="1588259549922">
+    <state width="1397" height="432" key="GridCell.Tab.0.left" timestamp="1588262771703">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="180" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1397" height="432" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262771703" />
     <state width="1228" height="486" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="180" key="GridCell.Tab.0.right" timestamp="1588259549922">
+    <state width="1397" height="432" key="GridCell.Tab.0.right" timestamp="1588262771703">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="180" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1397" height="432" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262771703" />
     <state width="1228" height="486" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="180" key="GridCell.Tab.1.bottom" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.1.bottom" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.1.center" timestamp="1588259549922">
+    <state width="1147" height="495" key="GridCell.Tab.1.center" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1147" height="495" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.1.left" timestamp="1588259549922">
+    <state width="1147" height="495" key="GridCell.Tab.1.left" timestamp="1588260667278">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549922" />
+    <state width="1147" height="495" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667278" />
     <state width="1228" height="486" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.1.right" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.1.right" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.2.bottom" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.2.bottom" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.2.center" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.2.center" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.2.left" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.2.left" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="180" key="GridCell.Tab.2.right" timestamp="1588259549923">
+    <state width="1147" height="495" key="GridCell.Tab.2.right" timestamp="1588260667279">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="180" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588259549923" />
+    <state width="1147" height="495" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260667279" />
     <state width="1228" height="486" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
     <state width="1147" height="356" key="GridCell.Tab.3.bottom" timestamp="1585471522893">
       <screen x="1920" y="0" width="1440" height="860" />
@@ -618,6 +613,14 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2215" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585491364490" />
+    <state x="345" y="0" width="1053" height="846" key="dock-window-1" timestamp="1588260941194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="345" y="0" width="1053" height="846" key="dock-window-1/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260941194" />
+    <state x="355" y="0" width="1053" height="846" key="dock-window-2" timestamp="1588262165160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="355" y="0" width="1053" height="846" key="dock-window-2/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262165160" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1584602177179">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

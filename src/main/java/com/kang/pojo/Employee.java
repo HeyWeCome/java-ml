@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Employee {
     String id;          // 员工的ID
     String name;        // 员工的名字
-    int sex;            // 员工的性别：1是男 0是女
+    String sex;            // 员工的性别：1是男 0是女
     String account;     // 员工的账号
     String password;    // 员工的密码
     String roleId;      // 角色ID

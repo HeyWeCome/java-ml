@@ -49,6 +49,7 @@ function loadAllModule() {
 
                 $('#listOfMudule').append(item);
             }
+            loadPermission($('#roleId').html());
         },
         error: function () {
         }
