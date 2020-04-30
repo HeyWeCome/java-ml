@@ -19,6 +19,9 @@
         <mapper class="com.kang.dao.questionDiscuss.QuestionDiscussMapper"/>
         <mapper class="com.kang.dao.discussCorrection.DiscussCorrectionMapper"/>
         <mapper class="com.kang.dao.employee.EmployeeMapper"/>
+        <mapper class="com.kang.dao.module.ModuleMapper"/>
+        <mapper class="com.kang.dao.role.RoleMapper"/>
+        <mapper class="com.kang.dao.permission.PermissionMapper"/>
     </mappers>
 
 </configuration>

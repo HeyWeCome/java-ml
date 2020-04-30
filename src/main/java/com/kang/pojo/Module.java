@@ -16,6 +16,6 @@ import lombok.NoArgsConstructor;
 public class Module {
     String id;              // 模块的ID
     String name;            // 模块的名字
-    String description;     // 模块的描述
     String status;          // 模块的状态：0:禁用 1:启用
+    String description;     // 模块的描述
 }

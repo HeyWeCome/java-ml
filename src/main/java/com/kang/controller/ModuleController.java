@@ -3,6 +3,7 @@ package com.kang.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.kang.service.module.ModuleService;
 import com.kang.service.module.ModuleServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,7 +17,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/module")
 public class ModuleController {
-    ModuleService moduleService = new ModuleServiceImpl();
+    @Autowired
+    private ModuleService moduleService = new ModuleServiceImpl();
 
     // 查询全部的模块
     @RequestMapping(value = "/loadAllModule",produces = "application/json; charset=utf-8")
