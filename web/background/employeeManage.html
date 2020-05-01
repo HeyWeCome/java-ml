@@ -187,7 +187,8 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <div id="toolbar">
-                                        <a id="removeUser" href="#" class="btn btn-outline-primary">删除</a>
+                                        <a id="addEmployee" href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#addEmployeeModal">新增</a>
+                                        <a id="removeEmployee" href="#" class="btn btn-outline-primary">删除</a>
                                     </div>
                                     <table id="employee" class="table table-hover"></table>
                                 </div>
@@ -195,8 +196,59 @@
                         </div>
                     </div>
 
+                    <!-- 新增员工 -->
+                    <div class="modal fade" id="addEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">新增员工信息</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                                        <input id="addName" type="text" placeholder="员工名" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card""></i></span></div>
+                                        <input id="addAccount" type="text" placeholder="账号" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-key"></i></span></div>
+                                        <input id="addPassword" type="text" placeholder="密码" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span style="padding-top: 5px;">性别：</span>
+                                        <div class="custom-control custom-checkbox" style="margin-right: 20px">
+                                            <input type="radio" checked name="sex" class="custom-control-input" id="boy">
+                                            <label class="custom-control-label" for="boy">男</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="radio" name="sex" class="custom-control-input" id="girl">
+                                            <label class="custom-control-label" for="girl">女</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span style="padding-top: 5px;">角色：</span>
+                                        <select id="roleList" class="form-control form-control-sm">
+<!--                                            <option id="">何总</option>-->
+<!--                                            <option>黄秘书</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                    <button id="postAdd" type="button" class="btn btn-primary">新增</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!-- Modal -->
-                    <div class="modal fade" id="modifyUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="modifyEmployee" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -206,10 +258,10 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <span id="userId" style="visibility: hidden">dsadas</span>
+                                    <span id="employeeId" style="visibility: hidden"></span>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
-                                        <input id="userName" type="text" placeholder="用户名" class="form-control">
+                                        <input id="name" type="text" placeholder="员工名" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card""></i></span></div>
@@ -221,15 +273,11 @@
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="fab fa-cc-discover"></i></span></div>
-                                        <input id="email" type="text" placeholder="邮箱" class="form-control">
+                                        <input id="sex" type="text" placeholder="性别" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-headphones"></i></span></div>
-                                        <input id="phoneNumber" type="text" placeholder="手机号码" class="form-control">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-warehouse"></i></span></div>
-                                        <input id="address" type="text" placeholder="地址" class="form-control">
+                                        <input id="roleName" type="text" placeholder="角色" class="form-control">
                                     </div>
                                 </div>
                                 <div class="modal-footer">

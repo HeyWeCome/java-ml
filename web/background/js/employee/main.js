@@ -1,17 +1,39 @@
 window.onload = function () {
-    loadAllUser();
+    loadAllEmployee();
+    loadRoleListInAdd();
 }
 
-// 加载所有的用户信息
-function loadAllUser() {
-    // 加载院校的题库
+// 加载所有的员工信息
+function loadAllEmployee() {
+    // 加载所有的员工信息
     $.ajax({
-        url: "../user/loadAllUser",
+        url: "../employee/loadAllEmployeeAndRole",
         type: "POST",
         dataType: "json",
         success: function (result) {
-            $('#user').bootstrapTable('load',result);
-            $('#user').bootstrapTable('hideColumn','id');
+            $('#employee').bootstrapTable('load',result);
+            $('#employee').bootstrapTable('hideColumn','id');
+        },
+        error: function () {
+        }
+    });
+}
+
+// 新增用户的时候选择加载角色
+function loadRoleListInAdd() {
+    // 加载所有的角色信息
+    $.ajax({
+        url: "../role/loadAllRole",
+        type: "POST",
+        dataType: "json",
+        success: function (result) {
+            $('#roleList').empty();
+
+            for (var i in result) {
+                var role =
+                    "<option id=\"" + result[i].id + "\">" + result[i].name + "</option>";
+                $('#roleList').append(role);
+            }
         },
         error: function () {
         }
@@ -21,7 +43,7 @@ function loadAllUser() {
 //操作栏的格式化
 function actionFormatter(value, row, index) {
     return[
-        '<a href="#" class="btn btn-outline-primary" id="modify" data-toggle="modal" data-target="#modifyUser">编辑</a>',
+        '<a href="#" class="btn btn-outline-primary" id="modify" data-toggle="modal" data-target="#modifyEmployee">编辑</a>',
         '<a href="#" class="btn btn-outline-primary" id="delete"">删除</a>',
     ].join('');
 
@@ -30,13 +52,12 @@ function actionFormatter(value, row, index) {
 /*每行表格尾部的小图标点击*/
 window.operateEvents = {
     'click #modify':function (e,value,row,index) {
-        $('#userName').val(row.name);
+        $('#name').val(row.name);
         $('#account').val(row.account);
         $('#password').val(row.password);
-        $('#email').val(row.email);
-        $('#phoneNumber').val(row.phoneNumber);
-        $('#address').val(row.address);
-        $('#userId').html(row.id);
+        $('#sex').val(row.sex);
+        $('#roleName').val(row.roleName);
+        $('#employeeId').html(row.id);
     },
     'click #delete':function (e,value,row,index) {
         var info = {
@@ -44,12 +65,11 @@ window.operateEvents = {
         }
 
         $.ajax({
-            url: "../user/deleteUser",
+            url: "../employee/deleteEmployee",
             type: "POST",
             data: info,
             dataType: "json",
             success: function (result) {
-                console.log(result);
                 if(result == "1"){
                     swal({
                         title: "删除成功",
@@ -57,7 +77,7 @@ window.operateEvents = {
                         button: false,
                         timer: 1000,
                     }).then(() => {
-                        loadAllUser();
+                        loadAllEmployee();
                     });
                 }
             },
@@ -70,8 +90,8 @@ window.operateEvents = {
 // 更改用户的信息
 $("#postModify").on("click", function() {
     var info = {
-        id: $('#userId').html(),
-        name: $('#userName').val(),
+        id: $('#employeeId').html(),
+        name: $('#name').val(),
         account: $('#account').val(),
         password: $('#password').val(),
         email: $('#email').val(),
@@ -80,7 +100,7 @@ $("#postModify").on("click", function() {
     }
 
     $.ajax({
-        url: "../user/modifyUser",
+        url: "../employee/modifyEmployee",
         type: "POST",
         data: info,
         dataType: "json",
@@ -92,8 +112,8 @@ $("#postModify").on("click", function() {
                     button: false,
                     timer: 1000,
                 }).then(() => {
-                    $('#modifyUser').modal('hide');
-                    loadAllUser();
+                    $('#modifyEmployee').modal('hide');
+                    loadAllEmployee();
                 });
             }
         },
@@ -102,12 +122,55 @@ $("#postModify").on("click", function() {
     });
 });
 
+// 新增员工
+$('#postAdd').click(function () {
+    var employeeName = $('#addName').val();
+    var addAccount = $('#addAccount').val();
+    var addPassword = $('#addPassword').val();
+    var sex;
+    var roleId = $("#roleList option:selected").attr("id");
+
+    if($("#boy").prop('checked')){
+        sex = "1";
+    }
+    if($("#girl").prop('checked')){
+        sex = "0";
+    }
+
+    var info = {
+        name:employeeName,
+        account:addAccount,
+        password:addPassword,
+        sex:sex,
+        role:roleId
+    }
+
+    $.ajax({
+        url: "../employee/addEmployee",
+        type: "POST",
+        data: info,
+        dataType: "json",
+        success: function (result) {
+            swal({
+                title: "新增成功",
+                icon: "success",
+                button: false,
+                timer: 1000,
+            }).then(() => {
+                $('#addEmployeeModal').modal('hide');
+                loadAllEmployee();
+            });
+        },
+        error: function () {
+        }
+    });
+});
 
 // 删除按钮事件
-$("#removeUser").on("click", function() {
+$("#removeEmployee").on("click", function() {
     if (!confirm("是否确认删除？"))
         return;
-    var rows = $("#user").bootstrapTable('getSelections');// 获得要删除的数据
+    var rows = $("#employee").bootstrapTable('getSelections');// 获得要删除的数据
     if (rows.length == 0) {// rows 主要是为了判断是否选中，下面的else内容才是主要
         alert("请先选择要删除的记录!");
         return;
@@ -122,13 +185,14 @@ $("#removeUser").on("click", function() {
 
 function deleteMs(ids) {
     var flag = 0;
+
     for(var i in ids){
         var info = {
             id: ids[i]
         }
 
         $.ajax({
-            url: "../user/deleteUser",
+            url: "../employee/deleteEmployee",
             type: "POST",
             data: info,
             dataType: "json",
@@ -146,7 +210,7 @@ function deleteMs(ids) {
             button: false,
             timer: 1000,
         }).then(() => {
-            loadAllUser();
+            loadAllEmployee();
         });
     }else{
         swal({
@@ -155,7 +219,7 @@ function deleteMs(ids) {
             button: false,
             timer: 1000,
         }).then(() => {
-            loadAllUser();
+            loadAllEmployee();
         });
     }
 }
@@ -187,6 +251,7 @@ $('#employee').bootstrapTable({
     },{
         field: '',
         title: '序号',
+        width:20,
         align: 'center',
         formatter: function (value, row, index) {
             //获取每页显示的数量
@@ -209,23 +274,22 @@ $('#employee').bootstrapTable({
         align: 'center',
         valign: 'middle',
     },{
-        field: 'email',
-        title: '邮箱',
+        field: 'sex',
+        title: '性别',
         align: 'center',
         valign: 'middle',
+        formatter: function (value, row, index) {
+            if(row.sex == "1"){
+                return[
+                    '男'
+                ].join('');
+            }else{
+                return '女'
+            }
+        }
     },{
-        field: 'phoneNumber',
-        title: '手机号码',
-        align: 'center',
-        valign: 'middle',
-    },{
-        field: 'address',
-        title: '地址',
-        align: 'center',
-        valign: 'middle',
-    },{
-        field: 'createTime',
-        title: '创建时间',
+        field: 'roleName',
+        title: '角色',
         align: 'center',
         valign: 'middle',
     },{

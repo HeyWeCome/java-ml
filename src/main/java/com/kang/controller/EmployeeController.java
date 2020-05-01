@@ -20,6 +20,34 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService = new EmployeeServiceImpl();
 
+    // 加载所有的员工
+    @RequestMapping(value = "/loadAllEmployeeAndRole",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllEmployeeAndRole(){
+        return JSONObject.toJSONString(employeeService.loadAllEmployeeAndRole());
+    }
+
+    // 新增的员工
+    @RequestMapping(value = "/addEmployee",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addEmployee(String name,String account,String password,String sex, String role){
+        return JSONObject.toJSONString(employeeService.addEmployee(name,sex,account,password,role));
+    }
+
+    // 修改员工
+    @RequestMapping(value = "/modifyEmployee",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String amodifyEmployee(String id,String name,String account,String password,String sex, String role){
+        return JSONObject.toJSONString(employeeService.modifyEmployee(id,name,sex,account,password,role));
+    }
+
+    // 删除员工
+    @RequestMapping(value = "/deleteEmployee",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteEmployee(String id){
+        return JSONObject.toJSONString(employeeService.deleteEmployee(id));
+    }
+
     // 员工登录
     @RequestMapping(value = "/login",produces = "application/json; charset=utf-8")
     @ResponseBody

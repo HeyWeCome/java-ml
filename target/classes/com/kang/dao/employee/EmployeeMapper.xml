@@ -13,10 +13,10 @@
     <select id="loadAllEmployeeAndRole" resultType="HashMap">
         SELECT
         employee.id,
-        employee. NAME,
+        employee.name,
         employee.sex,
         employee.account,
-        employee. PASSWORD,
+        employee.password,
         role. NAME AS roleName
         FROM
             wecode.employee
