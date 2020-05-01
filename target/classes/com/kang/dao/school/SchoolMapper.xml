@@ -9,6 +9,52 @@
         order by school.heat DESC
     </select>
 
+    <!--查询全部院校以及省份信息-->
+    <select id="loadAllSchoolAndProvincial" resultType="School">
+        SELECT
+            school.id,
+            school.name,
+            provincial.name as provincial,
+            school.location,
+            school.photo,
+            school.introduction,
+            school.heat,
+            school.postcode
+        FROM
+            wecode.school
+        JOIN
+            wecode.provincial
+        WHERE
+        school.provincial = provincial.id
+        ORDER BY
+	    school.heat DESC
+    </select>
+
+    <!--新增院校-->
+    <insert id="addSchool" parameterType="School" keyProperty="id">
+        insert into wecode.school(id,name,provincial,location,photo,introduction,heat,postcode)
+        values (#{id},#{name},#{provincial},#{location},#{photo},#{introduction},#{heat},#{postcode})
+    </insert>
+
+    <!--修改院校-->
+    <update id="modifySchool" keyProperty="id">
+        update wecode.school
+        set
+            school.name = #{name},
+            school.provincial=#{provincial},
+            school.location=#{location},
+            school.introduction=#{introduction},
+            school.postcode=#{postcode}
+        where
+            school.id = #{id}
+    </update>
+
+    <!--删除院校-->
+    <delete id="deleteSchool" parameterType="String">
+        delete from wecode.school
+        where id = #{id}
+    </delete>
+
     <!--根据省份id查询,返回全部院校-->
     <select id="loadSchoolByProvincial" parameterType="String" resultType="School">
         select * from wecode.school

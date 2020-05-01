@@ -7,11 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ef2212-9be2-4d78-9587-4381324b086a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/schoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/background/js/school/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/background/schoolManage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/employee/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/controller/SchoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/School.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/pojo/School.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/WEB-INF/classes/com/kang/service/school/SchoolServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/employeeManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/employeeManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/moduleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/moduleManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/permissionManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/permissionManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/roleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/roleManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/userManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/wecode_war_exploded/background/userManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/controller/SchoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/controller/SchoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/pojo/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/pojo/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kang/service/school/SchoolServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/controller/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/controller/SchoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/dao/school/SchoolMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/pojo/School.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/pojo/School.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kang/service/school/SchoolServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/background/employeeManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/employeeManage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/background/js/employee/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/js/employee/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/moduleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/moduleManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/permissionManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/permissionManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/roleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/roleManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/background/userManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/background/userManage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +88,9 @@
         <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,51 +176,51 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.31">
-    <configuration name="ModuleTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wecode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ModuleTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PermissionTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wecode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PermissionTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="employeeTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="employeeTest.loadAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="employeeTest" />
+      <option name="METHOD_NAME" value="loadAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="schoolTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wecode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="schoolTest" />
       <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="employeeTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="schoolTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="employeeTest" />
+      <option name="MAIN_CLASS_NAME" value="schoolTest" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="employeeTest.loadAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="schoolTest.modify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wecode" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="employeeTest" />
-      <option name="METHOD_NAME" value="loadAll" />
+      <option name="MAIN_CLASS_NAME" value="schoolTest" />
+      <option name="METHOD_NAME" value="modify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="schoolTest.searchSubject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wecode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="schoolTest" />
+      <option name="METHOD_NAME" value="searchSubject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -283,20 +310,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PermissionTest.delete" />
-      <item itemvalue="JUnit.ModuleTest.test" />
       <item itemvalue="JUnit.employeeTest.loadAll" />
-      <item itemvalue="JUnit.employeeTest.add" />
-      <item itemvalue="JUnit.employeeTest.delete" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.31" />
+      <item itemvalue="JUnit.schoolTest.searchSubject" />
+      <item itemvalue="JUnit.schoolTest.add" />
+      <item itemvalue="JUnit.schoolTest.modify" />
+      <item itemvalue="JUnit.schoolTest.delete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.schoolTest.delete" />
+        <item itemvalue="JUnit.schoolTest.modify" />
+        <item itemvalue="JUnit.schoolTest.add" />
+        <item itemvalue="JUnit.schoolTest.searchSubject" />
         <item itemvalue="JUnit.employeeTest.loadAll" />
-        <item itemvalue="JUnit.employeeTest.delete" />
-        <item itemvalue="JUnit.employeeTest.add" />
-        <item itemvalue="JUnit.ModuleTest.test" />
-        <item itemvalue="JUnit.PermissionTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +434,7 @@
       <workItem from="1588213486119" duration="661000" />
       <workItem from="1588225923785" duration="12952000" />
       <workItem from="1588255634955" duration="7229000" />
-      <workItem from="1588296941000" duration="5845000" />
+      <workItem from="1588296941000" duration="14774000" />
     </task>
     <servers />
   </component>
@@ -435,11 +462,11 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2344" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1586675012484" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1588262713797">
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1588320976649">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587024987763" />
-    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262713797" />
+    <state x="2445" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588320976649" />
     <state x="560" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585194079406" />
     <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583394543672">
       <screen x="0" y="0" width="1536" height="824" />
@@ -468,77 +495,77 @@
     </state>
     <state x="678" y="161" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586783762531" />
     <state x="2415" y="162" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1587899646973" />
-    <state width="1147" height="107" key="GridCell.Tab.0.bottom" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.0.bottom" timestamp="1588322535234">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="107" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535234" />
     <state width="1228" height="486" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.0.center" timestamp="1588313599339">
+    <state width="1147" height="213" key="GridCell.Tab.0.center" timestamp="1588322535233">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="107" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599339" />
+    <state width="1147" height="213" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535233" />
     <state width="1228" height="486" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="107" key="GridCell.Tab.0.left" timestamp="1588313599339">
+    <state width="1147" height="213" key="GridCell.Tab.0.left" timestamp="1588322535233">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="107" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599339" />
+    <state width="1147" height="213" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535233" />
     <state width="1228" height="486" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="107" key="GridCell.Tab.0.right" timestamp="1588313599339">
+    <state width="1147" height="213" key="GridCell.Tab.0.right" timestamp="1588322535234">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1587025552899" />
-    <state width="1147" height="107" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599339" />
+    <state width="1147" height="213" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535234" />
     <state width="1228" height="486" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315436" />
-    <state width="1147" height="107" key="GridCell.Tab.1.bottom" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.1.bottom" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.1.center" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.1.center" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.1.left" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.1.left" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.1.right" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.1.right" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.2.bottom" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.2.bottom" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.2.center" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.2.center" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.2.left" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.2.left" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
-    <state width="1147" height="107" key="GridCell.Tab.2.right" timestamp="1588313599340">
+    <state width="1147" height="213" key="GridCell.Tab.2.right" timestamp="1588322535142">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state width="1228" height="626" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586690266488" />
-    <state width="1147" height="107" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588313599340" />
+    <state width="1147" height="213" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322535142" />
     <state width="1228" height="486" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585195315437" />
     <state width="1147" height="356" key="GridCell.Tab.3.bottom" timestamp="1585471522893">
       <screen x="1920" y="0" width="1440" height="860" />
@@ -606,14 +633,26 @@
       <screen x="1920" y="0" width="1440" height="860" />
     </state>
     <state x="2215" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1585491364490" />
-    <state x="345" y="0" width="1053" height="846" key="dock-window-1" timestamp="1588260941194">
+    <state x="-30" y="33" width="1411" height="711" maximized="true" key="dock-window-1" timestamp="1588318416773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="345" y="0" width="1053" height="846" key="dock-window-1/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588260941194" />
-    <state x="355" y="0" width="1053" height="846" key="dock-window-2" timestamp="1588262165160">
+    <state x="-30" y="33" width="1411" height="711" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588318416773" />
+    <state x="0" y="0" width="1550" height="831" key="dock-window-2" timestamp="1588318416773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="355" y="0" width="1053" height="846" key="dock-window-2/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588262165160" />
+    <state x="0" y="0" width="1550" height="831" key="dock-window-2/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588318416773" />
+    <state x="2116" y="79" width="1456" height="832" key="dock-window-3" timestamp="1588318416773">
+      <screen x="1920" y="0" width="1440" height="860" />
+    </state>
+    <state x="2116" y="79" width="1456" height="832" key="dock-window-3/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588318416773" />
+    <state x="299" y="0" width="1053" height="846" key="dock-window-4" timestamp="1588322129646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="0" width="1053" height="846" key="dock-window-4/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322129646" />
+    <state x="299" y="0" width="1102" height="605" maximized="true" key="dock-window-5" timestamp="1588322140827">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="0" width="1102" height="605" maximized="true" key="dock-window-5/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1588322140827" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1584602177179">
       <screen x="1920" y="0" width="1440" height="860" />
     </state>

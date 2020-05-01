@@ -31,7 +31,7 @@
     <!-- ============================================================== -->
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <a class="navbar-brand" href="index.html">WeCode管理系统</a>
+            <a class="navbar-brand" href="../index.html">WeCode管理系统</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -117,7 +117,7 @@
                             <a class="nav-link" href="employeeManage.html"><i class="fa fas fa-users"></i>员 工 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i>角 色 管 理</a>
+                            <a class="nav-link" href="roleManage.html"><i class="fas fa-user-plus"></i>角 色 管 理</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="permissionManage.html"><i class="fas fa-cube"></i>权 限 管 理</a>
@@ -130,7 +130,7 @@
                             前台
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="schoolManage.html"><i class="fas fa-hospital-alt"></i>院 校 管 理</a>
+                            <a class="nav-link active" href="#"><i class="fas fa-hospital-alt"></i>院 校 管 理</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-folder-open"></i>题 库 管 理</a>
@@ -161,13 +161,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">角色管理</h2>
-                            <p class="pageheader-text">这是角色管理部分</p>
+                            <h2 class="pageheader-title">院校管理</h2>
+                            <p class="pageheader-text">这是院校管理部分</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">角色管理</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">角色列表</li>
+                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">院校管理</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">院校列表</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -187,62 +187,91 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <div id="toolbar">
-                                        <a id="addRole" href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#addOneRole">新增</a>
-                                        <a id="removeRole" href="#" class="btn btn-outline-primary">删除</a>
+                                        <a id="addSchool" href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#addSchoolModal">新增</a>
+                                        <a id="removeSchool" href="#" class="btn btn-outline-primary">删除</a>
                                     </div>
-                                    <table id="role" class="table table-hover"></table>
+                                    <table id="school" class="table table-hover"></table>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 新增 -->
-                    <div class="modal fade" id="addOneRole" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- 新增员工 -->
+                    <div class="modal fade" id="addSchoolModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">新增角色信息</h5>
+                                    <h5 class="modal-title">新增院校信息</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-clipboard-list"></i></span></div>
-                                        <input id="addRoleName" type="text" placeholder="角色名" class="form-control">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                                        <input id="addName" type="text" placeholder="院校名" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-pencil-alt"></i></span></div>
-                                        <input id="addDescription" type="text" placeholder="角色描述" class="form-control">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span></div>
+                                        <select id="provincialList" class="form-control">
+                                            <option value="" disabled selected>选择省份</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-building"></i></span></div>
+                                        <input id="addLocation" type="text" placeholder="地址" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-desktop"></i></span></div>
+                                        <input id="addIntroduction" type="text" placeholder="院校介绍，填写网址" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-key"></i></span></div>
+                                        <input id="addPostCode" type="text" placeholder="邮编" class="form-control">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                                    <button id="postAdd" type="button" class="btn btn-primary">提交</button>
+                                    <button id="postAdd" type="button" class="btn btn-primary">新增</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 修改 -->
-                    <div class="modal fade" id="modifyRole" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                    <!-- 修改员工 -->
+                    <div class="modal fade" id="modifySchool" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">修改模块信息</h5>
+                                    <h5 class="modal-title">修改院校信息</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <span id="roleId" style="visibility: hidden"></span>
+                                    <span id="schoolId" style="visibility: hidden"></span>
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-clipboard-list"></i></span></div>
-                                        <input id="roleName" type="text" placeholder="模块名" class="form-control">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                                        <input id="modifyName" type="text" placeholder="院校名" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-pencil-alt"></i></span></div>
-                                        <input id="description" type="text" placeholder="模块描述" class="form-control">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span></div>
+                                        <select id="modifyProvincialList" class="form-control">
+                                            <option value="" disabled selected>选择省份</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-building"></i></span></div>
+                                        <input id="modifyLocation" type="text" placeholder="地址" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-desktop"></i></span></div>
+                                        <input id="modifyIntroduction" type="text" placeholder="院校介绍，填写网址" class="form-control">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-key"></i></span></div>
+                                        <input id="modifyPostCode" type="text" placeholder="邮编" class="form-control">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -267,9 +296,9 @@
 <!-- end main wrapper  -->
 <!-- ============================================================== -->
 <!-- Optional JavaScript -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.cookie.min.js"></script>
-<script src="js/sweetalert.min.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/jquery.cookie.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
 <!-- slimscroll js -->
 <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
 <!-- main js -->
@@ -284,8 +313,9 @@
 <script type="text/javascript" src="../js/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-select.min.js"></script>
 <!-- chart c3 js -->
-<script src="js/jquery.cookie.min.js"></script>
-<script src="js/role/main.js"></script>
+<script src="../js/jquery.cookie.min.js"></script>
+<script src="../js/index/index.js"></script>
+<script src="js/school/main.js"></script>
 </body>
 
 </html>
