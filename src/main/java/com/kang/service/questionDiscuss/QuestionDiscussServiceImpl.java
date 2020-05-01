@@ -100,4 +100,8 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
     public int loadCollectionCount(String questionId) {
         return questionDiscussMapper.loadCollectionCount(questionId);
     }
+
+    public int deleteQuestionDiscuss(String id) {
+        return questionDiscussMapper.deleteQuestionDiscuss(id);
+    }
 }

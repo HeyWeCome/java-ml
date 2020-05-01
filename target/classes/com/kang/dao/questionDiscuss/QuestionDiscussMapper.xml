@@ -9,6 +9,13 @@
         values (#{id},#{questionId},#{userId},#{content},#{parent},#{time},#{agree})
     </insert>
 
+    <!--删除问题讨论-->
+    <delete id="deleteQuestionDiscuss" parameterType="String">
+        delete from wecode.question_discuss
+        where
+        question_discuss.id = #{id}
+    </delete>
+
     <!--查询问题的留言情况-->
     <select id="loadQuestionDiscuss" parameterType="String" resultType="java.util.HashMap">
         SELECT

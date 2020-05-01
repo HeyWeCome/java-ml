@@ -33,4 +33,33 @@ public class DisscussCorrectionController {
     public String addDisscussCorrection(String discussId,String reporterId,String content){
         return JSONObject.toJSONString(discussCorrectionService.addDiscussCorrection(discussId,reporterId,content));
     }
+
+    // 后台管理需要的查询全部投诉
+    @RequestMapping(value = "/loadAllReport",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllReport(){
+        return JSONObject.toJSONString(discussCorrectionService.loadAllReport());
+    }
+
+    // 后台管理根据举报删除留言
+    @RequestMapping(value = "/deleteDiscuss",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteDiscuss(String id){
+        return JSONObject.toJSONString(discussCorrectionService.deleteDiscuss(id));
+    }
+
+    // 后台管理修改举报状态
+    @RequestMapping(value = "/modifyReport",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String modifyReport(String id){
+        return JSONObject.toJSONString(discussCorrectionService.modifyReport(id));
+    }
+
+    // 后台管理删除举报
+    @RequestMapping(value = "/deleteReport",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteReport(String id){
+        return JSONObject.toJSONString(discussCorrectionService.deleteReport(id));
+    }
+
 }

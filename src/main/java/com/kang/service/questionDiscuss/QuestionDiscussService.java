@@ -14,4 +14,5 @@ public interface QuestionDiscussService {
     int deleteAgree(String id, int agree,String userId);                                                   // 取消赞
     int checkUserPrefer(String userId, String questionDiscussId);                                           // 检测用户有没有点击喜欢
     int loadCollectionCount(String questionId);                                                             // 检测题目的收藏数量
+    int deleteQuestionDiscuss(String id);                                                                               // 删除问题讨论
 }

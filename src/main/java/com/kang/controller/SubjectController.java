@@ -20,6 +20,8 @@ public class SubjectController {
     @Autowired
     private SubjectService subjectService = new SubjectServiceImpl();
 
+    // 查看所有的习题的所有内容
+
     @RequestMapping(value = "/getSubjectById",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String getSubjectById(String subjectId){
