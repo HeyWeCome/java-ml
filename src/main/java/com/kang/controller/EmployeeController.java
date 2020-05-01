@@ -37,7 +37,7 @@ public class EmployeeController {
     // 修改员工
     @RequestMapping(value = "/modifyEmployee",produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String amodifyEmployee(String id,String name,String account,String password,String sex, String role){
+    public String modifyEmployee(String id,String name,String account,String password,String sex, String role){
         return JSONObject.toJSONString(employeeService.modifyEmployee(id,name,sex,account,password,role));
     }
 

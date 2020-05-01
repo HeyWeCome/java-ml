@@ -19,7 +19,7 @@ function loadAllEmployee() {
     });
 }
 
-// 新增用户的时候选择加载角色
+// 用户的时候选择加载角色
 function loadRoleListInAdd() {
     // 加载所有的角色信息
     $.ajax({
@@ -27,12 +27,12 @@ function loadRoleListInAdd() {
         type: "POST",
         dataType: "json",
         success: function (result) {
-            $('#roleList').empty();
 
             for (var i in result) {
                 var role =
                     "<option id=\"" + result[i].id + "\">" + result[i].name + "</option>";
                 $('#roleList').append(role);
+                $('#modifyRoleList').append(role);
             }
         },
         error: function () {
@@ -56,7 +56,6 @@ window.operateEvents = {
         $('#account').val(row.account);
         $('#password').val(row.password);
         $('#sex').val(row.sex);
-        $('#roleName').val(row.roleName);
         $('#employeeId').html(row.id);
     },
     'click #delete':function (e,value,row,index) {
@@ -89,14 +88,22 @@ window.operateEvents = {
 
 // 更改用户的信息
 $("#postModify").on("click", function() {
+
+    var sex;
+    if($("#boy2").prop('checked')){
+        sex = "1";
+    }
+    if($("#girl2").prop('checked')){
+        sex = "0";
+    }
+
     var info = {
         id: $('#employeeId').html(),
         name: $('#name').val(),
         account: $('#account').val(),
         password: $('#password').val(),
-        email: $('#email').val(),
-        phoneNumber: $('#phoneNumber').val(),
-        address: $('#address').val()
+        sex: sex,
+        role: $("#modifyRoleList option:selected").attr("id")
     }
 
     $.ajax({

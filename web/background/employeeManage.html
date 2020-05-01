@@ -264,7 +264,7 @@
                                         <input id="name" type="text" placeholder="员工名" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card""></i></span></div>
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card"></i></span></div>
                                         <input id="account" type="text" placeholder="账号" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
@@ -272,12 +272,22 @@
                                         <input id="password" type="text" placeholder="密码" class="form-control">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fab fa-cc-discover"></i></span></div>
-                                        <input id="sex" type="text" placeholder="性别" class="form-control">
+                                        <span style="padding-top: 5px;">性别：</span>
+                                        <div class="custom-control custom-checkbox" style="margin-right: 20px">
+                                            <input type="radio" checked name="sex" class="custom-control-input" id="boy2">
+                                            <label class="custom-control-label" for="boy2">男</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="radio" name="sex" class="custom-control-input" id="girl2">
+                                            <label class="custom-control-label" for="girl2">女</label>
+                                        </div>
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-headphones"></i></span></div>
-                                        <input id="roleName" type="text" placeholder="角色" class="form-control">
+                                        <select id="modifyRoleList" class="form-control">
+                                            <!--                                            <option id="">何总</option>-->
+                                            <!--                                            <option>黄秘书</option>-->
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
