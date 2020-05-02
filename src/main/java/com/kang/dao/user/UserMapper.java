@@ -9,6 +9,7 @@ import java.util.List;
 public interface UserMapper {
     List<User> loadAllUser();                                                                               // 查询所有的用户
     int modifyUser(User user);
+    List<String> loadModule(String id);                                                                     // 加载用户的权限
     int deleteUser(String id);                                                                              // 删除用户
     int addDairy(UserDiary dairy);                                                                          // 新增一个动态
     List<UserDiary> queryAlldiary(String userId);                                                           // 查询全部日志,返回list集合

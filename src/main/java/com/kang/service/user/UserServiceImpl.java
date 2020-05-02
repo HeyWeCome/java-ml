@@ -36,6 +36,10 @@ public class UserServiceImpl implements UserService {
         return userMapper.addDairy(userDiary);
     }
 
+    public List<String> loadModule(String id) {
+        return userMapper.loadModule(id);
+    }
+
     public int modifyUser(String id, String name, String account, String password, String email, String phoneNumber, String address) {
         User user = new User();
         user.setId(id);

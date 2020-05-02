@@ -3,6 +3,23 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.user.UserMapper">
+
+    <select id="loadModule" parameterType="String" resultType="String">
+        select module.name
+        from
+            wecode.employee
+        join wecode.role
+        join wecode.permission
+        join wecode.module
+        where
+            employee.roleId = role.id
+        and
+            permission.roleId = role.id
+        and
+            permission.moduleId = module.id
+        and
+            employee.id = #{id}
+    </select>
     <!--增加一个日志-->
     <insert id="addDairy" parameterType="UserDiary" keyProperty="id">
         insert into wecode.user_diary(id,userId,content,createTime)

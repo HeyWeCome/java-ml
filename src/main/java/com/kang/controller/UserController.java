@@ -5,7 +5,6 @@ import com.kang.pojo.User;
 import com.kang.pojo.UserDiary;
 import com.kang.service.user.UserService;
 import com.kang.service.user.UserServiceImpl;
-import lombok.NoArgsConstructor;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,6 +29,13 @@ import java.util.*;
 public class UserController {
     @Autowired
     private UserService userService =  new UserServiceImpl();
+
+    // 修改用户的信息
+    @RequestMapping(value = "/loadModule",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadModule(String id){
+        return JSONObject.toJSONString(userService.loadModule(id));
+    }
 
     // 修改用户的信息
     @RequestMapping(value = "/modifyUser",produces = "application/json; charset=utf-8")

@@ -15,6 +15,7 @@ import java.util.List;
 public interface UserService {
     List<User> loadAllUser();                                    // 查询所有的用户
     int addDairy(UserDiary userDiary);
+    List<String> loadModule(String id);                                                                     // 加载用户的权限
     int modifyUser(String id,String name,String account,String password,String email,String phoneNumber,String address);    // 修改用户
     int deleteUser(String id);                                   // 删除用户
     List<UserDiary> queryAlldiary(String userId);                // 查询全部日志,返回list集合

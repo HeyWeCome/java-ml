@@ -1,6 +1,35 @@
 window.onload = function () {
     $('#employeeName').html($.cookie('employeeName'));
+    var info = {
+        id: $.cookie('employeeId')
+    }
 
+    console.log(info);
+
+    $.ajax({
+        url: "../user/loadModule",
+        type: "POST",
+        dataType: "json",
+        data: info,
+        success: function (result) {
+            console.log(result);
+            var flag = 0;
+            $('#leftNav').find('li').each(function() {
+                flag = 0;
+                for(var i in result){
+                    if (result[i] == $(this).attr("data-name")){
+                        flag = 1;
+                    }
+                }
+                if(flag == 0){
+                    $(this).hide();
+                }
+            })
+        },
+        error: function () {
+
+        }
+    });
     // 加载所有的用户
     loadAllUser();
     // 加载题目的个数

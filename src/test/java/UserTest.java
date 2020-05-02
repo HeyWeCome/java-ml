@@ -15,21 +15,15 @@ import java.util.List;
  * @version: 1.0
  */
 public class UserTest {
+
     @Test
     public void test3(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserServiceImpl) context.getBean("UserServiceImpl");
 
-        String id = "1083351f04d74a779fa6bfb1f033ea43";
-        String name = "用户哥";
-        String account = "testMan";
-        String password = "123456";
-        String email = "971334911@qq.com";
-        String phoneNumber = "10086";
-        String address = "北京";
+        String id = "e6fa6105188d4f41b0e32b9de8493047";
 
-        int i = userService.modifyUser(id, name, account, password, email, phoneNumber, address);
-        System.out.println(i);
+        System.out.println(userService.loadModule(id).toString());
     }
 
     @Test

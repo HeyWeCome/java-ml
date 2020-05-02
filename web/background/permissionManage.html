@@ -38,45 +38,6 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto navbar-right-top">
 
-                    <li class="nav-item dropdown notification">
-                        <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
-                        <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
-                            <li>
-                                <div class="notification-title"> 通知 </div>
-                                <div class="notification-list">
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item list-group-item-action active">
-                                            <div class="notification-info">
-                                                <div class="notification-list-user-img"><img src="assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                <div class="notification-list-user-block"><span class="notification-list-user-name">马云</span>小何，给你转了一个亿
-                                                    <div class="notification-date">2 分钟前</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action">
-                                            <div class="notification-info">
-                                                <div class="notification-list-user-img"><img src="assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                <div class="notification-list-user-block"><span class="notification-list-user-name">王鸥 </span>我想你了
-                                                    <div class="notification-date">20 分钟前</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action">
-                                            <div class="notification-info">
-                                                <div class="notification-list-user-img"><img src="assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                <div class="notification-list-user-block"><span class="notification-list-user-name">黄家澜</span> 滚你妈的
-                                                    <div class="notification-date">2 小时前</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-footer"> <a href="#">查看所有通知</a></div>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="nav-item dropdown nav-user">
                         <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
@@ -84,8 +45,8 @@
                                 <h5 id="employeeName" class="mb-0 text-white nav-user-name"></h5>
                                 <span class="status"></span><span class="ml-1">您好！</span>
                             </div>
-                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>账号设置</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>注销</a>
+<!--                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>账号设置</a>-->
+                            <a class="dropdown-item" onclick="loginOut();" href="#"><i class="fas fa-power-off mr-2"></i>注销</a>
                         </div>
                     </li>
                 </ul>
@@ -106,42 +67,42 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav flex-column">
-                        <li class="nav-divider">
-                            后台
-                        </li>
-                        <li class="nav-item ">
+                    <ul id="leftNav" class="navbar-nav flex-column">
+                            <span class="nav-divider">
+                                后台
+                            </span>
+                        <li data-name="用户管理" class="nav-item ">
                             <a class="nav-link" href="userManage.html" aria-expanded="false"><i class="fa fa-fw fa-user-circle"></i>用 户 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="员工管理" class="nav-item">
                             <a class="nav-link" href="employeeManage.html"><i class="fa fas fa-users"></i>员 工 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="角色管理" class="nav-item">
                             <a class="nav-link" href="roleManage.html"><i class="fas fa-user-plus"></i>角 色 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="权限管理" class="nav-item">
                             <a class="nav-link active" href="#"><i class="fas fa-cube"></i>权 限 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="模块管理" class="nav-item">
                             <a class="nav-link" href="moduleManage.html"><i class="fab fa-microsoft"></i>  模 块 管 理</a>
                         </li>
 
-                        <li class="nav-divider">
-                            前台
-                        </li>
-                        <li class="nav-item">
+                        <span class="nav-divider">
+                                前台
+                            </span>
+                        <li data-name="院校管理" class="nav-item">
                             <a class="nav-link" href="schoolManage.html"><i class="fas fa-hospital-alt"></i>院 校 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="题库管理" class="nav-item">
                             <a class="nav-link" href="subjectManage.html"><i class="fas fa-folder-open"></i>题 库 管 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="举报管理" class="nav-item">
                             <a class="nav-link" href="discussCorrectManage.html"><i class="fas fa-reply"></i>举 报 处 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="纠错管理" class="nav-item">
                             <a class="nav-link" href="errorCorrectionManage.html"><i class="fas fa-pencil-alt"></i>纠 错 处 理</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-name="留言管理" class="nav-item">
                             <a class="nav-link" href="questionDiscussManage.html"><i class="fas fa-comment-dots"></i>留 言 处 理</a>
                         </li>
                     </ul>
@@ -241,6 +202,10 @@
 <!-- chart c3 js -->
 <script src="js/jquery.cookie.min.js"></script>
 <script src="js/permission/main.js"></script>
+<script src="js/loginOut.js"></script>
+<script>
+    $('#employeeName').html($.cookie('employeeName'));
+</script>
 </body>
 
 </html>
