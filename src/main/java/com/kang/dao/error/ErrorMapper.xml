@@ -17,6 +17,45 @@
         time desc
     </select>
 
+    <select id="loadError" resultType="HashMap">
+        select
+            error_correction.id,
+            subject.title,
+            user.name,
+            error_correction.reason,
+            error_correction.time,
+            error_correction.status
+        from
+            wecode.error_correction
+        join
+            wecode.subject
+        join
+            wecode.user
+        where
+            error_correction.reporterId = user.id and error_correction.questionId = subject.id
+        ORDER BY
+        CASE
+        WHEN status = '0' THEN
+            0
+        ELSE
+            1
+        END,
+        time desc
+    </select>
+
+    <!--修改状态-->
+    <update id="modifyStatus" parameterType="String">
+        update wecode.error_correction
+        set status = #{status}
+        where id = #{id}
+    </update>
+
+    <!--删除题目举报-->
+    <delete id="delete" parameterType="String">
+        delete from wecode.error_correction
+        where id=#{id}
+    </delete>
+
     <insert id="addError" parameterType="ErrorCorrection" keyProperty="id">
         insert into wecode.error_correction(id,questionId,reporterId,reason,time,status)
         values (#{id},#{questionId},#{reporterId},#{reason},#{time},#{status})

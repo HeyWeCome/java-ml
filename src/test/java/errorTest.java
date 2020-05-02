@@ -22,4 +22,40 @@ public class errorTest {
 
         System.out.println(errorService.addError(questionId,reporterId,reason));
     }
+
+    @Test
+    public void modify(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ErrorServiceImpl errorService = (ErrorServiceImpl) context.getBean("ErrorServiceImpl");
+
+        String id = "ddddddd";
+        String questionId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String reporterId = "1";
+        String reason = "答案错误，应为B";
+        String status = "1";
+
+        System.out.println(errorService.modifyStatus(id,status));
+    }
+
+    @Test
+    public void delete(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ErrorServiceImpl errorService = (ErrorServiceImpl) context.getBean("ErrorServiceImpl");
+
+        String id = "ddddddd";
+        String questionId = "0a4de35d6e81493fb3f03265cb6bb391";
+        String reporterId = "1";
+        String reason = "答案错误，应为B";
+        String status = "1";
+
+        System.out.println(errorService.delete(id));
+    }
+
+    @Test
+    public void loadAll(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ErrorServiceImpl errorService = (ErrorServiceImpl) context.getBean("ErrorServiceImpl");
+
+        System.out.println(errorService.loadAllError().toString());
+    }
 }
