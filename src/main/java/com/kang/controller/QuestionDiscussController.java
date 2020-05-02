@@ -23,6 +23,27 @@ public class QuestionDiscussController {
     @Autowired
     private QuestionDiscussService questionDiscussService = new QuestionDiscussServiceImpl();
 
+    // 修改用户的留言
+    @RequestMapping(value = "/modifyDiscussContent",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String modifyDiscussContent(String id, String content){
+        return JSONObject.toJSONString(questionDiscussService.modifyDiscussContent(id,content));
+    }
+
+    // 删除用户的留言
+    @RequestMapping(value = "/deleteQuestionDiscuss",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteQuestionDiscuss(String id){
+        return JSONObject.toJSONString(questionDiscussService.deleteQuestionDiscuss(id));
+    }
+
+    // 后台加载用户的留言
+    @RequestMapping(value = "/loadAllQuestionDiscuss",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String loadAllQuestionDiscuss(){
+        return JSONObject.toJSONString(questionDiscussService.loadAllQuestionDiscuss());
+    }
+
     // 新增用户留言问题
     @RequestMapping(value = "/addQuestionDiscuss",produces = "application/json; charset=utf-8")
     @ResponseBody

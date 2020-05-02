@@ -133,16 +133,16 @@
                             <a class="nav-link" href="#"><i class="fas fa-hospital-alt"></i>院 校 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-folder-open"></i>题 库 管 理</a>
+                            <a class="nav-link" href="subjectManage.html"><i class="fas fa-folder-open"></i>题 库 管 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="discussCorrectManage.html"><i class="fas fa-reply"></i>留 言 举 报</a>
+                            <a class="nav-link" href="#"><i class="fas fa-reply"></i>举 报 处 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-pencil-alt"></i>题 目 纠 错</a>
+                            <a class="nav-link" href="#"><i class="fas fa-pencil-alt"></i>纠 错 处 理</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="questionDiscussManage.html"><i class="fas fa-comment-dots"></i>留 言 处 理</a>
+                            <a class="nav-link active" href="#"><i class="fas fa-comment-dots"></i>留 言 处 理</a>
                         </li>
                     </ul>
                 </div>
@@ -164,13 +164,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">留言举报管理</h2>
-                            <p class="pageheader-text">这是题库管理部分</p>
+                            <h2 class="pageheader-title">留言管理</h2>
+                            <p class="pageheader-text">这是题目的留言管理部分</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">留言举报</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">举报列表</li>
+                                        <li class="breadcrumb-item active"><a href="#" class="breadcrumb-link">留言管理</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">留言列表</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -190,9 +190,34 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <div id="toolbar">
-                                        <a id="removeReport" href="#" class="btn btn-outline-primary">删除</a>
+                                        <a id="removeDiscuss" href="#" class="btn btn-outline-primary">删除</a>
                                     </div>
-                                    <table id="report" class="table table-hover"></table>
+                                    <table id="discuss" class="table table-hover"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 修改留言 -->
+                    <div class="modal fade" id="modifyDiscuss" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">修改留言信息</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <span id="discussId" style="visibility: hidden"></span>
+                                    <div class="input-group mb-3">
+                                        <span>留言内容：</span>
+                                        <textarea style="min-height: 300px;resize: none;" id="modifyContent" type="text" placeholder="留言内容" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                    <button id="postModify" type="button" class="btn btn-primary">更改</button>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +256,7 @@
 <!-- chart c3 js -->
 <script src="../js/jquery.cookie.min.js"></script>
 <script src="../js/index/index.js"></script>
-<script src="js/discussCorrect/main.js"></script>
+<script src="js/questionDiscuss/main.js"></script>
 </body>
 
 </html>

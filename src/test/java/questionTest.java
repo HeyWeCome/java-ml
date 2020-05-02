@@ -30,6 +30,19 @@ public class questionTest {
     }
 
     @Test
+    public void loadAllQuestionDiscuss(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
+
+        String questionId = "0a4de35d6e81493fb3f03265cb6bb391";
+
+        List<HashMap> hashMaps = questionDiscussService.loadAllQuestionDiscuss();
+        for (HashMap hashMap : hashMaps) {
+            System.out.println(hashMap.toString());
+        }
+    }
+
+    @Test
     public void loadQuestionDiscuss(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
@@ -40,7 +53,17 @@ public class questionTest {
         for (HashMap hashMap : hashMaps) {
             System.out.println(hashMap.toString());
         }
-//        System.out.println();
+    }
+
+    @Test
+    public void modify(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        QuestionDiscussService questionDiscussService = (QuestionDiscussServiceImpl) context.getBean("QuestionDiscussServiceImpl");
+
+        String id = "21fdeeb444da46ae966f5701facaca16";
+        String content = "这是一个好题目!";
+
+        System.out.println(questionDiscussService.modifyDiscussContent(id, content));
     }
 
     @Test

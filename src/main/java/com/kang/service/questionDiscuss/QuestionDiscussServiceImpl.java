@@ -31,6 +31,11 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
         this.questionDiscussMapper = questionDiscussMapper;
     }
 
+    // 加载后台管理中所需要的全部的问题留言内容
+    public List<HashMap> loadAllQuestionDiscuss() {
+        return questionDiscussMapper.loadAllQuestionDiscuss();
+    }
+
     // 新增题目讨论
     public int addQuestionDiscuss(String questionId, String userId, String content, String parent) {
         // 得到32位的uuid
@@ -40,6 +45,11 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
 
         QuestionDiscuss questionDiscuss = new QuestionDiscuss(id, questionId, userId, content, parent, time, agree);
         return questionDiscussMapper.addQuestionDiscuss(questionDiscuss);
+    }
+
+    // 修改问题的留言板
+    public int modifyDiscussContent(String id, String content) {
+        return questionDiscussMapper.modifyDiscussContent(id,content);
     }
 
     // 查询题目的留言情况
@@ -101,6 +111,7 @@ public class QuestionDiscussServiceImpl implements QuestionDiscussService {
         return questionDiscussMapper.loadCollectionCount(questionId);
     }
 
+    // 删除留言
     public int deleteQuestionDiscuss(String id) {
         return questionDiscussMapper.deleteQuestionDiscuss(id);
     }

@@ -4,6 +4,26 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.questionDiscuss.QuestionDiscussMapper">
 
+    <!--查询所有额留言情况-->
+    <!--查询问题的留言情况-->
+    <select id="loadAllQuestionDiscuss" resultType="java.util.HashMap">
+        SELECT
+	        question_discuss.id,
+	        subject.title as questionContent,
+	        user.name as userName,
+	        question_discuss.content as discussContent,
+	        question_discuss.time
+        FROM
+	    wecode.question_discuss
+        JOIN wecode.user
+        JOIN wecode.subject
+        WHERE
+	        question_discuss.userId = user.id
+        and
+            question_discuss.questionId = subject.id
+        order by question_discuss.time desc
+    </select>
+
     <insert id="addQuestionDiscuss" parameterType="QuestionDiscuss" keyProperty="id">
         insert into wecode.question_discuss(id,questionId,userId,content,parent,time,agree)
         values (#{id},#{questionId},#{userId},#{content},#{parent},#{time},#{agree})
@@ -36,6 +56,13 @@
         question_discuss.questionId = #{questionId}
         order by question_discuss.agree desc
     </select>
+
+    <!--修改问题的留言板-->
+    <update id="modifyDiscussContent" parameterType="String">
+        update wecode.question_discuss
+        set content=#{content}
+        where id = #{id}
+    </update>
 
     <update id="addAgree" parameterType="QuestionDiscuss" keyProperty="id">
         update wecode.question_discuss
