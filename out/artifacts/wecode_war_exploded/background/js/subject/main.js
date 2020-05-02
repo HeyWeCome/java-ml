@@ -3,9 +3,8 @@ window.onload = function () {
     // loadProvincialListInAdd();
 }
 
-// 加载所有的员工信息
+// 加载所有的题目
 function loadAllSubject() {
-    // 加载所有的员工信息
     $.ajax({
         url: "../question/loadAllQuestion",
         type: "POST",
@@ -19,35 +18,93 @@ function loadAllSubject() {
     });
 }
 
-// 新增院校的时候选择加载省份
-function loadProvincialListInAdd() {
-    // 加载所有的角色信息
-    $.ajax({
-        url: "../provincial/loadProvincial",
-        type: "POST",
-        dataType: "json",
-        success: function (result) {
-
-            for (var i in result) {
-                var role =
-                    "<option id=\"" + result[i].id + "\">" + result[i].name + "</option>";
-                $('#modifyProvincialList').append(role);
-                $('#provincialList').append(role);
-            }
-        },
-        error: function () {
-        }
-    });
-}
-
 /*每行表格尾部的小图标点击*/
 window.operateEvents = {
+    'click #look':function (e,value,row,index) {
+        var info = {
+            subjectId : row.id
+        }
+
+        if(row.type == "单选题"){
+            $.ajax({
+                url: "../subject/getSubjectById",
+                type: "POST",
+                data: info,
+                dataType: "json",
+                success: function (result) {
+                    swal({
+                        text: "题目："+result.title+"\n"
+                              +"A："+result.optionA+"\n"
+                              +"B："+result.optionB+"\n"
+                              +"C："+result.optionC+"\n"
+                              +"D："+result.optionD+"\n",
+                    });
+                },
+                error: function () {
+                }
+            });
+        }
+
+        if(row.type == "简答题"){
+            $.ajax({
+                url: "../subject/getSubjectById",
+                type: "POST",
+                data: info,
+                dataType: "json",
+                success: function (result) {
+                    swal({
+                        text: "题目："+result.title+"\n"
+                            +"问题："+result.content+"\n",
+                    });
+                },
+                error: function () {
+                }
+            });
+        }
+
+
+    },
     'click #modify':function (e,value,row,index) {
-        $('#modifyName').val(row.name);
-        $('#modifyLocation').val(row.location);
-        $('#modifyIntroduction').val(row.introduction);
-        $('#modifyPostCode').val(row.postcode);
-        $('#schoolId').html(row.id);
+        var info = {
+            subjectId : row.id
+        }
+
+        if(row.type == "单选题"){
+            $.ajax({
+                url: "../subject/getSubjectById",
+                type: "POST",
+                data: info,
+                dataType: "json",
+                success: function (result) {
+                    $("#choiceId").html(result.id);
+                    $("#modifyOfAddContent").val(result.title);
+                    $("#optionA1").val(result.optionA);
+                    $("#optionB1").val(result.optionB);
+                    $("#optionC1").val(result.optionC);
+                    $("#optionD1").val(result.optionD);
+                    $('#modifySingleChoiceModal').modal('show');
+                },
+                error: function () {
+                }
+            });
+        }
+
+        if(row.type == "简答题"){
+            $.ajax({
+                url: "../subject/getSubjectById",
+                type: "POST",
+                data: info,
+                dataType: "json",
+                success: function (result) {
+                    $("#shortAnsId").html(result.id);
+                    $("#modifyOfShortContent").val(result.title);
+                    $("#modifyContent").val(result.content);
+                    $('#modifyShortAnsModal').modal('show');
+                },
+                error: function () {
+                }
+            });
+        }
     },
     'click #delete':function (e,value,row,index) {
         if (!confirm("是否确认删除？"))
@@ -58,7 +115,7 @@ window.operateEvents = {
         }
 
         $.ajax({
-            url: "../school/deleteSchool",
+            url: "../subject/deleteSubject",
             type: "POST",
             data: info,
             dataType: "json",
@@ -70,7 +127,7 @@ window.operateEvents = {
                         button: false,
                         timer: 1000,
                     }).then(() => {
-                        loadAllSchool();
+                        loadAllSubject();
                     });
                 }
             },
@@ -80,19 +137,89 @@ window.operateEvents = {
     },
 };
 
-// 更改学校的信息
-$("#postModify").on("click", function() {
+// 新增简答题
+$("#postAddShortAns").on("click", function() {
     var info = {
-        id: $('#schoolId').html(),
-        name: $('#modifyName').val(),
-        provincial: $("#modifyProvincialList option:selected").attr("id"),
-        location: $('#modifyLocation').val(),
-        introduction: $('#modifyIntroduction').val(),
-        postCode: $('#modifyPostCode').val(),
+        title: $("#shortAnsContent").val(),
+        classify: $("#classifyList2 option:selected").attr("data-id"),
+        type:"2",
+        content: $("#contentOfShortAns").val()
+    }
+
+
+    $.ajax({
+        url: "../subject/addShortAns",
+        type: "POST",
+        data: info,
+        dataType: "json",
+        success: function (result) {
+            if(result == "1"){
+                swal({
+                    title: "新增成功",
+                    icon: "success",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $('#addShortAns').modal('hide');
+                    loadAllSubject();
+                });
+            }
+        },
+        error: function () {
+        }
+    });
+});
+
+// 新增单选题
+$("#postAddOneChoice").on("click", function() {
+    var info = {
+        title: $("#content").val(),
+        classify: $("#classifyList option:selected").attr("data-id"),
+        type:"1",
+        optionA: $("#optionA").val(),
+        optionB: $("#optionB").val(),
+        optionC: $("#optionC").val(),
+        optionD: $("#optionD").val()
     }
 
     $.ajax({
-        url: "../school/modifySchool",
+        url: "../subject/addOneChoice",
+        type: "POST",
+        data: info,
+        dataType: "json",
+        success: function (result) {
+            if(result == "1"){
+                swal({
+                    title: "新增成功",
+                    icon: "success",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $('#addSingleChoiceModal').modal('hide');
+                    loadAllSubject();
+                });
+            }
+        },
+        error: function () {
+        }
+    });
+});
+
+// 修改单选题
+$('#modifyAddOneChoice').click(function () {
+
+    var info = {
+        id: $("#choiceId").html(),
+        title: $("#modifyOfAddContent").val(),
+        classify: $("#classifyList3 option:selected").attr("data-id"),
+        optionA:$("#optionA1").val(),
+        optionB:$("#optionB1").val(),
+        optionC:$("#optionC1").val(),
+        optionD:$("#optionD1").val()
+    }
+
+    $.ajax({
+        url: "../subject/modifyOneChoice",
         type: "POST",
         data: info,
         dataType: "json",
@@ -104,48 +231,65 @@ $("#postModify").on("click", function() {
                     button: false,
                     timer: 1000,
                 }).then(() => {
-                    $('#modifySchool').modal('hide');
-                    loadAllSchool();
+                    $('#modifySingleChoiceModal').modal('hide');
+                    loadAllSubject();
+                });
+            }else{
+                swal({
+                    title: "修改失败",
+                    icon: "error",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $('#modifySingleChoiceModal').modal('hide');
+                    loadAllSubject();
                 });
             }
+
         },
         error: function () {
         }
     });
 });
 
-// 新增院校
-$('#postAdd').click(function () {
-    var schoolName = $('#addName').val();
-    var provincial = $("#provincialList option:selected").attr("id");
-    var location = $('#addLocation').val();
-    var introduction = $('#addIntroduction').val();
-    var postCode = $('#addPostCode').val();
+// 修改简答题
+$('#modifyAddShortAns').click(function () {
 
     var info = {
-        name: schoolName,
-        provincial: provincial,
-        location: location,
-        introduction: introduction,
-        postCode: postCode
+        id: $("#shortAnsId").html(),
+        title: $("#modifyOfShortContent").val(),
+        classify: $("#classifyList3 option:selected").attr("data-id"),
+        content: $("#modifyContent").val()
     }
 
     $.ajax({
-        url: "../school/addSchool",
+        url: "../subject/modifyShortAns",
         type: "POST",
         data: info,
         dataType: "json",
         success: function (result) {
-            console.log(result);
-            swal({
-                title: "新增成功",
-                icon: "success",
-                button: false,
-                timer: 1000,
-            }).then(() => {
-                $('#addSchoolModal').modal('hide');
-                loadAllSchool();
-            });
+            if(result == "1"){
+                swal({
+                    title: "修改成功",
+                    icon: "success",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $('#modifyShortAnsModal').modal('hide');
+                    loadAllSubject();
+                });
+            }else{
+                swal({
+                    title: "修改失败",
+                    icon: "error",
+                    button: false,
+                    timer: 1000,
+                }).then(() => {
+                    $('#modifyShortAnsModal').modal('hide');
+                    loadAllSubject();
+                });
+            }
+
         },
         error: function () {
         }
@@ -153,10 +297,10 @@ $('#postAdd').click(function () {
 });
 
 // 删除按钮事件
-$("#removeSchool").on("click", function() {
+$("#removeSubject").on("click", function() {
     if (!confirm("是否确认删除？"))
         return;
-    var rows = $("#school").bootstrapTable('getSelections');// 获得要删除的数据
+    var rows = $("#subject").bootstrapTable('getSelections');// 获得要删除的数据
     if (rows.length == 0) {// rows 主要是为了判断是否选中，下面的else内容才是主要
         alert("请先选择要删除的记录!");
         return;
@@ -178,7 +322,7 @@ function deleteMs(ids) {
         }
 
         $.ajax({
-            url: "../school/deleteSchool",
+            url: "../subject/deleteSubject",
             type: "POST",
             data: info,
             dataType: "json",
@@ -196,7 +340,7 @@ function deleteMs(ids) {
             button: false,
             timer: 1000,
         }).then(() => {
-            loadAllSchool();
+            loadAllSubject();
         });
     }else{
         swal({
@@ -205,7 +349,7 @@ function deleteMs(ids) {
             button: false,
             timer: 1000,
         }).then(() => {
-            loadAllSchool();
+            loadAllSubject();
         });
     }
 }
@@ -213,9 +357,9 @@ function deleteMs(ids) {
 //操作栏的格式化
 function actionFormatter(value, row, index) {
     return[
-        '<a href="#" class="btn btn-outline-primary" id="add" data-toggle="modal" data-target="#modifySchool">查看</a>',
-        '<a href="#" class="btn btn-outline-primary" id="modify" data-toggle="modal" data-target="#modifySchool">编辑</a>',
-        '<a href="#" class="btn btn-outline-primary" id="delete"">删除</a>',
+        '<a href="#" class="btn btn-outline-primary" id="look">查看</a>',
+        '<a href="#" class="btn btn-outline-primary" id="modify">编辑</a>',
+        '<a href="#" class="btn btn-outline-primary" id="delete">删除</a>',
     ].join('');
 }
 

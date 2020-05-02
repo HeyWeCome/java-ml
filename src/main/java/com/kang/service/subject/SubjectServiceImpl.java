@@ -6,6 +6,7 @@ import com.kang.dao.subject.SubjectMapper;
 import com.kang.pojo.Subject;
 import com.kang.pojo.UserCollection;
 import com.kang.pojo.UserNote;
+import com.kang.utils.kangkang;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,6 +37,64 @@ public class SubjectServiceImpl implements SubjectService {
     // 通过题目的ID获取题目信息
     public Subject getSubjectById(String id) {
         return subjectMapper.getSubjectById(id);
+    }
+
+    // 新增单选题
+    public int addOneChoice(String title, String classify, String type, String optionA, String optionB, String optionC, String optionD) {
+        Subject subject = new Subject();
+        subject.setId(kangkang.id_get());   // 设置随机ID
+        subject.setTitle(title);        // 设置题目的内容
+        subject.setClassify(classify);      // 设置分类
+        subject.setType(type);          // 设置单选还是简答题
+        subject.setOptionA(optionA);    // 设置选项A
+        subject.setOptionB(optionB);    // 设置选项B
+        subject.setOptionC(optionC);    // 设置选项C
+        subject.setOptionD(optionD);    // 设置选项D
+        subject.setHeat(0);             // 设置热度
+
+        return subjectMapper.addOneChoice(subject);
+    }
+
+    public int modifyOneChoice(String id, String title, String classify,String optionA, String optionB, String optionC, String optionD) {
+        Subject subject = new Subject();
+        subject.setId(id);   // 设置随机ID
+        subject.setTitle(title);        // 设置题目的内容
+        subject.setClassify(classify);  // 设置分类
+        subject.setOptionA(optionA);    // 设置选项A
+        subject.setOptionB(optionB);    // 设置选项B
+        subject.setOptionC(optionC);    // 设置选项C
+        subject.setOptionD(optionD);    // 设置选项D
+
+        return subjectMapper.modifyOneChoice(subject);
+    }
+
+    // 删除单选题
+    public int deleteSubject(String id) {
+        return subjectMapper.deleteSubject(id);
+    }
+
+    // 新增简答题
+    public int addShortAns(String title, String classify, String type, String content) {
+        Subject subject = new Subject();
+        subject.setId(kangkang.id_get());   // 设置随机ID
+        subject.setTitle(title);        // 设置题目的内容
+        subject.setClassify(classify);      // 设置分类
+        subject.setType(type);          // 设置单选还是简答题
+        subject.setContent(content);    // 设置简答题内容
+        subject.setHeat(0);             // 设置热度
+
+        return subjectMapper.addShortAns(subject);
+    }
+
+    // 修改简答题
+    public int modifyShortAns(String id, String title, String classify,String content) {
+        Subject subject = new Subject();
+        subject.setId(id);              // 设置ID
+        subject.setTitle(title);        // 设置题目的内容
+        subject.setClassify(classify);      // 设置分类
+        subject.setContent(content);    // 设置简答题内容
+
+        return subjectMapper.modifyShortAns(subject);
     }
 
     // 题目的类型：1.单选 2.问答，暂时只考虑这两种 type

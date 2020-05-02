@@ -10,6 +10,11 @@ import java.util.List;
 
 public interface SubjectMapper {
     Subject getSubjectById(String id);                                                                          // 通过题目的ID获取题目信息
+    int addOneChoice(Subject subject);                                                                          // 新增单选
+    int addShortAns(Subject subject);                                                                           // 新增简答题
+    int modifyOneChoice(Subject subject);                                                                       // 修改单选
+    int modifyShortAns(Subject subject);                                                                        // 修改简答题
+    int deleteSubject(String id);                                                                              // 删除题目
     List<Subject> loadAllQuestion();                                                                            // 查询全部的问题
     List<Subject> loadQuestionByClassify(String classify);                                                      // 根据分类查询题目
     int addNote(UserNote userNote);                                                                             // 添加用户笔记

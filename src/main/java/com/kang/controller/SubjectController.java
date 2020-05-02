@@ -20,12 +20,46 @@ public class SubjectController {
     @Autowired
     private SubjectService subjectService = new SubjectServiceImpl();
 
-    // 查看所有的习题的所有内容
-
+    // 根据ID查询题目
     @RequestMapping(value = "/getSubjectById",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String getSubjectById(String subjectId){
         return JSONObject.toJSONString(subjectService.getSubjectById(subjectId));
+    }
+
+    // 添加单选题
+    @RequestMapping(value = "/addOneChoice",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addOneChoice(String title, String classify, String type,String optionA,String optionB,String optionC,String optionD){
+        return JSONObject.toJSONString(subjectService.addOneChoice(title,classify,type,optionA,optionB,optionC,optionD));
+    }
+
+    // 修改单选题
+    @RequestMapping(value = "/modifyOneChoice",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String modifyOneChoice(String id,String title, String classify,String optionA,String optionB,String optionC,String optionD){
+        return JSONObject.toJSONString(subjectService.modifyOneChoice(id,title,classify,optionA,optionB,optionC,optionD));
+    }
+
+    // 删除题目
+    @RequestMapping(value = "/deleteSubject",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String deleteSubject(String id){
+        return JSONObject.toJSONString(subjectService.deleteSubject(id));
+    }
+
+    // 添加简答题
+    @RequestMapping(value = "/addShortAns",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String addShortAns(String title, String classify, String type,String content){
+        return JSONObject.toJSONString(subjectService.addShortAns(title,classify,type,content));
+    }
+
+    // 修改简答题
+    @RequestMapping(value = "/modifyShortAns",produces = "application/json; charset=utf-8")
+    @ResponseBody
+    public String modifyShortAns(String id,String title, String classify,String content){
+        return JSONObject.toJSONString(subjectService.modifyShortAns(id,title,classify,content));
     }
 
     // 用户添加笔记

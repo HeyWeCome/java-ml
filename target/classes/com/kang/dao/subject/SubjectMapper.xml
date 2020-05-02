@@ -4,6 +4,49 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kang.dao.subject.SubjectMapper">
 
+    <!--新增单选-->
+    <insert id="addOneChoice" parameterType="Subject" keyProperty="id">
+        insert into wecode.subject(id,title,classify,type,optionA,optionB,optionC,optionD,heat)
+        values (#{id},#{title},#{classify},#{type},#{optionA},#{optionB},#{optionC},#{optionD},#{heat})
+    </insert>
+
+    <!--新增简答题-->
+    <insert id="addShortAns" parameterType="Subject" keyProperty="id">
+        insert into wecode.subject(id,title,classify,type,content,heat)
+        values (#{id},#{title},#{classify},#{type},#{content},#{heat})
+    </insert>
+
+    <!--修改单选-->
+    <update id="modifyOneChoice" parameterType="Subject">
+        update wecode.subject
+        set
+            title=#{title},
+            classify=#{classify},
+            optionA=#{optionA},
+            optionB=#{optionB},
+            optionC=#{optionC},
+            optionD=#{optionD}
+        where
+            subject.id = #{id}
+    </update>
+
+    <!--修改简答-->
+    <update id="modifyShortAns" parameterType="Subject">
+        update wecode.subject
+        set
+            title=#{title},
+            classify=#{classify},
+            content=#{content}
+        where
+            subject.id = #{id}
+    </update>
+
+    <!--删除单选-->
+    <delete id="deleteSubject" parameterType="String">
+        delete from wecode.subject
+        where id = #{id}
+    </delete>
+
     <select id="getSubjectById" parameterType="String" resultType="Subject">
         select * from wecode.subject
         where subject.id = #{id}

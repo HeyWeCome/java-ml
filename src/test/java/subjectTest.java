@@ -27,6 +27,88 @@ public class subjectTest {
     }
 
     @Test
+    public void addOneChoice(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String title = "测试数据";
+        String classify ="1";
+        String type = "1";
+        String optionA ="测试A";
+        String optionB = "测试B";
+        String optionC = "测试C";
+        String optionD = "测试D";
+
+        System.out.println(subjectService.addOneChoice(title, classify, type, optionA, optionB, optionC, optionD));
+
+    }
+
+    @Test
+    public void addShortAns(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String title = "测试数据";
+        String classify ="1";
+        String type = "1";
+        String content = "测试测试测试";
+        String optionA ="测试A";
+        String optionB = "测试B";
+        String optionC = "测试C";
+        String optionD = "测试D";
+
+        System.out.println(subjectService.addShortAns(title, classify, type, content));
+
+    }
+
+    @Test
+    public void modifyShortAns(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String id = "b0648000f8804a14940d1181c1f7fa87";
+        String title = "测试数据321321132";
+        String classify ="1";
+        String type = "1";
+        String content = "测试测试测试";
+        String optionA ="测试A";
+        String optionB = "测试B";
+        String optionC = "测试C";
+        String optionD = "测试D";
+
+        System.out.println(subjectService.modifyShortAns(id,title, classify,content));
+
+    }
+
+    @Test
+    public void modifyOneChoice(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String id = "8a2b4ae280904234856c3a284fa41c8c";
+        String title = "测试数据";
+        String classify ="2";
+        String optionA ="测试A";
+        String optionB = "测试B";
+        String optionC = "测试C";
+        String optionD = "测试D";
+
+        System.out.println(subjectService.modifyOneChoice(id,title, classify,optionA, optionB, optionC, optionD));
+
+    }
+
+    @Test
+    public void deleteOneChoice(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
+
+        String id = "b0648000f8804a14940d1181c1f7fa87";
+
+        System.out.println(subjectService.deleteSubject(id));
+
+    }
+
+    @Test
     public void searchAllSubject(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         SubjectService subjectService = (SubjectService) context.getBean("SubjectServiceImpl");
