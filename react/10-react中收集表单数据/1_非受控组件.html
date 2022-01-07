@@ -20,30 +20,19 @@
   <script type="text/javascript" src="../js/prop-types.js"></script>
 	
   <script type="text/babel"> /* 此处一定要写babel */
-    class Demo extends React.Component{
-
-      // React.createRef调用后可以返回一个容器，该容器可以存储被ref所标识的节点，该容器是专人专用
-      myRef = React.createRef();
-
+    class Login extends React.Component{
       render(){
-        return(                                                          
-          <div>
-            {/* <input ref={ (currentNode)=>{this.input1 = currentNode}} placeholder="请输入"/> */}
-            <input ref={ this.myRef } placeholder="请输入"/>
-            <input ref={ this.myRef } placeholder="请输入2"/>
-            <button onClick={this.showData}>点击我显示内容</button>  
-          </div>
+        return(
+          <form action="">\
+            用户名：<input type="text"/>
+            密码：<input type="password"/>  
+            <button>登录</button>
+          </form>
         )
-      }
-
-      showData = ()=> {
-        console.log(this.myRef);
       }
     }
 
-    
-
-    ReactDOM.render(<Demo/>, document.getElementById('test'));
+    ReactDOM.render(<Login/>, document.getElementById('test'));
 	</script>
 </body>
 
