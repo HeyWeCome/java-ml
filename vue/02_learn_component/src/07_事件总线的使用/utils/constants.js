@@ -1,0 +1,1 @@
+export const HEYWECOME_EVENT = "heywecome";
