@@ -2,6 +2,18 @@
   <div>
     <home></home>
     <async-category></async-category>
+
+    <!-- suspense提供两个插槽，default为默认显示内容，fallback为默认内容无法显示时候展示的内容 -->
+    <suspense>
+      <template #default>
+        <async-category></async-category>
+      </template>
+      <template #fallBack>
+        <loading></loading>
+      </template>
+
+    </suspense>
+
   </div>
 </template>
 
@@ -30,7 +42,8 @@
   export default {
     components: {
       Home,
-      AsyncCategory
+      AsyncCategory,
+      Loading
     }  
   }
 </script>
