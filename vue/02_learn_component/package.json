@@ -36,7 +36,8 @@
     },
     "rules": {
       "eslint-disable": 0,
-      "useEslint": 0
+      "useEslint": 0,
+      "vue/multi-word-component-names": 0
     }
   },
   "browserslist": [
