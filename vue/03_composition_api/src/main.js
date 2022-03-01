@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './01_mixin和extends/App.vue'
+import App from './02_compositionAPI的基础/App.vue'
 
 createApp(App).mount('#app')
